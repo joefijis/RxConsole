@@ -6,162 +6,172 @@
     <title>RxConsole User Guide</title>
     <style>
         :root {
-            --sidebar-width: 350px;
+            --sidebar-width: 380px;
             --header-height: 70px;
             --primary-blue: #0052cc;
-            --bg-gray: #f4f5f7;
+            --bg-sidebar: #f4f5f7;
             --text-main: #172b4d;
-            --border-color: #d1d5db;
+            --hover-bg: #ebecf0;
         }
 
         body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
+            margin: 0; padding: 0; height: 100%;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            color: var(--text-main);
-            overflow: hidden; /* Prevent body scroll, use container scrolls */
+            color: var(--text-main); overflow: hidden;
         }
 
-        /* --- Header --- */
         header {
-            height: var(--header-height);
-            background-color: var(--primary-blue);
-            color: white;
-            display: flex;
-            align-items: center;
-            padding: 0 30px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            height: var(--header-height); background: var(--primary-blue);
+            color: white; display: flex; align-items: center; padding: 0 30px;
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 22px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
+        .container { display: flex; margin-top: var(--header-height); height: calc(100vh - var(--header-height)); }
 
-        /* --- Main Layout --- */
-        .container {
-            display: flex;
-            margin-top: var(--header-height);
-            height: calc(100vh - var(--header-height));
-        }
-
-        /* --- Sidebar Navigation --- */
+        /* --- Sidebar --- */
         nav {
-            width: var(--sidebar-width);
-            background-color: var(--bg-gray);
-            border-right: 1px solid var(--border-color);
-            overflow-y: auto;
-            padding: 20px;
-            flex-shrink: 0;
+            width: var(--sidebar-width); background: var(--bg-sidebar);
+            border-right: 1px solid #d1d5db; overflow-y: auto; padding: 15px; flex-shrink: 0;
         }
 
-        nav h2 {
-            font-size: 14px;
-            text-transform: uppercase;
-            color: #6b778c;
-            margin-bottom: 15px;
-            padding-left: 10px;
+        .folder {
+            cursor: pointer; font-weight: 600; padding: 10px;
+            display: flex; align-items: center; border-radius: 4px; transition: background 0.2s;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .folder:hover { background: var(--hover-bg); }
+
+        .folder::before {
+            content: '▶'; display: inline-block; margin-right: 10px;
+            font-size: 10px; transition: transform 0.2s;
         }
 
-        nav li {
-            margin-bottom: 5px;
+        .folder.active::before { transform: rotate(90deg); }
+
+        .file-list { display: none; list-style: none; padding-left: 25px; margin: 5px 0 15px 0; }
+        .file-list.open { display: block; }
+
+        .file-list li a {
+            text-decoration: none; color: var(--text-main); display: block;
+            padding: 6px 10px; font-size: 14px; border-radius: 4px;
         }
 
-        nav a {
-            text-decoration: none;
-            color: var(--text-main);
-            display: block;
-            padding: 8px 12px;
-            border-radius: 4px;
-            font-size: 14px;
-            transition: background 0.2s;
-        }
+        .file-list li a:hover { background: var(--hover-bg); color: var(--primary-blue); }
 
-        nav a:hover {
-            background-color: #ebecf0;
-            color: var(--primary-blue);
-        }
-
-        /* Nested lists styling */
-        nav ul ul {
-            padding-left: 15px;
-            margin-top: 5px;
-            border-left: 1px solid #dfe1e6;
-        }
-
-        /* --- Content Area --- */
-        main {
-            flex-grow: 1;
-            background-color: white;
-            position: relative;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* Scrollbar Styling */
-        nav::-webkit-scrollbar { width: 6px; }
-        nav::-webkit-scrollbar-track { background: var(--bg-gray); }
-        nav::-webkit-scrollbar-thumb { background: #c1c7d0; border-radius: 10px; }
+        /* --- Main --- */
+        main { flex-grow: 1; background: white; }
+        iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>RxConsole User Guide</h1>
-</header>
+<header><h1>RxConsole User Guide</h1></header>
 
 <div class="container">
-    <nav>
-        <h2>Documentation Index</h2>
-        <ul>
-            <li>
-                <a href="RxConsole-Documentation_178487297.html" target="content-frame">RxConsole Documentation</a>
-                <ul>
-                    <li>
-                        <a href="Getting-Started_183205898.html" target="content-frame">Getting Started</a>
-                        <ul>
-                            <li><a href="Logging-into-the-RxConsole_178552833.html" target="content-frame">Logging into the RxConsole</a></li>
-                            <li><a href="Setting-up-your-Authenticator-App_179535876.html" target="content-frame">Setting up your Authenticator App</a></li>
-                            <li><a href="Resetting-your-Mobile-Authenticator-App_178388994.html" target="content-frame">Resetting your Mobile App</a></li>
-                            <li><a href="Resetting-your-Password_183271432.html" target="content-frame">Resetting your Password</a></li>
-                            <li><a href="Exiting-the-RxConsole-Application_201326608.html" target="content-frame">Exiting the Application</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="RxCheck-Dashboard_182845472.html" target="content-frame">RxCheck Dashboard</a>
-                        <ul>
-                            <li><a href="Dashboard-Overview_183402498.html" target="content-frame">Dashboard Overview</a></li>
-                            <li><a href="Applying-Filters-to-the-RxCheck-Dashboard_183926785.html" target="content-frame">Applying Filters</a></li>
-                            <li><a href="View-Incoming-and-Outgoing-Request-in-the-RxCheck-Dashboard_184123394.html" target="content-frame">View Requests</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="Analytical-Insights_183140360.html" target="content-frame">Analytical Insights</a>
-                        <ul>
-                            <li><a href="Analytical-Insights-Overview_183107599.html" target="content-frame">Overview</a></li>
-                            <li><a href="Viewing-Patient-and-Provider-Prescription-Data-in-Analytical-Insights_184647682.html" target="content-frame">Viewing Prescription Data</a></li>
-                        </ul>
-                    </li>
-                    </ul>
-            </li>
+    <nav id="sidebar-nav">
+        <div class="folder" onclick="toggleFolder(this)">Getting Started</div>
+        <ul class="file-list">
+            <li><a href="Logging-into-the-RxConsole_178552833.html" target="content-frame">Logging into the RxConsole</a></li>
+            <li><a href="Setting-up-your-Authenticator-App_179535876.html" target="content-frame">Setting up your Authenticator App</a></li>
+            <li><a href="Resetting-your-Mobile-Authenticator-App_178388994.html" target="content-frame">Resetting your Mobile Authenticator App</a></li>
+            <li><a href="Resetting-your-Password_183271432.html" target="content-frame">Resetting your Password</a></li>
+            <li><a href="Exiting-the-RxConsole-Application_201326608.html" target="content-frame">Exiting the RxConsole Application</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">RxCheck Dashboard</div>
+        <ul class="file-list">
+            <li><a href="Dashboard-Overview_183402498.html" target="content-frame">Dashboard Overview</a></li>
+            <li><a href="Applying-Filters-to-the-RxCheck-Dashboard_183926785.html" target="content-frame">Applying Filters</a></li>
+            <li><a href="View-Incoming-and-Outgoing-Request-in-the-RxCheck-Dashboard_184123394.html" target="content-frame">View Incoming and Outgoing Request</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">Analytical Insights</div>
+        <ul class="file-list">
+            <li><a href="Analytical-Insights-Overview_183107599.html" target="content-frame">Analytical Insights Overview</a></li>
+            <li><a href="Viewing-Patient-and-Provider-Prescription-Data-in-Analytical-Insights_184647682.html" target="content-frame">Viewing Prescription Data</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">State Routing Service Configuration</div>
+        <ul class="file-list">
+            <li><a href="State-Routing-Service-Configuration-Overview_184680451.html" target="content-frame">SRS Overview</a></li>
+            <li><a href="185434121.html" target="content-frame">Site Unique Identifier / Description</a></li>
+            <li><a href="SRS-Outbound-Sender-Endpoint_185434128.html" target="content-frame">SRS Outbound Sender Endpoint</a></li>
+            <li><a href="RxCheck-Hub-Service-Host-Endpoint_184778762.html" target="content-frame">RxCheck Hub Service Host Endpoint</a></li>
+            <li><a href="SRS-Inbound-Sender-Endpoint_184680460.html" target="content-frame">SRS Inbound Sender Endpoint</a></li>
+            <li><a href="Site-PDMP-Application-Endpoint_185434139.html" target="content-frame">Site PDMP Application Endpoint</a></li>
+            <li><a href="SRS-Certificate_185139213.html" target="content-frame">SRS Certificate</a></li>
+            <li><a href="Configure-the-SRS_185434146.html" target="content-frame">Configure the SRS</a></li>
+            <li><a href="Configuring-the-Required-Fields_185499678.html" target="content-frame">Configuring the Required Fields</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">Heartbeat and Health Monitoring</div>
+        <ul class="file-list">
+            <li><a href="Current-Site-Monitoring_185008164.html" target="content-frame">Current Site Monitoring</a></li>
+            <li><a href="All-Site-Monitoring_185040952.html" target="content-frame">All Site Monitoring</a></li>
+            <li><a href="Heartbeat-Notifications_185663506.html" target="content-frame">Heartbeat Notifications</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">Hub Audit Logs</div>
+        <ul class="file-list">
+            <li><a href="Hub-Audit-Log-Overview_185106487.html" target="content-frame">Hub Audit Log Overview</a></li>
+            <li><a href="Reading-the-hub-audit-logs_192020481.html" target="content-frame">Reading the hub audit logs</a></li>
+            <li><a href="Filtering-the-Hub-Audit-Logs_192217096.html" target="content-frame">Filtering the Hub Audit Logs</a></li>
+            <li><a href="Downloading-the-Hub-Audit-Logs_192610306.html" target="content-frame">Downloading the Hub Audit Logs</a></li>
+            <li><a href="Exporting-the-Hub-Audit-Logs-to-an-sFTP-Server_193200131.html" target="content-frame">Exporting to sFTP Server</a></li>
+            <li><a href="Using-an-API-to-Download-the-Logs_193626113.html" target="content-frame">Using an API to Download Logs</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">Healthcare Entities</div>
+        <ul class="file-list">
+            <li><a href="Healthcare-Entities-Overview_193200145.html" target="content-frame">Healthcare Entities Overview</a></li>
+            <li><a href="Add-a-New-Healthcare-Entity-Site_192118788.html" target="content-frame">Add a New Healthcare Entity Site</a></li>
+            <li><a href="Breakdown-of-Healthcare-Entity-Site-Details_195592193.html" target="content-frame">Breakdown of Site Details</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">Interstate Data-Sharing</div>
+        <ul class="file-list">
+            <li><a href="Interstate-Data-Sharing-Overview_196804611.html" target="content-frame">Interstate Data-Sharing Overview</a></li>
+            <li><a href="197099521.html" target="content-frame">Select/Deselect States</a></li>
+            <li><a href="MOU-Worksheet-Overview_195788808.html" target="content-frame">MOU Worksheet Overview</a></li>
+            <li><a href="Populating-and-Submitting-the-MOU-Worksheet_195264532.html" target="content-frame">Populating/Submitting MOU</a></li>
+            <li><a href="Reviewing-and-Responding-to-an-MOU-Worksheet_196444173.html" target="content-frame">Reviewing/Responding to MOU</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">User Management</div>
+        <ul class="file-list">
+            <li><a href="User-Management-Overview_197132309.html" target="content-frame">User Management Overview</a></li>
+            <li><a href="Searching-for-and-Updating-User-Information_195624989.html" target="content-frame">Searching/Updating Users</a></li>
+            <li><a href="Adding-Users_200572929.html" target="content-frame">Adding Users</a></li>
+            <li><a href="Unlocking-a-User-Account_200605698.html" target="content-frame">Unlocking a User Account</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">Provider Validation</div>
+        <ul class="file-list">
+            <li><a href="Provider-Validation-Overview_201949185.html" target="content-frame">Provider Validation Overview</a></li>
+            <li><a href="Viewing-and-Adding-a-Datasource-for-Provider-Validation_200933385.html" target="content-frame">Viewing/Adding Datasource</a></li>
+            <li><a href="Viewing%2C-Deleting%2C-and-Searching-an-Existing-Datasource_201097220.html" target="content-frame">Managing Existing Datasource</a></li>
+            <li><a href="Creating-a-Datasource-File_202047502.html" target="content-frame">Creating a Datasource File</a></li>
+            <li><a href="Adding-a-New-Datasource-File_200605706.html" target="content-frame">Adding a New Datasource File</a></li>
+            <li><a href="Adding-a-Datasource-API_201818119.html" target="content-frame">Adding a Datasource API</a></li>
+            <li><a href="Modifying-an-Existing-Provider-Validation_200572941.html" target="content-frame">Modifying Provider Validation</a></li>
+            <li><a href="Adding-a-New-Provider-Validation_202637321.html" target="content-frame">Adding New Provider Validation</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">System & Maintenance</div>
+        <ul class="file-list">
+            <li><a href="PDMP-Maintenance-Schedule-Overview_202670085.html" target="content-frame">Maintenance Schedule Overview</a></li>
+            <li><a href="Creating-and-Modifying-a-Maintenance-Event_203096071.html" target="content-frame">Managing Maintenance Events</a></li>
+            <li><a href="System-Information-Overview_202571798.html" target="content-frame">System Information Overview</a></li>
+            <li><a href="Connected-PDMP-Sites_203259917.html" target="content-frame">Connected PDMP Sites</a></li>
+            <li><a href="System-Notifications-Overview_203554817.html" target="content-frame">System Notifications Overview</a></li>
+            <li><a href="Viewing-System-Notifications_201359367.html" target="content-frame">Viewing System Notifications</a></li>
+        </ul>
+
+        <div class="folder" onclick="toggleFolder(this)">Vendor Connect</div>
+        <ul class="file-list">
+            <li><a href="Applying-to-Becoming-a-Vendor_209092610.html" target="content-frame">Becoming a Vendor</a></li>
+            <li><a href="Assigning-Sites-to-a-Vendor_208797697.html" target="content-frame">Assigning Sites to Vendor</a></li>
+            <li><a href="Vendor-Connection-Requirements_209321985.html" target="content-frame">Connection Requirements</a></li>
         </ul>
     </nav>
 
@@ -169,6 +179,14 @@
         <iframe name="content-frame" src="RxConsole-Documentation_178487297.html"></iframe>
     </main>
 </div>
+
+<script>
+    function toggleFolder(element) {
+        element.classList.toggle('active');
+        const list = element.nextElementSibling;
+        list.classList.toggle('open');
+    }
+</script>
 
 </body>
 </html>
