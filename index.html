@@ -42,8 +42,9 @@
             flex-shrink: 0; transition: margin-left 0.3s;
         }
 
+        .search-container { position: relative; margin-bottom: 20px; }
         .search-box {
-            width: 100%; padding: 10px; margin-bottom: 20px;
+            width: 100%; padding: 10px; padding-right: 30px;
             border: 1px solid #c1c7d0; border-radius: 4px; box-sizing: border-box;
         }
 
@@ -55,8 +56,10 @@
         .folder::before { content: '▶'; display: inline-block; margin-right: 10px; font-size: 10px; transition: 0.2s; }
         .folder.active::before { transform: rotate(90deg); }
 
+        /* The hidden state */
         .file-list { display: none; list-style: none; padding-left: 20px; margin: 0 0 10px 0; }
-        .file-list.open { display: block; }
+        /* The expanded state */
+        .file-list.open { display: block !important; }
 
         .file-list li a {
             text-decoration: none; color: var(--text-main); display: block;
@@ -78,7 +81,9 @@
 
 <div class="container">
     <nav>
-        <input type="text" class="search-box" id="docSearch" placeholder="Search documentation..." onkeyup="filterDocs()">
+        <div class="search-container">
+            <input type="text" class="search-box" id="docSearch" placeholder="Search documentation..." onkeyup="filterDocs()">
+        </div>
         
         <div id="nav-content">
             <div class="folder" onclick="toggleFolder(this)">Getting Started</div>
@@ -201,60 +206,63 @@
     </nav>
 
     <main>
-        <iframe name="content-frame" src="RxConsole-Documentation_178487297.html"></iframe>
+        <iframe name="content-frame" id="docFrame" src="RxConsole-Documentation_178487297.html"></iframe>
     </main>
 </div>
 
 <script>
+    // 1. Manual Toggle Logic
     function toggleFolder(element) {
         element.classList.toggle('active');
         const list = element.nextElementSibling;
         list.classList.toggle('open');
-        list.style.display = list.classList.contains('open') ? "block" : "none";
     }
 
+    // 2. Sidebar Toggle Logic
     function toggleSidebar() { 
         document.body.classList.toggle('sidebar-collapsed'); 
     }
 
+    // 3. Search Filter Logic (Robust Version)
     function filterDocs() {
         let input = document.getElementById('docSearch').value.toLowerCase();
         let folders = document.querySelectorAll('.folder');
         let lists = document.querySelectorAll('.file-list');
 
         folders.forEach((folder, i) => {
-            let links = lists[i].querySelectorAll('a');
+            let list = lists[i];
+            let links = list.querySelectorAll('li');
             let folderHasMatch = false;
 
-            links.forEach(link => {
-                let text = link.innerText.toLowerCase();
+            links.forEach(li => {
+                let text = li.innerText.toLowerCase();
                 if (text.includes(input)) {
-                    link.parentElement.style.display = "";
+                    li.style.display = "block";
                     folderHasMatch = true;
                 } else {
-                    link.parentElement.style.display = "none";
+                    li.style.display = "none";
                 }
             });
 
             if (input.length > 0) {
                 if (folderHasMatch) {
-                    folder.style.display = "";
-                    lists[i].style.display = "block";
-                    lists[i].classList.add('open');
+                    folder.style.display = "flex";
+                    list.classList.add('open');
                     folder.classList.add('active');
                 } else {
                     folder.style.display = "none";
-                    lists[i].style.display = "none";
+                    list.classList.remove('open');
                 }
             } else {
-                folder.style.display = "";
+                // Return to default collapsed state
+                folder.style.display = "flex";
                 folder.classList.remove('active');
-                lists[i].style.display = "none";
-                lists[i].classList.remove('open');
+                list.classList.remove('open');
             }
         });
     }
 
+    // 4. Active Highlight Link logic
     const links = document.querySelectorAll('.file-list a');
     links.forEach(link => {
         link.addEventListener('click', function() {
