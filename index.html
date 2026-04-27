@@ -215,11 +215,49 @@
         element.classList.toggle('active');
         const list = element.nextElementSibling;
         list.classList.toggle('open');
+        list.style.display = list.classList.contains('open') ? "block" : "none";
     }
 
     function toggleSidebar() { 
         document.body.classList.toggle('sidebar-collapsed'); 
     }
+
+    function syncState() {
+        const hash = window.location.hash.substring(1);
+        const frame = document.getElementById('docFrame');
+        const links = document.querySelectorAll('.file-list a');
+
+        if (!hash) return;
+
+        if (frame.src.indexOf(hash) === -1) {
+            frame.src = hash;
+        }
+
+        links.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === hash) {
+                document.querySelectorAll('.file-list a').forEach(l => l.classList.remove('current'));
+                link.classList.add('current');
+
+                const parentList = link.closest('.file-list');
+                const folderBtn = parentList.previousElementSibling;
+                parentList.classList.add('open');
+                parentList.style.display = "block";
+                folderBtn.classList.add('active');
+                
+                link.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+    }
+
+    document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A' && e.target.closest('.file-list')) {
+            window.location.hash = e.target.getAttribute('href');
+        }
+    });
+
+    window.addEventListener('hashchange', syncState);
+    window.addEventListener('load', syncState);
 
     function filterDocs() {
         let input = document.getElementById('docSearch').value.toLowerCase();
@@ -227,64 +265,21 @@
         let lists = document.querySelectorAll('.file-list');
 
         folders.forEach((folder, i) => {
-            let list = lists[i];
-            let links = list.querySelectorAll('li');
-            let folderHasMatch = false;
-
+            let links = lists[i].querySelectorAll('li');
+            let match = false;
             links.forEach(li => {
                 if (li.innerText.toLowerCase().includes(input)) {
                     li.style.display = "block";
-                    folderHasMatch = true;
-                } else {
-                    li.style.display = "none";
-                }
+                    match = true;
+                } else { li.style.display = "none"; }
             });
-
-            if (input.length > 0) {
-                if (folderHasMatch) {
-                    folder.style.display = "flex";
-                    list.classList.add('open');
-                    folder.classList.add('active');
-                } else {
-                    folder.style.display = "none";
-                }
-            } else {
-                folder.style.display = "flex";
+            folder.style.display = match || !input ? "flex" : "none";
+            if (input && match) {
+                lists[i].classList.add('open');
+                lists[i].style.display = "block";
             }
         });
     }
-
-    function updateActiveLink() {
-        const currentHash = window.location.hash.substring(1);
-        const links = document.querySelectorAll('.file-list a');
-        const frame = document.getElementById('docFrame');
-
-        links.forEach(link => {
-            const linkHref = link.getAttribute('href');
-            if (linkHref === currentHash) {
-                links.forEach(l => l.classList.remove('current'));
-                link.classList.add('current');
-                
-                const parentList = link.closest('.file-list');
-                const parentFolder = parentList.previousElementSibling;
-                parentList.classList.add('open');
-                parentFolder.classList.add('active');
-
-                if (frame.contentWindow.location.pathname.indexOf(linkHref) === -1) {
-                    frame.src = linkHref;
-                }
-            }
-        });
-    }
-
-    document.querySelectorAll('.file-list a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            window.location.hash = this.getAttribute('href');
-        });
-    });
-
-    window.addEventListener('load', updateActiveLink);
-    window.addEventListener('hashchange', updateActiveLink);
 </script>
 </body>
 </html>
