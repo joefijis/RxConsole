@@ -211,19 +211,16 @@
 </div>
 
 <script>
-    // 1. Manual Toggle Logic
     function toggleFolder(element) {
         element.classList.toggle('active');
         const list = element.nextElementSibling;
         list.classList.toggle('open');
     }
 
-    // 2. Sidebar Toggle Logic
     function toggleSidebar() { 
         document.body.classList.toggle('sidebar-collapsed'); 
     }
 
-    // 3. Search Filter Logic (Robust Version)
     function filterDocs() {
         let input = document.getElementById('docSearch').value.toLowerCase();
         let folders = document.querySelectorAll('.folder');
@@ -235,8 +232,7 @@
             let folderHasMatch = false;
 
             links.forEach(li => {
-                let text = li.innerText.toLowerCase();
-                if (text.includes(input)) {
+                if (li.innerText.toLowerCase().includes(input)) {
                     li.style.display = "block";
                     folderHasMatch = true;
                 } else {
@@ -251,25 +247,44 @@
                     folder.classList.add('active');
                 } else {
                     folder.style.display = "none";
-                    list.classList.remove('open');
                 }
             } else {
-                // Return to default collapsed state
                 folder.style.display = "flex";
-                folder.classList.remove('active');
-                list.classList.remove('open');
             }
         });
     }
 
-    // 4. Active Highlight Link logic
-    const links = document.querySelectorAll('.file-list a');
-    links.forEach(link => {
-        link.addEventListener('click', function() {
-            links.forEach(l => l.classList.remove('current'));
-            this.classList.add('current');
+    function updateActiveLink() {
+        const currentHash = window.location.hash.substring(1);
+        const links = document.querySelectorAll('.file-list a');
+        const frame = document.getElementById('docFrame');
+
+        links.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentHash) {
+                links.forEach(l => l.classList.remove('current'));
+                link.classList.add('current');
+                
+                const parentList = link.closest('.file-list');
+                const parentFolder = parentList.previousElementSibling;
+                parentList.classList.add('open');
+                parentFolder.classList.add('active');
+
+                if (frame.contentWindow.location.pathname.indexOf(linkHref) === -1) {
+                    frame.src = linkHref;
+                }
+            }
+        });
+    }
+
+    document.querySelectorAll('.file-list a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            window.location.hash = this.getAttribute('href');
         });
     });
+
+    window.addEventListener('load', updateActiveLink);
+    window.addEventListener('hashchange', updateActiveLink);
 </script>
 </body>
 </html>
