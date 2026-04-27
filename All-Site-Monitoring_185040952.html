@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -61,21 +47,20 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              State Routing Service
-             </em>
-             button, followed by the
-             <em>
-              Heartbeat &amp; Health Monitoring
-             </em>
-             option, located on the left-hand side of the screen.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Click on the
+            <em>
+             State Routing Service
+            </em>
+            button, followed by the
+            <em>
+             Heartbeat &amp; Health Monitoring
+            </em>
+            option, located on the left-hand side of the screen.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">
@@ -91,31 +76,29 @@
        <div class="columnLayout fixed-width">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              All Sites
-             </em>
-             button in the top right corner of the screen.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            Click on the
+            <em>
+             All Sites
+            </em>
+            button in the top right corner of the screen.
+           </p>
+          </p>
           <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
            <img alt="image-20251223-175600.png" class="confluence-embedded-image image-center" src="attachments/185040952/184877086.png?width=450"/>
           </span>
-          <ol>
-           <li>
-            <p>
-             The next screen is the
-             <em>
-              SRS: Heartbeat and Health Monitoring
-             </em>
-             screen and includes a United States Map.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            The next screen is the
+            <em>
+             SRS: Heartbeat and Health Monitoring
+            </em>
+            screen and includes a United States Map.
+           </p>
+          </p>
           <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
            <img alt="image-20251223-175623.png" class="confluence-embedded-image image-center" src="attachments/185040952/185466892.png?width=463"/>
           </span>
@@ -125,13 +108,12 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             The map allows you to hover your cursor over a state and get the current status of their SRS server.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            The map allows you to hover your cursor over a state and get the current status of their SRS server.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -156,13 +138,12 @@
        <div class="columnLayout fixed-width">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Scrolling down on this screen, you are able to see a list of the States and their connection status in a table. The table also allows you to see the most recent query to or from a state.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            Scrolling down on this screen, you are able to see a list of the States and their connection status in a table. The table also allows you to see the most recent query to or from a state.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -179,50 +160,48 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           6.
+           <p>
+            You can search for a specific site by:
+           </p>
+           <p class="hardcoded-step">
+            7.
             <p>
-             You can search for a specific site by:
+             Finding the state on the list using the page buttons under the table, or
             </p>
-            <ol>
-             <li>
-              <p>
-               Finding the state on the list using the page buttons under the table, or
-              </p>
-             </li>
-             <li>
-              <p>
-               Searching for the state in the search box above the table.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
-          <p>
-          </p>
-          <p>
-          </p>
-          <p>
-          </p>
-          <ol>
-           <li>
+           </p>
+           <p class="hardcoded-step">
+            8.
             <p>
-             Scrolling down further, the last table displays a list of the connected healthcare entities and the last time a query was received from them. A healthcare entity can be found by:
+             Searching for the state in the search box above the table.
             </p>
-            <ol>
-             <li>
-              <p>
-               Using the page buttons on the bottom of the table and looking for the entity, or
-              </p>
-             </li>
-             <li>
-              <p>
-               Search for the site in the search bar above the table.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
+           </p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           9.
+           <p>
+            Scrolling down further, the last table displays a list of the connected healthcare entities and the last time a query was received from them. A healthcare entity can be found by:
+           </p>
+           <p class="hardcoded-step">
+            10.
+            <p>
+             Using the page buttons on the bottom of the table and looking for the entity, or
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            11.
+            <p>
+             Search for the site in the search bar above the table.
+            </p>
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">

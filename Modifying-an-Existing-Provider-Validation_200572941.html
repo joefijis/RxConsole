@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -48,32 +34,30 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Provider Management
-             </em>
-             button, followed by the
-             <em>
-              Provider Validation
-             </em>
-             option, located on the left-hand side of the screen.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Click on the
+            <em>
+             Provider Management
+            </em>
+            button, followed by the
+            <em>
+             Provider Validation
+            </em>
+            option, located on the left-hand side of the screen.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             The Provider Validation screen allows you to view a list of existing validations that have been added and includes a button to add a new provider validation.
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            The Provider Validation screen allows you to view a list of existing validations that have been added and includes a button to add a new provider validation.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -85,118 +69,117 @@
           </p>
           <p>
           </p>
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            To view and/or modify an existing validation, click on the name of a validation.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            The following screen allows you to change settings related to the existing validation.
+           </p>
+           <p class="hardcoded-step">
+            5.
             <p>
-             To view and/or modify an existing validation, click on the name of a validation.
+             Name – change the name of the validation settings.
             </p>
-           </li>
-          </ol>
-          <p>
-          </p>
-          <p>
-          </p>
-          <ol>
-           <li>
+           </p>
+           <p class="hardcoded-step">
+            6.
             <p>
-             The following screen allows you to change settings related to the existing validation.
+             Select Roles – change the roles that are subject to validation.
             </p>
-            <ol>
-             <li>
-              <p>
-               Name – change the name of the validation settings.
-              </p>
-             </li>
-             <li>
-              <p>
-               Select Roles – change the roles that are subject to validation.
-              </p>
-             </li>
-             <li>
-              <p>
-               Validation Type – if
-               <em>
-                Mandatory
-               </em>
-               is chosen, a query will fail if the fields are not present, while Validate will stop a query if the validation check fails.
-              </p>
-             </li>
-             <li>
-              <p>
-               Datasource – allows you to select a datasource to reference for the validation check. (Only present if validate is chosen for the
-               <em>
-                Validation Type
-               </em>
-               .)
-              </p>
-             </li>
-             <li>
-              <p>
-               Selection – if
-               <em>
-                All
-               </em>
-               is chosen, all boxes checked in the
-               <em>
-                Validation Field(s)
-               </em>
-               selection will be checked for validation. If
-               <em>
-                Any
-               </em>
-               is chosen, only one of the numbers must pass for the validation to be successful.
-              </p>
-             </li>
-             <li>
-              <p>
-               Validation Field(s) – allows you to check which ID numbers are subject to validation.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
-          <p>
-          </p>
-          <ol>
-           <li>
+           </p>
+           <p class="hardcoded-step">
+            7.
             <p>
-             Press the
+             Validation Type – if
              <em>
-              Save
+              Mandatory
              </em>
-             button on the right corner of the screen to record your changes to provider validation to the RxConsole for your state.
+             is chosen, a query will fail if the fields are not present, while Validate will stop a query if the validation check fails.
             </p>
-           </li>
-          </ol>
+           </p>
+           <p class="hardcoded-step">
+            8.
+            <p>
+             Datasource – allows you to select a datasource to reference for the validation check. (Only present if validate is chosen for the
+             <em>
+              Validation Type
+             </em>
+             .)
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            9.
+            <p>
+             Selection – if
+             <em>
+              All
+             </em>
+             is chosen, all boxes checked in the
+             <em>
+              Validation Field(s)
+             </em>
+             selection will be checked for validation. If
+             <em>
+              Any
+             </em>
+             is chosen, only one of the numbers must pass for the validation to be successful.
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            10.
+            <p>
+             Validation Field(s) – allows you to check which ID numbers are subject to validation.
+            </p>
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Alternatively, if you do not wish to proceed with your changes, you can press the
-             <em>
-              Cancel
-             </em>
-             button to discard changes and return to the previous screen.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           11.
+           <p>
+            Press the
+            <em>
+             Save
+            </em>
+            button on the right corner of the screen to record your changes to provider validation to the RxConsole for your state.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Verify the Provider Validation was successfully updated by looking for the Alert that states, “Provider Validation Updated”.
-             <br/>
-             <br/>
-             You will also return to the Provider Validation screen and should see your changes in the
-             <em>
-              List of Provider Validations
-             </em>
-             .
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           12.
+           <p>
+            Alternatively, if you do not wish to proceed with your changes, you can press the
+            <em>
+             Cancel
+            </em>
+            button to discard changes and return to the previous screen.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           13.
+           <p>
+            Verify the Provider Validation was successfully updated by looking for the Alert that states, “Provider Validation Updated”.
+            <br/>
+            <br/>
+            You will also return to the Provider Validation screen and should see your changes in the
+            <em>
+             List of Provider Validations
+            </em>
+            .
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">

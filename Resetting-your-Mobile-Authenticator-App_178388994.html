@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -48,13 +34,12 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Users can set up or reset their authenticator app by:
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Users can set up or reset their authenticator app by:
+           </p>
+          </p>
           <p style="margin-left: 30.0px;">
            a. Scanning the QR code from their RxConsole account creation email, or
           </p>
@@ -71,61 +56,59 @@
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             If you clicked the
-             <em>
-              Reset QR Code
-             </em>
-             link, press the
-             <em>
-              Email QR Code
-             </em>
-             button on the following screen.
-             <br/>
-            </p>
-           </li>
-           <li>
-            <p>
-             A
-             <em>
-              Reset QR Code – Email Sent
-             </em>
-             pop-up will display. Press the
-             <em>
-              Ok
-             </em>
-             button.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            If you clicked the
+            <em>
+             Reset QR Code
+            </em>
+            link, press the
+            <em>
+             Email QR Code
+            </em>
+            button on the following screen.
+            <br/>
+           </p>
           </p>
-          <p>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            A
+            <em>
+             Reset QR Code – Email Sent
+            </em>
+            pop-up will display. Press the
+            <em>
+             Ok
+            </em>
+            button.
+           </p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Users will receive an email from “prod-notif” with the subject
-             <strong>
-              Reset QR Code
-             </strong>
-             .
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Open the email and scan the QR Code.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            Users will receive an email from “prod-notif” with the subject
+            <strong>
+             Reset QR Code
+            </strong>
+            .
+           </p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            Open the email and scan the QR Code.
+           </p>
+          </p>
           <p>
           </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">

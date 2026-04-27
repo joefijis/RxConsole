@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -76,24 +62,24 @@
        </strong>
        The certificate includes two components:
       </p>
-      <ol>
-       <li>
-        <p>
-         <strong>
-          Private Key—
-         </strong>
-         Must be kept confidential and never shared, including within the RxCheck Network.
-        </p>
-       </li>
-       <li>
-        <p>
-         <strong>
-          Public Key—
-         </strong>
-         Uploaded to the RxConsole and shared with other participating states in the RxCheck Network.
-        </p>
-       </li>
-      </ol>
+      <p class="hardcoded-step">
+       1.
+       <p>
+        <strong>
+         Private Key—
+        </strong>
+        Must be kept confidential and never shared, including within the RxCheck Network.
+       </p>
+      </p>
+      <p class="hardcoded-step">
+       2.
+       <p>
+        <strong>
+         Public Key—
+        </strong>
+        Uploaded to the RxConsole and shared with other participating states in the RxCheck Network.
+       </p>
+      </p>
       <p>
        The State PDMP Administrator must input the required data into the fields provided under the SRS Certificate section.
       </p>

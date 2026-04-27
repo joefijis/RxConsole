@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -60,51 +46,46 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Perform any filtering desired using the steps in the previous section.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Perform any filtering desired using the steps in the previous section.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the download button on the right-hand side of the screen.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            Click on the download button on the right-hand side of the screen.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             The hub audit logs will be saved to your computer in a zipped folder.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            The hub audit logs will be saved to your computer in a zipped folder.
+           </p>
+          </p>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Right-click on the zipped folder to view options
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            Right-click on the zipped folder to view options
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Select the “Extract All…” option.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            Select the “Extract All…” option.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">

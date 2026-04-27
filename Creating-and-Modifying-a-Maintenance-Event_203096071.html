@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -48,30 +34,28 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              PDMP Maintenance Schedule
-             </em>
-             button, located on the left-hand side of the screen.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Click on the
+            <em>
+             PDMP Maintenance Schedule
+            </em>
+            button, located on the left-hand side of the screen.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Add Maintenance
-             </em>
-             button located on the top right-hand corner of the screen.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            Click on the
+            <em>
+             Add Maintenance
+            </em>
+            button located on the top right-hand corner of the screen.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -85,18 +69,15 @@
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             A pop-up screen titled
-             <em>
-              Maintenance
-             </em>
-             will appear.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            A pop-up screen titled
+            <em>
+             Maintenance
+            </em>
+            will appear.
+           </p>
           </p>
           <p>
           </p>
@@ -104,90 +85,86 @@
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Select the start date and time by making appropriate selections in the calendar by clicking the blue calendar in the field labeled
-             <em>
-              From Date&amp;Time
-             </em>
-             .
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
-          <p>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            Select the start date and time by making appropriate selections in the calendar by clicking the blue calendar in the field labeled
+            <em>
+             From Date&amp;Time
+            </em>
+            .
+           </p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Select the end date and time by making appropriate selections in the calendar by clicking the blue calendar in the field labeled
-             <em>
-              To Date&amp;Time
-             </em>
-             .
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Select the reason for the maintenance event by clicking on one of the dropdown options for the field labeled,
-             <em>
-              Reason Type
-             </em>
-             .
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            Select the end date and time by making appropriate selections in the calendar by clicking the blue calendar in the field labeled
+            <em>
+             To Date&amp;Time
+            </em>
+            .
+           </p>
           </p>
-          <p>
-          </p>
-          <ol>
-           <li>
-            <p>
-             Add a note into the text box labeled,
-             <em>
-              Reason Message
-             </em>
-             to add context to the maintenance event.
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Press the
-             <em>
-              Save
-             </em>
-             button to add the new maintenance event to the maintenance schedule in the RxConsole.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           6.
+           <p>
+            Select the reason for the maintenance event by clicking on one of the dropdown options for the field labeled,
+            <em>
+             Reason Type
+            </em>
+            .
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Alternatively, you can press the
-             <em>
-              Close
-             </em>
-             button to discard changes and return to the previous screen.
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           7.
+           <p>
+            Add a note into the text box labeled,
+            <em>
+             Reason Message
+            </em>
+            to add context to the maintenance event.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           8.
+           <p>
+            Press the
+            <em>
+             Save
+            </em>
+            button to add the new maintenance event to the maintenance schedule in the RxConsole.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           9.
+           <p>
+            Alternatively, you can press the
+            <em>
+             Close
+            </em>
+            button to discard changes and return to the previous screen.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">
@@ -257,82 +234,76 @@
          <div class="innerCell">
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on an event listed in the
-             <em>
-              Maintenance Schedule
-             </em>
-             .
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           10.
+           <p>
+            Click on an event listed in the
+            <em>
+             Maintenance Schedule
+            </em>
+            .
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Modify any information in the
-             <em>
-              Maintenance
-             </em>
-             popup similar to if you were adding a new event.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           11.
+           <p>
+            Modify any information in the
+            <em>
+             Maintenance
+            </em>
+            popup similar to if you were adding a new event.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Press the
-             <em>
-              Save
-             </em>
-             button to record the changes to the maintenance event in the RxConsole.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           12.
+           <p>
+            Press the
+            <em>
+             Save
+            </em>
+            button to record the changes to the maintenance event in the RxConsole.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Alternatively, you can press the
-             <em>
-              Close
-             </em>
-             button to discard changes and return to the previous screen.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           13.
+           <p>
+            Alternatively, you can press the
+            <em>
+             Close
+            </em>
+            button to discard changes and return to the previous screen.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Press the
-             <em>
-              Complete
-             </em>
-             button to mark the event as completed.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           14.
+           <p>
+            Press the
+            <em>
+             Complete
+            </em>
+            button to mark the event as completed.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Press the
-             <em>
-              Cancel
-             </em>
-             button to cancel the event in the maintenance schedule.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           15.
+           <p>
+            Press the
+            <em>
+             Cancel
+            </em>
+            button to cancel the event in the maintenance schedule.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">

@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -50,34 +36,32 @@
          <div class="innerCell">
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Hub Audit Logs
-             </em>
-             button, located on the left-hand side of the screen.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Click on the
+            <em>
+             Hub Audit Logs
+            </em>
+            button, located on the left-hand side of the screen.
+           </p>
           </p>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Select the appropriate
-             <em>
-              Site Selector
-             </em>
-             option:
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            Select the appropriate
+            <em>
+             Site Selector
+            </em>
+            option:
+           </p>
+          </p>
           <ul>
            <li>
             <p>
@@ -117,29 +101,28 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            Select the
+            <em>
+             Site Code
+            </em>
+            by clicking the down arrow and then:
+           </p>
+           <p class="hardcoded-step">
+            4.
             <p>
-             Select the
-             <em>
-              Site Code
-             </em>
-             by clicking the down arrow and then:
+             Scrolling through the dropdown options and checking the box, or
             </p>
-            <ol>
-             <li>
-              <p>
-               Scrolling through the dropdown options and checking the box, or
-              </p>
-             </li>
-             <li>
-              <p>
-               Typing in the search bar to filter results.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
+           </p>
+           <p class="hardcoded-step">
+            5.
+            <p>
+             Typing in the search bar to filter results.
+            </p>
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -161,119 +144,122 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           6.
+           <p>
+            Select the date and time range to filter the audit log:
+           </p>
+           <p class="hardcoded-step">
+            7.
             <p>
-             Select the date and time range to filter the audit log:
+             From DateTime – Start date and time
             </p>
-            <ol>
-             <li>
-              <p>
-               From DateTime – Start date and time
-              </p>
-             </li>
-             <li>
-              <p>
-               To DateTime – End date and time
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
+           </p>
+           <p class="hardcoded-step">
+            8.
+            <p>
+             To DateTime – End date and time
+            </p>
+           </p>
+          </p>
           <p>
            Click the blue calendar icon to choose a date. Use the left/right arrows to switch months. Adjust the time using the up/down arrows below the calendar (24-hour format: HH:MM).
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Clicking on the
-             <em>
-              More&gt;&gt;&gt;
-             </em>
-             link located below the
-             <em>
-              Site Selector
-             </em>
-             filter will provide additional filtering options.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           9.
+           <p>
+            Clicking on the
+            <em>
+             More&gt;&gt;&gt;
+            </em>
+            link located below the
+            <em>
+             Site Selector
+            </em>
+            filter will provide additional filtering options.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           10.
+           <p>
+            The following additional filter options are available:
+           </p>
+           <p class="hardcoded-step">
+            11.
             <p>
-             The following additional filter options are available:
+             Message ID
             </p>
-            <ol>
-             <li>
-              <p>
-               Message ID
-              </p>
-             </li>
-             <li>
-              <p>
-               Request ID
-              </p>
-             </li>
-             <li>
-              <p>
-               Requestor
-              </p>
-             </li>
-             <li>
-              <p>
-               Roles
-              </p>
-             </li>
-             <li>
-              <p>
-               DEA#
-              </p>
-             </li>
-             <li>
-              <p>
-               NPI#
-              </p>
-             </li>
-             <li>
-              <p>
-               SL#
-              </p>
-             </li>
-             <li>
-              <p>
-               Other#
-              </p>
-             </li>
-             <li>
-              <p>
-               Status Types
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
+           </p>
+           <p class="hardcoded-step">
+            12.
+            <p>
+             Request ID
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            13.
+            <p>
+             Requestor
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            14.
+            <p>
+             Roles
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            15.
+            <p>
+             DEA#
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            16.
+            <p>
+             NPI#
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            17.
+            <p>
+             SL#
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            18.
+            <p>
+             Other#
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            19.
+            <p>
+             Status Types
+            </p>
+           </p>
+          </p>
           <p>
            Enter an appropriate value into your desired filter option field. An explanation of each field is listed in a table following these steps.
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Filter
-             </em>
-             button to apply the selected Hub audit log criteria.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           20.
+           <p>
+            Click on the
+            <em>
+             Filter
+            </em>
+            button to apply the selected Hub audit log criteria.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">

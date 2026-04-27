@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -48,30 +34,29 @@
        <div class="columnLayout fixed-width">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Follow steps 1, 2, and 4 under the section titled
-             <a>
-              V
-              <em>
-               iew and add a datasource for provider validation
-              </em>
-             </a>
-             in this guide to view an existing datasource.
-             <br/>
-             The new screen will look similar to the
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Follow steps 1, 2, and 4 under the section titled
+            <a>
+             V
              <em>
-              Add Datasource
+              iew and add a datasource for provider validation
              </em>
-             screen, but includes a section labeled
-             <em>
-              Search Provider
-             </em>
-             .
-            </p>
-           </li>
-          </ol>
+            </a>
+            in this guide to view an existing datasource.
+            <br/>
+            The new screen will look similar to the
+            <em>
+             Add Datasource
+            </em>
+            screen, but includes a section labeled
+            <em>
+             Search Provider
+            </em>
+            .
+           </p>
+          </p>
           <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
            <img alt="image-20260113-203643.png" class="confluence-embedded-image image-center" src="attachments/201097220/202047496.png?width=415"/>
           </span>
@@ -81,37 +66,36 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            To see if an existing datasource file contains a provider, you can enter the DEA#, NPI#, SL# or OTHER# in the
+            <em>
+             Search Provider
+            </em>
+            section to see if that provider exists on the datasource you are viewing.
+           </p>
+           <p class="hardcoded-step">
+            3.
             <p>
-             To see if an existing datasource file contains a provider, you can enter the DEA#, NPI#, SL# or OTHER# in the
+             If the provider is on the list, you will see their information returned under the
              <em>
               Search Provider
              </em>
-             section to see if that provider exists on the datasource you are viewing.
+             section.
             </p>
-            <ol>
-             <li>
-              <p>
-               If the provider is on the list, you will see their information returned under the
-               <em>
-                Search Provider
-               </em>
-               section.
-              </p>
-             </li>
-             <li>
-              <p>
-               If the provider is not on the list, you will see “No Provider found.” Under the
-               <em>
-                Search Provider
-               </em>
-               section.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
+           </p>
+           <p class="hardcoded-step">
+            4.
+            <p>
+             If the provider is not on the list, you will see “No Provider found.” Under the
+             <em>
+              Search Provider
+             </em>
+             section.
+            </p>
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>

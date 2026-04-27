@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -50,88 +36,84 @@
          <div class="innerCell">
           <p>
           </p>
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Click on the
+            <em>
+             User Management
+            </em>
+            button, located on the left-hand side of the screen.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            Locate the user you are searching for by:
+           </p>
+           <p class="hardcoded-step">
+            3.
             <p>
-             Click on the
+             Scrolling through the list of users displayed on the screen, or
+            </p>
+           </p>
+           <p class="hardcoded-step">
+            4.
+            <p>
+             Searching for a user by typing his / her name into the
              <em>
-              User Management
+              Filter User
              </em>
-             button, located on the left-hand side of the screen.
+             search bar in the top right corner of the screen.
             </p>
-           </li>
-          </ol>
-          <p>
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            Select the desired user by clicking on their information to view or modify their existing record.
+           </p>
+           <p class="hardcoded-step">
+            6.
             <p>
-             Locate the user you are searching for by:
+             If the user type is
+             <strong>
+              System User
+             </strong>
+             , a pop-up screen titled
+             <em>
+              Add/Update User
+             </em>
+             will appear.
             </p>
-            <ol>
-             <li>
-              <p>
-               Scrolling through the list of users displayed on the screen, or
-              </p>
-             </li>
-             <li>
-              <p>
-               Searching for a user by typing his / her name into the
-               <em>
-                Filter User
-               </em>
-               search bar in the top right corner of the screen.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
-          <p>
-          </p>
-          <ol>
-           <li>
+           </p>
+           <p class="hardcoded-step">
+            7.
             <p>
-             Select the desired user by clicking on their information to view or modify their existing record.
+             If the user type is
+             <strong>
+              PDMP Admin
+             </strong>
+             , a pop-up notification will appear to inform the user to reach out the RxCheck Administrator.
             </p>
-            <ol>
-             <li>
-              <p>
-               If the user type is
-               <strong>
-                System User
-               </strong>
-               , a pop-up screen titled
-               <em>
-                Add/Update User
-               </em>
-               will appear.
-              </p>
-             </li>
-             <li>
-              <p>
-               If the user type is
-               <strong>
-                PDMP Admin
-               </strong>
-               , a pop-up notification will appear to inform the user to reach out the RxCheck Administrator.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
+           </p>
+          </p>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             For system users, you may edit any information (except the password) displayed in each data field.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           8.
+           <p>
+            For system users, you may edit any information (except the password) displayed in each data field.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -156,13 +138,12 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Verify that the user has been successfully updated by looking for the alert that states, “Selected User Updated Successfully”.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           9.
+           <p>
+            Verify that the user has been successfully updated by looking for the alert that states, “Selected User Updated Successfully”.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">

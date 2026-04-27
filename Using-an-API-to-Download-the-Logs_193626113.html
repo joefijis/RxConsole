@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -59,77 +45,72 @@
          <div class="innerCell">
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             From the log extract window, select the
-             <em>
-              API Key
-             </em>
-             tab.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            From the log extract window, select the
+            <em>
+             API Key
+            </em>
+            tab.
+           </p>
           </p>
-          <p>
-          </p>
-          <p>
-          </p>
-          <ol>
-           <li>
-            <p>
-             Press the
-             <em>
-              Key
-             </em>
-             button to generate an API key.
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             To copy the API Key, press the
-             <em>
-              copy
-             </em>
-             button.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            Press the
+            <em>
+             Key
+            </em>
+            button to generate an API key.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             To create a new unique API key, press the
-             <em>
-              ReGenerateAPIKey
-             </em>
-             .
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             To remove your API, press the
-             <em>
-              Delete
-             </em>
-             key.
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            To copy the API Key, press the
+            <em>
+             copy
+            </em>
+            button.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            To create a new unique API key, press the
+            <em>
+             ReGenerateAPIKey
+            </em>
+            .
+           </p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            To remove your API, press the
+            <em>
+             Delete
+            </em>
+            key.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>

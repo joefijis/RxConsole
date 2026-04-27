@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -48,45 +34,42 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Interstate Data Sharing
-             </em>
-             button, followed by the
-             <em>
-              MOU Worksheet(s)
-             </em>
-             option, located on the left-hand side of the screen.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Click on the
+            <em>
+             Interstate Data Sharing
+            </em>
+            button, followed by the
+            <em>
+             MOU Worksheet(s)
+            </em>
+            option, located on the left-hand side of the screen.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             The MOU Worksheet(s) page is displayed with the MOU Worksheet record submitted by the PDMP State for Interstate Data Sharing Request.
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              View Details
-             </em>
-             button to display the MOU Worksheet data submitted by the other PDMP State as view-only data.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            The MOU Worksheet(s) page is displayed with the MOU Worksheet record submitted by the PDMP State for Interstate Data Sharing Request.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            Click on the
+            <em>
+             View Details
+            </em>
+            button to display the MOU Worksheet data submitted by the other PDMP State as view-only data.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -103,52 +86,48 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click the
-             <em>
-              Cancel
-             </em>
-             button to discard the MOU worksheet data.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            Click the
+            <em>
+             Cancel
+            </em>
+            button to discard the MOU worksheet data.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click the
-             <em>
-              Print
-             </em>
-             button to print or save a copy of the MOU Worksheet.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            Click the
+            <em>
+             Print
+            </em>
+            button to print or save a copy of the MOU Worksheet.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             To agree to the MOU Worksheet, click on the
-             <em>
-              Finalize
-             </em>
-             button.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           6.
+           <p>
+            To agree to the MOU Worksheet, click on the
+            <em>
+             Finalize
+            </em>
+            button.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             The MOU Worksheet record will be displayed with a status of “Finalized” for both PDMP States.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           7.
+           <p>
+            The MOU Worksheet record will be displayed with a status of “Finalized” for both PDMP States.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">

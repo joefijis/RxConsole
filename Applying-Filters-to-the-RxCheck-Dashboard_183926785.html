@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -48,31 +34,28 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click the pie graph icon on the left-hand side of the screen to access the RxCheck Dashboard.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Click the pie graph icon on the left-hand side of the screen to access the RxCheck Dashboard.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the downward-facing arrow for the filter titled “During” to reveal options to filter by.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            Click on the downward-facing arrow for the filter titled “During” to reveal options to filter by.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Select the period to match the historical timeframe you would like to populate the RxCheck dashboard.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            Select the period to match the historical timeframe you would like to populate the RxCheck dashboard.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -82,38 +65,36 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the downward-facing arrow for the filter titled “Healthcare Entities (PDMP-Site Code)” to reveal a list of healthcare entities.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            Click on the downward-facing arrow for the filter titled “Healthcare Entities (PDMP-Site Code)” to reveal a list of healthcare entities.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            Select the desired healthcare entity(ies) by:
+           </p>
+           <p class="hardcoded-step">
+            6.
             <p>
-             Select the desired healthcare entity(ies) by:
+             Scrolling through the dropdown and checking the box next to each desired entity, or
             </p>
-            <ol>
-             <li>
-              <p>
-               Scrolling through the dropdown and checking the box next to each desired entity, or
-              </p>
-             </li>
-             <li>
-              <p>
-               Typing in the
-               <strong>
-                Search Bar
-               </strong>
-               to filter the entities.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
+           </p>
+           <p class="hardcoded-step">
+            7.
+            <p>
+             Typing in the
+             <strong>
+              Search Bar
+             </strong>
+             to filter the entities.
+            </p>
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -123,38 +104,36 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the downward-facing arrow for the filter titled “PDMP Sites” to reveal a list of states.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           8.
+           <p>
+            Click on the downward-facing arrow for the filter titled “PDMP Sites” to reveal a list of states.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           9.
+           <p>
+            Select the desired PDMP Site(s) by:
+           </p>
+           <p class="hardcoded-step">
+            10.
             <p>
-             Select the desired PDMP Site(s) by:
+             Scrolling through the dropdown and checking the box next to each desired state, or
             </p>
-            <ol>
-             <li>
-              <p>
-               Scrolling through the dropdown and checking the box next to each desired state, or
-              </p>
-             </li>
-             <li>
-              <p>
-               Typing in the
-               <strong>
-                Search Bar
-               </strong>
-               to filter the states.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
+           </p>
+           <p class="hardcoded-step">
+            11.
+            <p>
+             Typing in the
+             <strong>
+              Search Bar
+             </strong>
+             to filter the states.
+            </p>
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -164,13 +143,12 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Uncheck the “Include Integrations” box to exclude transaction counts from out-of-state healthcare entities.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           12.
+           <p>
+            Uncheck the “Include Integrations” box to exclude transaction counts from out-of-state healthcare entities.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -180,38 +158,36 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the downward-facing arrow for the filter titled “Status Types” to reveal a list of status options.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           13.
+           <p>
+            Click on the downward-facing arrow for the filter titled “Status Types” to reveal a list of status options.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           14.
+           <p>
+            Select the desired Status Type(s) by:
+           </p>
+           <p class="hardcoded-step">
+            15.
             <p>
-             Select the desired Status Type(s) by:
+             Scrolling through the dropdown and checking the box next to each desired status, or
             </p>
-            <ol>
-             <li>
-              <p>
-               Scrolling through the dropdown and checking the box next to each desired status, or
-              </p>
-             </li>
-             <li>
-              <p>
-               Typing in the
-               <strong>
-                Search Bar
-               </strong>
-               to filter the status types.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
+           </p>
+           <p class="hardcoded-step">
+            16.
+            <p>
+             Typing in the
+             <strong>
+              Search Bar
+             </strong>
+             to filter the status types.
+            </p>
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -221,17 +197,16 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Apply Filter
-             </em>
-             button to apply your selected filters on the dashboard.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           17.
+           <p>
+            Click on the
+            <em>
+             Apply Filter
+            </em>
+            button to apply your selected filters on the dashboard.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">

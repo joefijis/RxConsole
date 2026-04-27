@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -60,30 +46,28 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Healthcare Entities
-             </em>
-             button, located on the left-hand side of the screen.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Click on the
+            <em>
+             Healthcare Entities
+            </em>
+            button, located on the left-hand side of the screen.
+           </p>
           </p>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Find the healthcare entity using one of two methods:
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            Find the healthcare entity using one of two methods:
+           </p>
+          </p>
           <ul>
            <li>
             <p>
@@ -108,34 +92,12 @@
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Select the desired healthcare entity to view further details about that facility.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            Select the desired healthcare entity to view further details about that facility.
+           </p>
           </p>
-          <p>
-          </p>
-          <p>
-          </p>
-          <p>
-          </p>
-          <p>
-          </p>
-          <ol>
-           <li>
-            <p>
-             After opening the desired site, navigate to the
-             <em>
-              Site Details
-             </em>
-             section of the page by using the scroll bar or clicking on the site details text on the screen.
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
           <p>
@@ -146,52 +108,69 @@
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Press the lock icon to unlock the ability to assign the site to an authorized vendor.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            After opening the desired site, navigate to the
+            <em>
+             Site Details
+            </em>
+            section of the page by using the scroll bar or clicking on the site details text on the screen.
+           </p>
+          </p>
+          <p>
+          </p>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             You will now have the ability to select an authorized vendor from a dropdown list.
-             <br/>
-            </p>
-            <p>
-             Selecting a vendor here, assigns that HCE to a vendor account for management.
-             <br/>
-            </p>
-            <p>
-             If you do not see the desired vendor, ensure they have been approved as an authorized vendor.
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             To edit a record, make your changes and click the
-             <em>
-              Save
-             </em>
-             button to ensure any new information is recorded.
-             <br/>
-             <br/>
-             To exit without saving, click on the
-             <em>
-              Cancel
-             </em>
-             button.
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            Press the lock icon to unlock the ability to assign the site to an authorized vendor.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           6.
+           <p>
+            You will now have the ability to select an authorized vendor from a dropdown list.
+            <br/>
+           </p>
+           <p>
+            Selecting a vendor here, assigns that HCE to a vendor account for management.
+            <br/>
+           </p>
+           <p>
+            If you do not see the desired vendor, ensure they have been approved as an authorized vendor.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           7.
+           <p>
+            To edit a record, make your changes and click the
+            <em>
+             Save
+            </em>
+            button to ensure any new information is recorded.
+            <br/>
+            <br/>
+            To exit without saving, click on the
+            <em>
+             Cancel
+            </em>
+            button.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">

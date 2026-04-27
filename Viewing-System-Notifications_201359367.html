@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -48,32 +34,30 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             After logging into the RxConsole application, a PDMP Administrator will be able to see the
-             <em>
-              Notification(s)
-             </em>
-             icon in the top right corner under their name.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            After logging into the RxConsole application, a PDMP Administrator will be able to see the
+            <em>
+             Notification(s)
+            </em>
+            icon in the top right corner under their name.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Clicking on the
-             <em>
-              Notification(s)
-             </em>
-             icon, will display the message relating to the notification, if a notification exists.
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            Clicking on the
+            <em>
+             Notification(s)
+            </em>
+            icon, will display the message relating to the notification, if a notification exists.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -85,17 +69,16 @@
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Clicking on the blue circle
-             <em>
-              X
-             </em>
-             button will minimize the notification.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            Clicking on the blue circle
+            <em>
+             X
+            </em>
+            button will minimize the notification.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">

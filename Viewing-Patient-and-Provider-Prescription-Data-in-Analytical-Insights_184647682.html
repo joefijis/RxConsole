@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -48,71 +34,66 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click the area graph icon on the left-hand side of the screen to access the RxCheck Dashboard.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Click the area graph icon on the left-hand side of the screen to access the RxCheck Dashboard.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Patient
-             </em>
-             or
-             <em>
-              Provider
-             </em>
-             button located in the top middle of the page, depending on the information you would like to display.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            Click on the
+            <em>
+             Patient
+            </em>
+            or
+            <em>
+             Provider
+            </em>
+            button located in the top middle of the page, depending on the information you would like to display.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the filter button in the top right corner.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            Click on the filter button in the top right corner.
+           </p>
+          </p>
           <p>
           </p>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             After clicking the filter button, you can view the search filters.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            After clicking the filter button, you can view the search filters.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             The
-             <em>
-              Incoming
-             </em>
-             and
-             <em>
-              Outgoing
-             </em>
-             buttons allow you to filter the request type.
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            The
+            <em>
+             Incoming
+            </em>
+            and
+            <em>
+             Outgoing
+            </em>
+            buttons allow you to filter the request type.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -126,37 +107,35 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Use the
-             <em>
-              Time Range
-             </em>
-             dropdown to select a period you want to display.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           6.
+           <p>
+            Use the
+            <em>
+             Time Range
+            </em>
+            dropdown to select a period you want to display.
+           </p>
           </p>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Prescription information can be searched by
-             <em>
-              County
-             </em>
-             or
-             <em>
-              Zip Code.
-             </em>
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           7.
+           <p>
+            Prescription information can be searched by
+            <em>
+             County
+            </em>
+            or
+            <em>
+             Zip Code.
+            </em>
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">
@@ -214,17 +193,16 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              County
-             </em>
-             radio button.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           8.
+           <p>
+            Click on the
+            <em>
+             County
+            </em>
+            radio button.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -238,62 +216,58 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
+          <p class="hardcoded-step">
+           9.
+           <p>
+            Click on the downward-facing arrow for the filter titled “County” to reveal a list of counties.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           10.
+           <p>
+            Select your County(ies) by:
+           </p>
+           <p class="hardcoded-step">
+            11.
             <p>
-             Click on the downward-facing arrow for the filter titled “County” to reveal a list of counties.
+             Scrolling through the dropdown options and checking the box, or
             </p>
-           </li>
-          </ol>
-          <p>
-          </p>
-          <p>
-          </p>
-          <ol>
-           <li>
+           </p>
+           <p class="hardcoded-step">
+            12.
             <p>
-             Select your County(ies) by:
+             Typing in the search bar to filter results.
             </p>
-            <ol>
-             <li>
-              <p>
-               Scrolling through the dropdown options and checking the box, or
-              </p>
-             </li>
-             <li>
-              <p>
-               Typing in the search bar to filter results.
-              </p>
-             </li>
-            </ol>
-           </li>
-          </ol>
+           </p>
+          </p>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click the
-             <em>
-              Search
-             </em>
-             button to display prescription counts for patients based on the counties selected.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           13.
+           <p>
+            Click the
+            <em>
+             Search
+            </em>
+            button to display prescription counts for patients based on the counties selected.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Results are displayed on the map with the user’s state highlighted green and the connected states in orange.
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           14.
+           <p>
+            Results are displayed on the map with the user’s state highlighted green and the connected states in orange.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">
@@ -341,50 +315,46 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Zip Code
-             </em>
-             radio button.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           15.
+           <p>
+            Click on the
+            <em>
+             Zip Code
+            </em>
+            radio button.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Enter the zip code and the desired distance in miles around the zip code to be searched.
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click the
-             <em>
-              Search
-             </em>
-             button to display prescription counts for patients based on the zip code and range entered.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           16.
+           <p>
+            Enter the zip code and the desired distance in miles around the zip code to be searched.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Results are displayed on the map with the user’s state highlighted green and the connected states in orange.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           17.
+           <p>
+            Click the
+            <em>
+             Search
+            </em>
+            button to display prescription counts for patients based on the zip code and range entered.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           18.
+           <p>
+            Results are displayed on the map with the user’s state highlighted green and the connected states in orange.
+           </p>
+          </p>
           <p>
           </p>
           <p>

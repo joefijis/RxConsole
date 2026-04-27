@@ -14,22 +14,8 @@
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
             hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            
-            /* GLOBAL FIX FOR NUMBERING (Prevents 1. 1. 1. issue) */
-            ol { 
-                list-style-type: decimal !important; 
-                margin-left: 30px !important; 
-                padding-left: 0 !important;
-                counter-reset: none !important; 
-            }
-            ol li { 
-                display: list-item !important; 
-                margin-bottom: 10px; 
-            }
-            /* Ensures lists don't reset inside columns or cells */
-            .innerCell ol, .cell ol, .columnLayout ol { 
-                counter-reset: none !important; 
-            }
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .step-num { color: #0052cc; font-weight: bold; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
@@ -965,26 +951,24 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Add Facility
-             </em>
-             button.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           1.
+           <p>
+            Click on the
+            <em>
+             Add Facility
+            </em>
+            button.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             In the pop-up window, enter the requested information in the appropriate data fields.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           2.
+           <p>
+            In the pop-up window, enter the requested information in the appropriate data fields.
+           </p>
+          </p>
           <p>
            To see a description of each field, see the table below.
           </p>
@@ -992,17 +976,16 @@
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Save
-             </em>
-             button to save the populated information.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           3.
+           <p>
+            Click on the
+            <em>
+             Save
+            </em>
+            button to save the populated information.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">
@@ -1188,105 +1171,99 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Add Multiple Facilities
-             </em>
-             button.
-            </p>
-           </li>
-          </ol>
-          <p>
-          </p>
-          <ol>
-           <li>
-            <p>
-             You will be directed to the
-             <em>
-              Add Facilities
-             </em>
-             screen.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           4.
+           <p>
+            Click on the
+            <em>
+             Add Multiple Facilities
+            </em>
+            button.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Standardized Facilities Template
-             </em>
-             link to download a template to populate. The template will download in an Excel workbook format (.xlsx).
-             <br/>
-             <br/>
-             The first tab titled
-             <em>
-              Facilities File Template
-             </em>
-             contains columns to enter the same information available when adding a single facility. A table describing each heading is available in the previous subsection.
-             <br/>
-             <br/>
-             The second tab titled
-             <em>
-              Field Definitions
-             </em>
-             provides an abbreviated summary of each field, its requirement status, and an example.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           5.
+           <p>
+            You will be directed to the
+            <em>
+             Add Facilities
+            </em>
+            screen.
+           </p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Populate the
-             <em>
-              Standardized Facilities Template
-             </em>
-             with each facility occupying a single row.
-            </p>
-           </li>
-          </ol>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Press the
-             <em>
-              Click to select file
-             </em>
-             button to choose the populated template to upload into the system.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           6.
+           <p>
+            Click on the
+            <em>
+             Standardized Facilities Template
+            </em>
+            link to download a template to populate. The template will download in an Excel workbook format (.xlsx).
+            <br/>
+            <br/>
+            The first tab titled
+            <em>
+             Facilities File Template
+            </em>
+            contains columns to enter the same information available when adding a single facility. A table describing each heading is available in the previous subsection.
+            <br/>
+            <br/>
+            The second tab titled
+            <em>
+             Field Definitions
+            </em>
+            provides an abbreviated summary of each field, its requirement status, and an example.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             If all facilities share a single contact person, you can check the box labeled
-             <em>
-              One contact for all facilities
-             </em>
-             and data fields for that individual person will appear.
-             <br/>
-             <br/>
-             A description of these fields can be found in the table in the previous subsection.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           7.
+           <p>
+            Populate the
+            <em>
+             Standardized Facilities Template
+            </em>
+            with each facility occupying a single row.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           8.
+           <p>
+            Press the
+            <em>
+             Click to select file
+            </em>
+            button to choose the populated template to upload into the system.
+           </p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           9.
+           <p>
+            If all facilities share a single contact person, you can check the box labeled
+            <em>
+             One contact for all facilities
+            </em>
+            and data fields for that individual person will appear.
+            <br/>
+            <br/>
+            A description of these fields can be found in the table in the previous subsection.
+           </p>
+          </p>
           <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
            <div class="panelContent" style="background-color: #EAE6FF;">
             <p>
@@ -1296,30 +1273,28 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click the
-             <em>
-              Upload
-             </em>
-             button to import the data populated in the file you selected in step 5.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           10.
+           <p>
+            Click the
+            <em>
+             Upload
+            </em>
+            button to import the data populated in the file you selected in step 5.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             The
-             <em>
-              Cancel
-             </em>
-             button will discard any changes made on this screen and return the user to the previous page.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           11.
+           <p>
+            The
+            <em>
+             Cancel
+            </em>
+            button will discard any changes made on this screen and return the user to the previous page.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">
@@ -1522,42 +1497,39 @@
        <div class="columnLayout two-equal">
         <div class="cell normal">
          <div class="innerCell">
-          <ol>
-           <li>
-            <p>
-             Click the
-             <em>
-              Add User
-             </em>
-             button to open a popup window.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           12.
+           <p>
+            Click the
+            <em>
+             Add User
+            </em>
+            button to open a popup window.
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             In the popup window, enter the requested information into the appropriate data field.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           13.
+           <p>
+            In the popup window, enter the requested information into the appropriate data field.
+           </p>
+          </p>
           <p>
            A description of each field is available in the following table.
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click the
-             <em>
-              Save
-             </em>
-             button to save the information populated in the fields.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           14.
+           <p>
+            Click the
+            <em>
+             Save
+            </em>
+            button to save the information populated in the fields.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">
@@ -1741,28 +1713,26 @@
          <div class="innerCell">
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Healthcare Entities
-             </em>
-             button, located on the left-hand side of the screen.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           15.
+           <p>
+            Click on the
+            <em>
+             Healthcare Entities
+            </em>
+            button, located on the left-hand side of the screen.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Find the healthcare entity using one of two methods:
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           16.
+           <p>
+            Find the healthcare entity using one of two methods:
+           </p>
+          </p>
           <ul>
            <li>
             <p>
@@ -1819,36 +1789,34 @@
          <div class="innerCell">
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Select the desired healthcare entity to view further details about that facility.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           17.
+           <p>
+            Select the desired healthcare entity to view further details about that facility.
+           </p>
           </p>
           <p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             To edit a record, make your changes and click the
-             <em>
-              Save
-             </em>
-             button to ensure any new information is recorded.
-             <br/>
-             To exit without saving, click on the
-             <em>
-              Cancel
-             </em>
-             button.
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           18.
+           <p>
+            To edit a record, make your changes and click the
+            <em>
+             Save
+            </em>
+            button to ensure any new information is recorded.
+            <br/>
+            To exit without saving, click on the
+            <em>
+             Cancel
+            </em>
+            button.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">
@@ -1886,28 +1854,26 @@
          <div class="innerCell">
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Click on the
-             <em>
-              Healthcare Entities
-             </em>
-             button, located on the left-hand side of the screen.
-            </p>
-           </li>
-          </ol>
-          <p>
+          <p class="hardcoded-step">
+           19.
+           <p>
+            Click on the
+            <em>
+             Healthcare Entities
+            </em>
+            button, located on the left-hand side of the screen.
+           </p>
           </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             In the top-right corner, there are two buttons to extract either:
-            </p>
-           </li>
-          </ol>
+          <p>
+          </p>
+          <p class="hardcoded-step">
+           20.
+           <p>
+            In the top-right corner, there are two buttons to extract either:
+           </p>
+          </p>
           <ul>
            <li>
             <p>
@@ -1929,22 +1895,20 @@
           </div>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Right-click on the zipped folder to view options
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           21.
+           <p>
+            Right-click on the zipped folder to view options
+           </p>
+          </p>
           <p>
           </p>
-          <ol>
-           <li>
-            <p>
-             Select the “Extract All…” option.
-            </p>
-           </li>
-          </ol>
+          <p class="hardcoded-step">
+           22.
+           <p>
+            Select the “Extract All…” option.
+           </p>
+          </p>
          </div>
         </div>
         <div class="cell normal">
