@@ -211,6 +211,8 @@
 </div>
 
 <script>
+    const frame = document.getElementById('docFrame');
+
     function toggleFolder(element) {
         element.classList.toggle('active');
         const list = element.nextElementSibling;
@@ -224,7 +226,6 @@
 
     function syncState() {
         const hash = window.location.hash.substring(1);
-        const frame = document.getElementById('docFrame');
         const links = document.querySelectorAll('.file-list a');
 
         if (!hash) return;
@@ -241,6 +242,7 @@
 
                 const parentList = link.closest('.file-list');
                 const folderBtn = parentList.previousElementSibling;
+                
                 parentList.classList.add('open');
                 parentList.style.display = "block";
                 folderBtn.classList.add('active');
@@ -266,17 +268,22 @@
 
         folders.forEach((folder, i) => {
             let links = lists[i].querySelectorAll('li');
-            let match = false;
+            let matchFound = false;
+
             links.forEach(li => {
                 if (li.innerText.toLowerCase().includes(input)) {
                     li.style.display = "block";
-                    match = true;
-                } else { li.style.display = "none"; }
+                    matchFound = true;
+                } else {
+                    li.style.display = "none";
+                }
             });
-            folder.style.display = match || !input ? "flex" : "none";
-            if (input && match) {
+
+            folder.style.display = matchFound || !input ? "flex" : "none";
+            if (input && matchFound) {
                 lists[i].classList.add('open');
                 lists[i].style.display = "block";
+                folder.classList.add('active');
             }
         });
     }
