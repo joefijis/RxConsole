@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RxCheck : SRS Certificate</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">RxCheck</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="State-Routing-Service-Configuration_185106453.html">State Routing Service Configuration</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            RxCheck : SRS Certificate
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joseph Fibich</span> on Dec 23, 2025
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p local-id="af263800-8f86-4e9f-bf63-dfaf81ea91b6">Each state is responsible for generating its own digital certificate using Microsoft PowerShell. Detailed instructions for this process are provided in the SRS Installation Guide for PDMP.</p><p local-id="98927081-edd3-4fc7-b0cb-33620e1ddde8">The certificate, created by the PDMP state implementing the SRS software, supports secure end-to-end message encryption. The SRS certificate uses a public key/private key infrastructure:</p><ul local-id="9a6060b4-8925-405f-9ff3-ff1fa3dcda90"><li local-id="77093752-bfbf-4ccb-beb8-40b7797ce6cc"><p local-id="f30b84cf-59c6-49e3-8a1d-a2ff03e0799d">The <strong>public key</strong> (contained in the certificate) is used to encrypt outgoing messages.</p></li><li local-id="cc3a48a9-4fde-4238-bbb5-0f42c8fbdb4e"><p local-id="0463f825-bbbe-4448-a837-38f302e0a550">The <strong>private key</strong> is used by the receiving system to decrypt the message.</p></li></ul><p local-id="b8bc0202-b0c0-4cde-a000-0a36073034dc"><strong>Important: </strong>The certificate includes two components:</p><ol start="1" local-id="406a8fdb-6cb2-455b-a48f-57d6ee1e1ef9"><li local-id="53341fb7-ab35-4fbf-8157-c71684f40d6b"><p local-id="9bdcdb5d-694d-4e47-83b0-7f02974af44e"><strong>Private Key—</strong>Must be kept confidential and never shared, including within the RxCheck Network.</p></li><li local-id="65ea865e-114d-4027-8297-d8468b504c30"><p local-id="7b7d937e-57b5-4cee-a2ae-d97e70a86b9e"><strong>Public Key—</strong>Uploaded to the RxConsole and shared with other participating states in the RxCheck Network.</p></li></ol><p local-id="d8379a41-3f11-4206-a444-2af855b576a4">The State PDMP Administrator must input the required data into the fields provided under the SRS Certificate section.</p><p local-id="b425c451-8cdd-4039-a8f8-b3915dcbf591">The screenshot below illustrates the configuration interface for this section. For added clarity, the subsequent table provides descriptions for each data field shown in the screenshot.</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20251223-173724.png" width="471" loading="lazy" src="attachments/185139213/185401357.png?width=471" data-image-src="attachments/185139213/185401357.png" data-height="89" data-width="471" data-unresolved-comment-count="0" data-linked-resource-id="185401357" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20251223-173724.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="185139213" data-linked-resource-container-version="1" data-media-id="73121a9c-5bef-44a1-881e-853d6898b01b" data-media-type="file"></span><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="dc8fc10b-17d7-4cc2-addd-06fd8a3ca9d6" class="confluenceTable"><colgroup><col style="width: 182.0px;"/><col style="width: 577.0px;"/></colgroup><tbody><tr data-local-id="bf4d4100-0ee4-4fe1-9742-b73aabffb6da"><th data-local-id="43349c40-2b1d-415c-8f2a-2af79f7a2d9a" class="confluenceTh"><p local-id="61b78caa-9455-4a69-a136-6578fdc68177"><strong>Data Field Name</strong></p></th><th data-local-id="b26b222d-5ebb-4607-92ba-4a1127fbc449" class="confluenceTh"><p local-id="86feaa38-e1ae-4f91-b90f-f1aa7a64255e"><strong>Description</strong></p></th></tr><tr data-local-id="90d0b5aa-323e-4690-99c6-0d63e262082d"><td data-local-id="4979ebab-a076-41c5-8a05-40d795f0a158" class="confluenceTd"><p local-id="7ed16529-435d-491f-965a-4ef59612c812">Private Key Subject</p></td><td data-local-id="266efca4-5a8b-45be-ab43-6ce367e7e957" class="confluenceTd"><p local-id="87356a8c-e024-4cd5-8334-57410283416d">The key generated at the time of Site Certificate creation. The private key is in .pfx format. The Private key must be kept confidential by the PDMP State.</p></td></tr><tr data-local-id="29ca87c7-2208-4702-b308-61436c22de92"><td data-local-id="ad766268-f977-4567-aca9-8ae8c681126a" class="confluenceTd"><p local-id="648df7b4-411b-43ec-8e2b-dba7897e2e58">Public key (DER Format)</p></td><td data-local-id="c0a4a45c-8360-4e3e-b1ea-5542c3067a5a" class="confluenceTd"><p local-id="a8358100-839e-48f1-ae9e-1cfd708e48b4">The key generated at the time of Site Certificate creation and is in .der format. The Public key is shared by the PDMP State with other PDMP States in the RxConsole Application.</p></td></tr><tr data-local-id="837017b0-19d0-4d74-b71f-8b0ab43af1b1"><td data-local-id="c395865d-72f9-4299-bf24-ce66a8689843" class="confluenceTd"><p local-id="dca6eec5-6053-479d-ae01-413692a52c6d">Certificate Expiry Date</p></td><td data-local-id="b799fd70-b2f9-4ca3-b16a-d8a814ea0872" class="confluenceTd"><p local-id="228a8573-0751-47dd-8af5-2053d29676d3">The date when the uploaded certificate expires.</p></td></tr></tbody></table></div>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/185139213/184680467.png">Confluence Header.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/185139213/185401357.png">image-20251223-173724.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Apr 22, 2026 13:04</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

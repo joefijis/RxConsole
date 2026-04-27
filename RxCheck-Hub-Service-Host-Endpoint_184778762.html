@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RxCheck : RxCheck Hub Service Host Endpoint</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">RxCheck</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="State-Routing-Service-Configuration_185106453.html">State Routing Service Configuration</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            RxCheck : RxCheck Hub Service Host Endpoint
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joseph Fibich</span>, last modified on Dec 23, 2025
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p local-id="96224fee-53db-4547-a437-109411decbde">The RxCheck Hub Service Host Endpoint section is a critical part of configuring the hub connection with the RxConsole application. The RxCheck Hub, a core component of the PMIX architecture, functions as a fully operational data-sharing system that allows states to securely and efficiently exchange Prescription Drug Monitoring Program (PDMP) data with other states and integration partners (e.g. Health Information Exchanges (HIE) and Electronic Health Records (EHR).</p><p local-id="b19474e8-5088-4f47-b847-9437141f2e89">All data fields in this section are auto-populated by the system, based on the information originally entered by the Super Administrator during site creation. State PDMP Administrators can review this information and should contact the RxCheck technical team if any discrepancies or concerns arise.</p><p local-id="df0bcc17-e3fa-4163-b40d-d5ced1eebdfd">The screenshot below shows the configuration interface for this section. The accompanying table provides details descriptions for each data field presented.</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20251223-170830.png" width="471" loading="lazy" src="attachments/184778762/185499671.png?width=471" data-image-src="attachments/184778762/185499671.png" data-height="94" data-width="471" data-unresolved-comment-count="0" data-linked-resource-id="185499671" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20251223-170830.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="184778762" data-linked-resource-container-version="2" data-media-id="13a4c091-a7b6-4b8d-9406-585daeca65f3" data-media-type="file"></span><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="aad05a42-24b7-4f27-9b17-a4fcd0367565" class="confluenceTable"><colgroup><col style="width: 215.0px;"/><col style="width: 544.0px;"/></colgroup><tbody><tr data-local-id="6fb55c5e-683f-4489-9e69-1fa6a74a065f"><th data-local-id="c94114bf-c973-4dbd-ad60-87f179528ef0" class="confluenceTh"><p local-id="43215bda-99c4-4280-a4d2-1a11be39d5b0"><strong>Data Field Name</strong></p></th><th data-local-id="ea87886c-0d03-4ae2-9508-2fd4a16ea0e7" class="confluenceTh"><p local-id="b209e04b-b190-4bc0-9ecd-5808915a9a4a"><strong>Description</strong></p></th></tr><tr data-local-id="4ebc083c-c54f-4922-a90f-cb52c0c2c5c8"><td data-local-id="29c3abea-682e-4808-b70c-57e01eb8d5a7" class="confluenceTd"><p local-id="e716660b-ce2e-46fc-94fa-03d9364d157e">Protocol</p></td><td data-local-id="ca83d7b3-2a35-46e7-a531-11f697bee78a" class="confluenceTd"><p local-id="b54c8a1a-d605-4efc-bcf0-e173656b4ef4">This value cannot be changed and is set to “HTTPS”.This value cannot be changed and is set to “HTTPS”.</p></td></tr><tr data-local-id="cdb56a05-7ea8-4df8-a13c-d794b85b5bbb"><td data-local-id="6f4af2a2-97ab-4d12-8985-b1d49bbd3dfa" class="confluenceTd"><p local-id="de344ece-8ec9-43e9-af75-eaf5c41649c6">Domain</p></td><td data-local-id="d69c5806-0eb7-4790-9e8b-6f6250c9cfeb" class="confluenceTd"><p local-id="54cb6679-2f0d-4b4f-9c12-e9e3d36a7ce8">This value cannot be changed and is automatically set to the hub domain name.</p></td></tr><tr data-local-id="2053294a-8193-47e8-8f6e-ce4e8d8e9ad9"><td data-local-id="4da08597-4f72-439b-be35-97ce3a8675e7" class="confluenceTd"><p local-id="2f407013-b64d-402d-9d7d-d34413de69aa">Port Number</p></td><td data-local-id="dc8ddac2-1cce-48e3-b054-71c739c43e20" class="confluenceTd"><p local-id="8916761e-5b34-4fe5-9cf8-ceb50795c005">This value cannot be changed and is automatically set to the port on which the Hub is running.</p></td></tr><tr data-local-id="dcc89642-ecab-43e5-b7cc-a898cb9c8077"><td data-local-id="af7b20b4-ddfd-4526-aa7e-a766dd93bbdf" class="confluenceTd"><p local-id="2e2017a8-9496-4c18-852b-e9de67d4994c">IP Address</p></td><td data-local-id="c79ac493-af4c-44b7-8802-04f00c1e448a" class="confluenceTd"><p local-id="d58cc162-acf5-4b43-a9ac-071e3c5d16c6">This value cannot be changed and is automatically set to the IP address for the Hub.</p></td></tr><tr data-local-id="2edf9391-865d-4230-b5a9-19245f527d6b"><td data-local-id="68ae4f18-01aa-4876-9aa8-87f7ce8b1633" class="confluenceTd"><p local-id="c3ed73bc-c334-47fc-bcb0-27638a7ee170">PMIX2 Hub Endpoint URL</p></td><td data-local-id="936e780a-ef60-4451-bb94-373a47496093" class="confluenceTd"><p local-id="50e25658-c74e-41f9-b4f4-17318c0d8f64"><em><strong>This field is auto-populated.</strong></em> It is a fully qualified URL for the PMIX2 NIEM4 service on the RxCheck Hub.</p></td></tr></tbody></table></div>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/184778762/185499664.png">Confluence Header.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/184778762/185499671.png">image-20251223-170830.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Apr 22, 2026 13:04</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

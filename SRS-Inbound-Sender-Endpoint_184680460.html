@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RxCheck : SRS Inbound Sender Endpoint</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">RxCheck</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="State-Routing-Service-Configuration_185106453.html">State Routing Service Configuration</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            RxCheck : SRS Inbound Sender Endpoint
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                            
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Joseph Fibich</span> on Dec 23, 2025
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p local-id="7d860c13-7caf-4fa4-b8e6-38107ed58b35">The SRS Inbound Sender Endpoint configuration enables the State PDMP system to receive incoming queries initiated by other states. To complete this configuration, the State PDMP Administrator must input the required information into the specified data fields within this section.</p><p local-id="d5fddcce-c181-4656-98bc-c9b07d27e92c">The screenshot below illustrates the configuration interface for the Inbound Sender Endpoint. For additional clarity, the following table provides detailed descriptions of each data field shown in the screenshot.</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20251223-172107.png" width="471" loading="lazy" src="attachments/184680460/185368579.png?width=471" data-image-src="attachments/184680460/185368579.png" data-height="206" data-width="471" data-unresolved-comment-count="0" data-linked-resource-id="185368579" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20251223-172107.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="184680460" data-linked-resource-container-version="1" data-media-id="c67c27a7-4626-4e1e-8e3b-f51acdb8d87c" data-media-type="file"></span><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="f8ac7d66-1cec-4956-9213-1d28be1bbec8" class="confluenceTable"><colgroup><col style="width: 148.0px;"/><col style="width: 180.0px;"/><col style="width: 430.0px;"/></colgroup><tbody><tr data-local-id="310e3401-7712-4c55-b2db-5f3b17721b6a"><th data-local-id="06b7a07d-ed41-41c6-b435-c3ad8ca6ab23" class="confluenceTh"><p local-id="b7091680-dfab-42e3-a52d-13a9018d2c99"><strong>Heading</strong></p></th><th data-local-id="37c79542-8970-4b12-80de-3aa8481aedb1" class="confluenceTh"><p local-id="8e085df1-dcfd-48f3-a378-2c58f0ffd956"><strong>Data Field Name</strong></p></th><th data-local-id="2fe04063-b4d5-433d-a3d6-8b6a4d6529b5" class="confluenceTh"><p local-id="d31511e3-5079-4284-92df-173d0741ec2b"><strong>Description</strong></p></th></tr><tr data-local-id="dbe232ec-7a79-45ca-96a4-0dd1db29d46f"><td data-local-id="06ed072b-a006-4e6c-82ee-27b538db89e4" class="confluenceTd"><p local-id="d89b8c8c-3e38-4b84-9739-0b3331445445" /></td><td data-local-id="e74eea8a-ed73-4626-bd5b-b5bb048a3eaa" class="confluenceTd"><p local-id="c7769e1c-3ca1-42d7-9664-68bfcbca4865">Protocol</p></td><td data-local-id="f59eb289-3d90-4024-9018-d939454dd2e9" class="confluenceTd"><p local-id="efc3920a-b95e-4658-a266-c7bd9c6831de">This value can be set to “HTTP” or “HTTPS”.</p></td></tr><tr data-local-id="f6e0e712-c394-4f4c-a3ac-871abafa4235"><td data-local-id="0714a151-2b02-4731-926f-a06549867781" class="confluenceTd"><p local-id="256e7f7a-a9d8-4860-9efa-d9de50e6a1d4" /></td><td data-local-id="d3dbe34e-00f0-499d-91f0-9ce903f48a8c" class="confluenceTd"><p local-id="98934cbe-29cf-4a1a-830d-04cb4672c6cb">Domain</p></td><td data-local-id="cf4f204f-6905-4ca4-a063-364cccd51d3f" class="confluenceTd"><p local-id="b8190f2c-83e7-4ba1-a0c2-7d9e0420179e">The official website address of the PDMP’s Inbound Service instance.</p><p local-id="406655c0-022b-478e-8bde-4a4c69c3517b">This field is <u>optional</u> – if the domain is not provided, the system will automatically take the IP address.</p></td></tr><tr data-local-id="2363e57f-6bb8-4b0d-8001-506dc7410ff3"><td data-local-id="56eccaa3-31c7-4d08-accc-69516ab2b21f" class="confluenceTd"><p local-id="13b17a22-d509-419d-8648-693c7a6a2e25" /></td><td data-local-id="46f8f0c3-0210-4dd6-81da-0734edbf0b66" class="confluenceTd"><p local-id="e31942da-19da-40f4-bb5d-73e548550f5a">Port Number</p></td><td data-local-id="4d73db9f-1b8f-4e16-8bc8-4cb36efddf2e" class="confluenceTd"><p local-id="c6d97c90-5ff2-4abf-9e18-7ac5bfead619">Port number where the Inbound Service is configured.</p></td></tr><tr data-local-id="43f1b155-9955-4ff0-9a36-453f2facc02a"><td data-local-id="672779f6-ae68-4e2b-8520-371877f93731" class="confluenceTd"><p local-id="b69fe01b-f612-4427-aecc-61429ffc2604" /></td><td data-local-id="205118a2-6a86-4a12-ade0-6d5acdbf0375" class="confluenceTd"><p local-id="f148a33b-5d08-415f-925e-17f21429d8ba">IP Address</p></td><td data-local-id="52110385-45cb-4dea-b849-39b143127560" class="confluenceTd"><p local-id="cabfe60f-a1b2-4d64-9704-d753bc0645b6">IP address where the Inbound SRS is hosted.</p></td></tr><tr data-local-id="8f1d3688-8073-4b0a-bf13-85878c75605c"><td data-local-id="7ce191fb-8cd6-40fa-b5d2-84434bde5811" class="confluenceTd"><p local-id="a5651cf0-6d83-4920-9923-9b2eab0ad415" /></td><td data-local-id="e75cb99f-b50d-4229-a533-68ad3377e3e6" class="confluenceTd"><p local-id="c093fbf7-0c7a-4e4a-ab1a-47d034e9a08b">PMIX2 Inbound URL</p></td><td data-local-id="a144fd63-a7d2-46d2-ba39-86cd5b30f59a" class="confluenceTd"><p local-id="0aa9acd9-2faf-42f4-a2e8-3eb9f6f79fc3"><em><strong>This field is auto-populated</strong></em> based on the values selected/entered in the Protocol, Domain, IP address, and Port number fields. It is a fully qualified URL for PMIX2 NIEM4 Service on Inbound.</p></td></tr><tr data-local-id="71722e54-facf-4739-b839-d70004f3be86"><td data-local-id="884b8e0d-3d09-4b7e-a2ab-65863afc5bd5" class="confluenceTd"><p local-id="2af0232d-d369-4c58-8f33-d14dcb60b0f3" /></td><td data-local-id="f656b9c1-e0ab-48d7-86d2-9933d9941deb" class="confluenceTd"><p local-id="c3370920-ff5a-42a0-a528-3ee56dd75055">IEPD</p></td><td data-local-id="2ca8e9c2-a2bd-4e57-bb86-55c52cc90953" class="confluenceTd"><p local-id="dd5af472-289c-4e08-90f0-8a7892c05837"><em><strong>This field is auto-populated</strong></em> based on IEPD option selected by Super Administrator at the time of PDMP Site creation. The value indicates the type of PDMP site. This indicates the PMIX version supported by PDMP.</p></td></tr><tr data-local-id="3291ac26-6fd2-47d9-8801-1a76b78bf993"><td data-local-id="9bed7520-00cf-405f-ae91-bb49a25a2438" class="confluenceTd"><p local-id="77061115-183d-4fed-9f04-79d0ad611c06">Rate Limiting</p></td><td data-local-id="5f1e8188-c453-4831-9961-e929c462acc0" class="confluenceTd"><p local-id="fa038993-812d-4b6f-b75b-53ac48795932">Rate Limit</p></td><td data-local-id="b61bc82f-a3ff-45fc-b35f-8f49308940c8" class="confluenceTd"><p local-id="a792d3b0-89a8-4db4-a108-cbc672c49e44">If a value is entered for this field, it indicates the number of Requests to the inbound with respect to the defined time unit.</p></td></tr><tr data-local-id="56c01553-5555-4991-b572-50d73d5ca081"><td data-local-id="d48f276b-1f68-47e9-ab15-4e6edac3fcb7" class="confluenceTd"><p local-id="3a416c04-3211-45c0-b05c-c477002e6397">Rate Limiting</p></td><td data-local-id="395e2f8c-16bf-496d-86f8-8ba50a2c56ef" class="confluenceTd"><p local-id="cb97cdae-e157-43b0-8279-5edcf15f90ec">Time Unit</p></td><td data-local-id="b07a7366-1ffe-4979-82cc-873030a7d687" class="confluenceTd"><p local-id="38019c5a-e6a5-4ef9-bad4-e0dca8a8f471">Defines the unit for the value entered in the <em>Rate Limit</em> field. Can be set to Second, Minute, Hour, Day, or Month.</p></td></tr><tr data-local-id="f42c05a8-445e-4b9a-add8-ce97c30c32fd"><td data-local-id="29ef71e1-9c8d-41e3-be22-2e946b5b01f5" class="confluenceTd"><p local-id="b0d1ab73-3aaf-4b01-8c5a-fd549882d325">Enable Loopback (Same Site Outbound can call same site inbound)</p></td><td data-local-id="f0f7d12d-743c-4e4f-9df3-4573519f0c79" class="confluenceTd"><p local-id="2b887d77-f558-4452-ac63-1a17c02239dd">Enable Loopback</p></td><td data-local-id="9439f50b-1df1-46b4-8161-28fcdde5800c" class="confluenceTd"><p local-id="a2c73919-37a7-40a5-b0f0-9aae4999690a">This is a toggle button. When enabled (blue), it indicates that the users in the PDMP state can make Prescription Data requests to the same PDMP State.</p><p local-id="6a280b11-adc2-4a17-807c-b4c3f9ef4935">For example, if it is enabled for the PDMP State of NJ, it will indicate that NJ users can send the Prescription Data Requests to NJ.</p><p local-id="f51e832e-e0d6-47c9-be93-9099ee2b08f0">If the box is gray, it is disabled.</p></td></tr><tr data-local-id="32e546a4-4cab-44d7-919a-695fdab6c5c4"><td rowspan="2" data-local-id="fe25cf2c-3773-4d20-9280-38128f2996c8" class="confluenceTd"><p local-id="5021c43a-c213-4207-b35a-78be643811a1">Security Credentials (HTTP Basic Authentication)</p></td><td data-local-id="274717db-95aa-4be7-8ed5-88f6efa0c119" class="confluenceTd"><p local-id="68d43caa-1cec-4049-bcdf-fb45b0a0c5a7">Inbound Username</p></td><td data-local-id="aa118bbb-6c1b-4baf-9ec5-1909f1e62a4b" class="confluenceTd"><p local-id="e8bd679c-0a3e-40bf-80e1-63f97528f960">A username to authenticate the SRS connection in the RxCheck network.</p></td></tr><tr data-local-id="4ef11d1c-fabe-4075-a5b4-9b6f277528c0"><td data-local-id="e5855076-1ff2-4a6e-b27b-2c67f723ad6b" class="confluenceTd"><p local-id="72510054-0b3a-44d9-ac97-96068166993e">Inbound Password</p></td><td data-local-id="dce31cf3-cb72-4c9b-bb34-f71b6cedd4fa" class="confluenceTd"><p local-id="3b94ab8d-371f-4ec3-8b0b-5cfcc2cac72c">A password to authenticate the SRS connection in the RxCheck network.</p></td></tr></tbody></table></div><p local-id="b5ae03ed-53ff-4f6a-b39a-a1727cd2a021" />
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/184680460/185008137.png">Confluence Header.png</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/184680460/185368579.png">image-20251223-172107.png</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Apr 22, 2026 13:04</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>
