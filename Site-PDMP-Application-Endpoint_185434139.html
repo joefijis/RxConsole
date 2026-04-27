@@ -1,72 +1,216 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RxCheck : Site PDMP Application Endpoint</title>
-        <link rel="stylesheet" href="styles/site.css" type="text/css" />
-        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-
-    <body class="theme-default aui-theme-default">
-        <div id="page">
-            <div id="main" class="aui-page-panel">
-                <div id="main-header">
-                    <div id="breadcrumb-section">
-                        <ol id="breadcrumbs">
-                            <li class="first">
-                                <span><a href="index.html">RxCheck</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="State-Routing-Service-Configuration_185106453.html">State Routing Service Configuration</a></span>
-                            </li>
-                                                </ol>
-                    </div>
-                    <h1 id="title-heading" class="pagetitle">
-                                                <span id="title-text">
-                            RxCheck : Site PDMP Application Endpoint
-                        </span>
-                    </h1>
-                </div>
-
-                <div id="content" class="view">
-                    <div class="page-metadata">
-                            
-        
-    
-        
-    
-        
-        
-            Created by <span class='author'> Joseph Fibich</span> on Dec 23, 2025
-                        </div>
-                    <div id="main-content" class="wiki-content group">
-                    <p local-id="2e48c7a0-3ad6-4970-8049-e45c3f4fa409">This section defines the technical parameters of the state’s PDMP application necessary for message routing and integration. To configure this section, the State PDMP Administrator must enter the required information into the designated data fields.</p><p local-id="2dc78a3f-850b-49f6-9b74-c75e1e9a2d14">The screenshot below demonstrates the configuration interface for this section. For additional clarity, the accompanying table provides descriptions for each data field shown in the screenshot.</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20251223-173307.png" width="471" loading="lazy" src="attachments/185434139/185139207.png?width=471" data-image-src="attachments/185434139/185139207.png" data-height="153" data-width="471" data-unresolved-comment-count="0" data-linked-resource-id="185139207" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20251223-173307.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="185434139" data-linked-resource-container-version="1" data-media-id="55a347c0-b5eb-4b8e-996c-e6da9515c78d" data-media-type="file"></span><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="b9ca66db-99eb-47b3-91f9-1c4b04a662af" class="confluenceTable"><colgroup><col style="width: 142.0px;"/><col style="width: 181.0px;"/><col style="width: 435.0px;"/></colgroup><tbody><tr data-local-id="cf44840e-d981-406d-ac2c-8a64129ac0f5"><th data-local-id="edd43bd9-0d69-460f-9256-4c2d785102f0" class="confluenceTh"><p local-id="a22675c4-aee5-429f-88b4-b9006128b655"><strong>Heading</strong></p></th><th data-local-id="27ed0a1c-2416-45d4-b8c0-21da74fde5c6" class="confluenceTh"><p local-id="b3bea44e-e51b-4573-9124-4ace2e47dfae"><strong>Data Field Name</strong></p></th><th data-local-id="9d86e5a9-7aba-4a1c-b835-e126f15939d7" class="confluenceTh"><p local-id="37878fa4-cd98-42bf-875c-9c18549d2ddf"><strong>Description</strong></p></th></tr><tr data-local-id="b46a7744-f074-46bb-956f-5c29eccb61c8"><td data-local-id="a44085d4-0641-4bfd-912f-23d03be7b5bc" class="confluenceTd"><p local-id="f9c1831b-d4bf-47ba-a39d-8ba9aba57d12" /></td><td data-local-id="8edd17f0-dfbb-4478-ba74-05d0dde8beba" class="confluenceTd"><p local-id="1f184755-8a83-4c24-a024-4f2f98401a22">Protocol</p></td><td data-local-id="6acf04e1-bf96-4da4-b31b-309c1248992f" class="confluenceTd"><p local-id="94612dbe-b578-4a04-9b65-fa81ffc593fe">This value can be set to “HTTP” or “HTTPS”.</p></td></tr><tr data-local-id="d8eab2ef-e8b6-4369-b91b-153b244666e3"><td data-local-id="5f26430d-8add-46c7-8d01-579ef20d5f64" class="confluenceTd"><p local-id="38403767-c5eb-4d63-8f2a-500a2e25fdb0" /></td><td data-local-id="a766e761-3ec3-43cd-a8a0-fecd9f9cc054" class="confluenceTd"><p local-id="fdfe5d75-e630-4b6b-a78a-30ed8801a750">Domain</p></td><td data-local-id="18b91d6b-733c-473f-9cda-651ab1a117a5" class="confluenceTd"><p local-id="4be81d5a-0089-41e2-8482-032270d30df8">The website address of the PDMP state.</p><p local-id="37589b38-5480-47f9-ab6f-274940dc2c69">This field is <u>optional</u> – if the domain is not provided, the system will automatically take the IP address.</p></td></tr><tr data-local-id="ccc2c897-333e-4f25-873a-e2aee8e64b16"><td data-local-id="d74a0b4e-3866-4d4e-92e0-d0f117f516a9" class="confluenceTd"><p local-id="870b8a68-1d43-4eda-b539-e3516fc34714" /></td><td data-local-id="07ec9d16-0492-4047-b881-1b2424037af6" class="confluenceTd"><p local-id="afec8d01-94c4-41c2-b2b2-9ae2158414f9">Port Number</p></td><td data-local-id="46624623-e479-4845-8cd5-f08d12fe43a0" class="confluenceTd"><p local-id="8c46f902-046f-4da6-8b72-72e94b0d15ce">Port number where the website is hosted.</p></td></tr><tr data-local-id="4cb43517-0b7d-4518-9619-d66eca9ba433"><td data-local-id="7b098577-36bd-4ed9-aac0-6262faf60a89" class="confluenceTd"><p local-id="69bccd6e-76c4-4b7b-b534-a7a9a732a421" /></td><td data-local-id="71cf876b-f32e-47f2-bf59-16ac5e406584" class="confluenceTd"><p local-id="cf8c744b-da32-4d1a-91bd-7e28fce484c1">IP Address</p></td><td data-local-id="0a45156f-dad8-4798-afe2-4cbf6478b8c7" class="confluenceTd"><p local-id="980eddf9-284b-47ab-8306-ffe983c5b6bf">IP address of the state PDMP server where the website is hosted.</p></td></tr><tr data-local-id="970f823f-7dbf-4ae5-9f4f-564bec101d41"><td data-local-id="f67c311c-6108-44ad-a317-0b692945b433" class="confluenceTd"><p local-id="2d3d2267-f49c-473e-a803-f8f82fc5b490" /></td><td data-local-id="9e9197a3-36fd-4705-8186-01a984c1cfad" class="confluenceTd"><p local-id="c65d18b5-8e51-436e-9651-e80ae98cc364">URL Path</p></td><td data-local-id="db45b991-344f-44f9-ac20-7553b1f00cb5" class="confluenceTd"><p local-id="9658e5a4-3191-4b6c-8249-4d101b1ac513">This is the base URL or path for the PDMP Application endpoint for all the requests. The value for this field is based on the IEPD option selected by Super Administrator at the time of PDMP Site creation.</p></td></tr><tr data-local-id="68fd91d7-a772-4d3e-b5b6-05a6131e9434"><td data-local-id="88bab9fd-79d9-47c4-ac87-b38ca4887729" class="confluenceTd"><p local-id="2c5b2a2f-b781-439c-be53-0c173f94caba" /></td><td data-local-id="a3ff1600-43c1-4cc8-aa47-71012e073339" class="confluenceTd"><p local-id="b440e11c-4ac4-4e1c-8927-5002f6da690e">PDMP URL</p></td><td data-local-id="acf72e79-c4d7-4fd1-a7bf-c6b1d3f03bd2" class="confluenceTd"><p local-id="6113cb16-e1db-4248-9ee0-9fe1e8c56380"><em><strong>This field is auto-populated</strong></em> based on the values selected/entered in Protocol, Domain/IP Address, Port Number.</p></td></tr><tr data-local-id="980061a0-8c80-4309-9b5d-9d533759d6e5"><td rowspan="2" data-local-id="78f91b1e-bd2b-42da-8d98-cd2840b2a5ac" class="confluenceTd"><p local-id="30ef0658-7b85-4672-a235-70f8791ab6c1">Security Credentials (HTTP Basic Authentication)</p></td><td data-local-id="ef2b249e-72c9-4bb1-b5de-36b42493c86f" class="confluenceTd"><p local-id="90e0944f-d514-48a2-90fd-35d580a47570">Inbound Username</p></td><td data-local-id="39ab00c8-b8df-4354-844f-b9caa3ee4c49" class="confluenceTd"><p local-id="b293cb2f-050b-4b53-8ea7-c478d63f1665">A username and is an optional parameter which enables basic authentication on PDMP Site.</p></td></tr><tr data-local-id="0490492f-a697-45f4-b3b4-b49c2b1a7f8c"><td data-local-id="efd0ee52-ee5b-4e24-8b3a-34b759849abd" class="confluenceTd"><p local-id="0963afae-a5c5-4851-958c-1da759ce8c49">Inbound Password</p></td><td data-local-id="046bd33e-e26d-41fd-925a-2e2e7b346710" class="confluenceTd"><p local-id="efa76085-8129-4f87-8909-305c0de89d6f">A password and is an optional parameter which enables basic authentication on PDMP Site.</p></td></tr></tbody></table></div>
-                    </div>
-
-                                        <div class="pageSection group">
-                        <div class="pageSectionHeader">
-                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
-                        </div>
-
-                        <div class="greybox" align="left">
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/185434139/185008147.png">Confluence Header.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/185434139/185139207.png">image-20251223-173307.png</a> (image/png)
-                                <br/>
-                                                    </div>
-                    </div>
-                    
-                                                      
-                </div>             </div> 
-            <div id="footer" role="contentinfo">
-                <section class="footer-body">
-                    <p>Document generated by Confluence on Apr 22, 2026 13:04</p>
-                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-                </section>
-            </div>
-        </div>     </body>
+ <head>
+  <title>
+   RxCheck : Site PDMP Application Endpoint
+  </title>
+  <link href="styles/site.css"/>
+  <meta/>
+  <style>
+   body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 1200px; margin: auto; color: #333; }
+            .columnLayout { display: flex; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
+            .cell { flex: 1; min-width: 320px; }
+            .panel { padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #d1d5db; }
+            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
+            .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
+            hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
+  </style>
+ </head>
+ <body class="theme-default aui-theme-default">
+  <div id="page">
+   <div class="aui-page-panel" id="main">
+    <div id="main-header">
+     <h1 class="pagetitle" id="title-heading">
+      <span id="title-text">
+       RxCheck : Site PDMP Application Endpoint
+      </span>
+     </h1>
+    </div>
+    <div class="view" id="content">
+     <div class="wiki-content group" id="main-content">
+      <p>
+       This section defines the technical parameters of the state’s PDMP application necessary for message routing and integration. To configure this section, the State PDMP Administrator must enter the required information into the designated data fields.
+      </p>
+      <p>
+       The screenshot below demonstrates the configuration interface for this section. For additional clarity, the accompanying table provides descriptions for each data field shown in the screenshot.
+      </p>
+      <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+       <img alt="image-20251223-173307.png" class="confluence-embedded-image image-center" src="attachments/185434139/185139207.png?width=471"/>
+      </span>
+      <div class="table-wrap">
+       <table class="confluenceTable">
+        <colgroup>
+         <col style="width: 142.0px;"/>
+         <col style="width: 181.0px;"/>
+         <col style="width: 435.0px;"/>
+        </colgroup>
+        <tbody>
+         <tr>
+          <th class="confluenceTh">
+           <p>
+            <strong>
+             Heading
+            </strong>
+           </p>
+          </th>
+          <th class="confluenceTh">
+           <p>
+            <strong>
+             Data Field Name
+            </strong>
+           </p>
+          </th>
+          <th class="confluenceTh">
+           <p>
+            <strong>
+             Description
+            </strong>
+           </p>
+          </th>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Protocol
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            This value can be set to “HTTP” or “HTTPS”.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Domain
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The website address of the PDMP state.
+           </p>
+           <p>
+            This field is
+            <u>
+             optional
+            </u>
+            – if the domain is not provided, the system will automatically take the IP address.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Port Number
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Port number where the website is hosted.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            IP Address
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            IP address of the state PDMP server where the website is hosted.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            URL Path
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            This is the base URL or path for the PDMP Application endpoint for all the requests. The value for this field is based on the IEPD option selected by Super Administrator at the time of PDMP Site creation.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            PDMP URL
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            <em>
+             <strong>
+              This field is auto-populated
+             </strong>
+            </em>
+            based on the values selected/entered in Protocol, Domain/IP Address, Port Number.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+            Security Credentials (HTTP Basic Authentication)
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Inbound Username
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A username and is an optional parameter which enables basic authentication on PDMP Site.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+            Inbound Password
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A password and is an optional parameter which enables basic authentication on PDMP Site.
+           </p>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>

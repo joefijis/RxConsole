@@ -1,104 +1,216 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RxCheck : Adding a Datasource API</title>
-        <link rel="stylesheet" href="styles/site.css" type="text/css" />
-        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-
-    <body class="theme-default aui-theme-default">
-        <div id="page">
-            <div id="main" class="aui-page-panel">
-                <div id="main-header">
-                    <div id="breadcrumb-section">
-                        <ol id="breadcrumbs">
-                            <li class="first">
-                                <span><a href="index.html">RxCheck</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="Provider-Validation_200802311.html">Provider Validation</a></span>
-                            </li>
-                                                </ol>
-                    </div>
-                    <h1 id="title-heading" class="pagetitle">
-                                                <span id="title-text">
-                            RxCheck : Adding a Datasource API
-                        </span>
-                    </h1>
-                </div>
-
-                <div id="content" class="view">
-                    <div class="page-metadata">
-                            
-        
-    
-        
-    
-        
-        
-            Created by <span class='author'> Joseph Fibich</span> on Jan 13, 2026
-                        </div>
-                    <div id="main-content" class="wiki-content group">
-                    <div class="contentLayout2">
-<div class="columnLayout two-equal" data-layout="two-equal">
-<div class="cell normal" data-type="normal">
-<div class="innerCell">
-<ol start="1" local-id="453a8b1e-9c98-4253-aae6-2d29e9cdec60"><li local-id="080351d0-3eb1-4801-9029-0a69740fd25d"><p local-id="b3093cf3-4b47-48fe-834a-932a3eb320db">Follow steps 1-3 under the section titled <a rel="nofollow">V<em>iew and add a datasource for provider validation</em></a> in this guide.</p></li></ol><p local-id="dec1e428-e066-4017-928a-753482adaf1c" /><ol start="2" local-id="0c0c5da6-b678-4666-b24e-a087fd452268"><li local-id="c1aaae5b-e11b-44e0-a063-51ab6dd787f2"><p local-id="bb7e9d2a-ad45-4a49-855a-66b1a582b4c2">Select the “API” option under the <em>Datasource Type</em> dropdown.</p></li></ol><p local-id="a0dedcea-b964-4147-b6b5-c7c73ba798ab" /><ol start="3" local-id="245fa298-a04c-4fe7-9806-8a80e771ee3b"><li local-id="633db950-dbc3-4487-b473-0af8ef0bfa1a"><p local-id="b45ec53e-7672-4abb-8999-071ef7674167">Enter the API URL into the field labeled <em>API URL</em>.</p></li></ol><p local-id="55264e66-e986-49e5-8762-c0bba711e922" /><ol start="4" local-id="71eba819-517f-4f00-aff4-dcd3aaf4491a"><li local-id="c0422e1f-02a4-4af0-972f-00ab0037ca58"><p local-id="db56a477-a84f-431a-b50e-866dfece9727">Select the appropriate authorization type using the <em>Auth Type</em> dropdown.</p></li></ol><p local-id="b4eb5287-3578-4240-bee6-38e8f2b9677e" /><ol start="5" local-id="39fc03e9-07f2-4554-b9ef-1bd0915e050e"><li local-id="240ebc7c-9f91-4768-a1d3-0bb10fa1e111"><p local-id="f16b4d1e-c9ad-4568-ab6b-d6571a4cbd25">For BASIC authorization, enter the username and password.</p></li></ol><p local-id="39224cdd-2ec0-4540-99c7-187c6f11c584" /><p local-id="b1336b97-b2b6-47c0-90f7-6c1d41efb0b8" /><p local-id="7eaa3be2-a9eb-4a1e-ace9-f7f6a736ac47" /><ol start="6" local-id="aae839ef-041c-4e66-8b7f-33c7df245bc8"><li local-id="87c2c84b-5cec-47b7-9c37-040fccdd131e"><p local-id="1486c316-0ae0-4185-9ee6-4643343067ed">For OAUTH2 authorization, enter the Client ID, Client Secret, and Auth URL into their respective fields.</p></li></ol><p local-id="cc5bb35c-b847-4ca5-aa99-5cea8c5a1146" /><p local-id="768adce3-1343-48b3-80ae-27526d9ba901" /><ol start="7" local-id="20e85b92-57e1-4c95-bd30-a24cd3f5e5cf"><li local-id="8875115b-2302-4411-807f-0916179221a1"><p local-id="e0ff1239-1a61-424f-b804-b4129a7bb4de">Press the <em>Save</em> button on the right corner of the screen to add your datasource API to the RxConsole for your state.</p></li></ol><p local-id="b7006c44-30e5-4db0-b196-7da435f1ccfa" /><ol start="8" local-id="820554ef-e9be-4c83-b451-e4d126078406"><li local-id="bbec23a2-eb57-4816-b237-17008f96450f"><p local-id="f9051562-7d67-4694-82fb-1d71c38d6a7c">Alternatively, if you do not wish to add an API you can press the <em>Cancel</em> button to discard changes and return to the previous screen.</p></li></ol><p local-id="9f0e5123-95b4-44fb-91f9-ebe4a667c76f" /><ol start="9" local-id="0e158628-89d2-4a93-b06e-f7a5db0a1920"><li local-id="20708eeb-aa23-47eb-8151-8e3de4f4cff2"><p local-id="2eb5d086-771e-40ba-81f0-7568bb62de60">Verify the datasource API was successfully added by looking for the Alert that states, “Datasource Created”.<br/>You will also return to the Datasource screen and should see your datasource in the <em>List of Datasources</em>.</p></li></ol></div>
-</div>
-<div class="cell normal" data-type="normal">
-<div class="innerCell">
-<p local-id="02b3e2c5-9eee-4ef1-b461-880c961e0d24" /><p local-id="e50619df-3ac5-4981-a7a4-39397a649180" /><p local-id="ad41f1c5-294a-4bfb-9d50-4466e9a6700f" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-210257.png" width="219" loading="lazy" src="attachments/201818119/202047509.png?width=219" data-image-src="attachments/201818119/202047509.png" data-height="62" data-width="219" data-unresolved-comment-count="0" data-linked-resource-id="202047509" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-210257.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="201818119" data-linked-resource-container-version="1" data-media-id="36447f7f-fa26-4132-b27a-0203b254ecde" data-media-type="file"></span><p local-id="0db32170-b0fc-41fc-a9dc-447aca056574" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-210302.png" width="218" loading="lazy" src="attachments/201818119/200933395.png?width=218" data-image-src="attachments/201818119/200933395.png" data-height="50" data-width="218" data-unresolved-comment-count="0" data-linked-resource-id="200933395" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-210302.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="201818119" data-linked-resource-container-version="1" data-media-id="6d429508-78e9-47df-96dc-d3c6318ec473" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-210308.png" width="217" loading="lazy" src="attachments/201818119/202768386.png?width=217" data-image-src="attachments/201818119/202768386.png" data-height="65" data-width="217" data-unresolved-comment-count="0" data-linked-resource-id="202768386" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-210308.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="201818119" data-linked-resource-container-version="1" data-media-id="019dd2ac-a0d6-44c4-ab43-eb8b56128ab6" data-media-type="file"></span><p local-id="2db2a0ce-ff43-4566-a3ac-3afbdb9c387e" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-210321.png" width="356" loading="lazy" src="attachments/201818119/201228320.png?width=356" data-image-src="attachments/201818119/201228320.png" data-height="116" data-width="417" data-unresolved-comment-count="0" data-linked-resource-id="201228320" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-210321.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="201818119" data-linked-resource-container-version="1" data-media-id="73393e0c-67a5-42f7-9e7c-23bdfeb47840" data-media-type="file"></span><p local-id="ed9787bb-b1ce-4021-ba2a-87625b67dc96" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-210330.png" width="356" loading="lazy" src="attachments/201818119/202637315.png?width=356" data-image-src="attachments/201818119/202637315.png" data-height="98" data-width="427" data-unresolved-comment-count="0" data-linked-resource-id="202637315" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-210330.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="201818119" data-linked-resource-container-version="1" data-media-id="828c70be-04d0-4992-81eb-53f9c116e6d3" data-media-type="file"></span><p local-id="5c0f6c4b-8268-4a3e-b4cd-90aeac1f687b" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-210344.png" width="49" loading="lazy" src="attachments/201818119/200605719.png?width=49" data-image-src="attachments/201818119/200605719.png" data-height="23" data-width="49" data-unresolved-comment-count="0" data-linked-resource-id="200605719" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-210344.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="201818119" data-linked-resource-container-version="1" data-media-id="2f7e4173-7520-44f5-932f-9c18f3cd72f4" data-media-type="file"></span><p local-id="a1ccdb15-bea0-43df-b4d2-50d1a5546317" /><p local-id="e0dfe187-2943-4eb4-b731-23a8134c580f" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-210350.png" width="59" loading="lazy" src="attachments/201818119/202342407.png?width=59" data-image-src="attachments/201818119/202342407.png" data-height="22" data-width="59" data-unresolved-comment-count="0" data-linked-resource-id="202342407" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-210350.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="201818119" data-linked-resource-container-version="1" data-media-id="97896ec9-f973-4be3-8cad-e918a31e771c" data-media-type="file"></span><p local-id="f5e73dd8-4549-470f-8313-ab17d62eba1d" /><p local-id="52850e94-bfbf-4376-bd59-2edfd3b9edaa" /><p local-id="71edb2f5-2e68-473f-bc4c-5e74c9b0661f" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-210355.png" width="199" loading="lazy" src="attachments/201818119/201621506.png?width=199" data-image-src="attachments/201818119/201621506.png" data-height="47" data-width="199" data-unresolved-comment-count="0" data-linked-resource-id="201621506" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-210355.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="201818119" data-linked-resource-container-version="1" data-media-id="690a4a41-8f90-4271-b92d-fbd374aec1b0" data-media-type="file"></span><p local-id="1eeef369-9a5b-47dc-996f-ab8079eba278" /></div>
-</div>
-</div>
-</div>
-                    </div>
-
-                                        <div class="pageSection group">
-                        <div class="pageSectionHeader">
-                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
-                        </div>
-
-                        <div class="greybox" align="left">
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/201818119/200671241.png">Confluence Header.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/201818119/202047509.png">image-20260113-210257.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/201818119/200933395.png">image-20260113-210302.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/201818119/202768386.png">image-20260113-210308.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/201818119/201228320.png">image-20260113-210321.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/201818119/202637315.png">image-20260113-210330.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/201818119/200605719.png">image-20260113-210344.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/201818119/202342407.png">image-20260113-210350.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/201818119/201621506.png">image-20260113-210355.png</a> (image/png)
-                                <br/>
-                                                    </div>
-                    </div>
-                    
-                                                      
-                </div>             </div> 
-            <div id="footer" role="contentinfo">
-                <section class="footer-body">
-                    <p>Document generated by Confluence on Apr 22, 2026 13:05</p>
-                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-                </section>
-            </div>
-        </div>     </body>
+ <head>
+  <title>
+   RxCheck : Adding a Datasource API
+  </title>
+  <link href="styles/site.css"/>
+  <meta/>
+  <style>
+   body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 1200px; margin: auto; color: #333; }
+            .columnLayout { display: flex; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
+            .cell { flex: 1; min-width: 320px; }
+            .panel { padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #d1d5db; }
+            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
+            .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
+            hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
+  </style>
+ </head>
+ <body class="theme-default aui-theme-default">
+  <div id="page">
+   <div class="aui-page-panel" id="main">
+    <div id="main-header">
+     <h1 class="pagetitle" id="title-heading">
+      <span id="title-text">
+       RxCheck : Adding a Datasource API
+      </span>
+     </h1>
+    </div>
+    <div class="view" id="content">
+     <div class="wiki-content group" id="main-content">
+      <div class="contentLayout2">
+       <div class="columnLayout two-equal">
+        <div class="cell normal">
+         <div class="innerCell">
+          <ol>
+           <li>
+            <p>
+             Follow steps 1-3 under the section titled
+             <a>
+              V
+              <em>
+               iew and add a datasource for provider validation
+              </em>
+             </a>
+             in this guide.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             Select the “API” option under the
+             <em>
+              Datasource Type
+             </em>
+             dropdown.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             Enter the API URL into the field labeled
+             <em>
+              API URL
+             </em>
+             .
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             Select the appropriate authorization type using the
+             <em>
+              Auth Type
+             </em>
+             dropdown.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             For BASIC authorization, enter the username and password.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             For OAUTH2 authorization, enter the Client ID, Client Secret, and Auth URL into their respective fields.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             Press the
+             <em>
+              Save
+             </em>
+             button on the right corner of the screen to add your datasource API to the RxConsole for your state.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             Alternatively, if you do not wish to add an API you can press the
+             <em>
+              Cancel
+             </em>
+             button to discard changes and return to the previous screen.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             Verify the datasource API was successfully added by looking for the Alert that states, “Datasource Created”.
+             <br/>
+             You will also return to the Datasource screen and should see your datasource in the
+             <em>
+              List of Datasources
+             </em>
+             .
+            </p>
+           </li>
+          </ol>
+         </div>
+        </div>
+        <div class="cell normal">
+         <div class="innerCell">
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-210257.png" class="confluence-embedded-image image-center" src="attachments/201818119/202047509.png?width=219"/>
+          </span>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-210302.png" class="confluence-embedded-image image-center" src="attachments/201818119/200933395.png?width=218"/>
+          </span>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-210308.png" class="confluence-embedded-image image-center" src="attachments/201818119/202768386.png?width=217"/>
+          </span>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-210321.png" class="confluence-embedded-image image-center" src="attachments/201818119/201228320.png?width=356"/>
+          </span>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-210330.png" class="confluence-embedded-image image-center" src="attachments/201818119/202637315.png?width=356"/>
+          </span>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-210344.png" class="confluence-embedded-image image-center" src="attachments/201818119/200605719.png?width=49"/>
+          </span>
+          <p>
+          </p>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-210350.png" class="confluence-embedded-image image-center" src="attachments/201818119/202342407.png?width=59"/>
+          </span>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-210355.png" class="confluence-embedded-image image-center" src="attachments/201818119/201621506.png?width=199"/>
+          </span>
+          <p>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>

@@ -1,75 +1,565 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RxCheck : Reading the hub audit logs</title>
-        <link rel="stylesheet" href="styles/site.css" type="text/css" />
-        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-
-    <body class="theme-default aui-theme-default">
-        <div id="page">
-            <div id="main" class="aui-page-panel">
-                <div id="main-header">
-                    <div id="breadcrumb-section">
-                        <ol id="breadcrumbs">
-                            <li class="first">
-                                <span><a href="index.html">RxCheck</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="Hub-Audit-Logs_184680476.html">Hub Audit Logs</a></span>
-                            </li>
-                                                </ol>
-                    </div>
-                    <h1 id="title-heading" class="pagetitle">
-                                                <span id="title-text">
-                            RxCheck : Reading the hub audit logs
-                        </span>
-                    </h1>
-                </div>
-
-                <div id="content" class="view">
-                    <div class="page-metadata">
-                            
-        
-    
-        
-    
-        
-        
-            Created by <span class='author'> Joseph Fibich</span> on Jan 07, 2026
-                        </div>
-                    <div id="main-content" class="wiki-content group">
-                    <p local-id="9ee150d4-92b9-45b5-bcac-5c574ea5108a">The following screenshot displays two hub audit log entries.</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260107-201612.png" width="507" loading="lazy" src="attachments/192020481/192053252.png?width=507" data-image-src="attachments/192020481/192053252.png" data-height="61" data-width="507" data-unresolved-comment-count="0" data-linked-resource-id="192053252" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260107-201612.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="192020481" data-linked-resource-container-version="1" data-media-id="65dfcd66-de44-4d42-89f7-c589dbacd820" data-media-type="file"></span><p local-id="a90a25a8-86c6-432c-95f5-65c5b4e04ba0">Clicking on the blue hyperlink text will display additional information about its column.</p><p local-id="3a1a01f2-ef40-429f-a667-b2eca03f4c14">For example, clicking on <em>View </em>will display the following Log Summary pop-up page. The Log Summary contains additional information about the respective transaction and may add further insight (in the “Message” section) as to why a transaction was not successful.</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260107-201646.png" width="380" loading="lazy" src="attachments/192020481/192348161.png?width=380" data-image-src="attachments/192020481/192348161.png" data-height="364" data-width="380" data-unresolved-comment-count="0" data-linked-resource-id="192348161" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260107-201646.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="192020481" data-linked-resource-container-version="1" data-media-id="ca04d4b7-e10c-4156-bd2e-1c8f2a17ce1f" data-media-type="file"></span><p local-id="074707f5-0ab9-4def-a86a-f6118bb78abd">The following table details the role of each column title displayed in the Hub Audit Log.</p><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="a35ae408-4836-4e20-acf1-e21f4f7be91e" class="confluenceTable"><colgroup><col style="width: 200.0px;"/><col style="width: 559.0px;"/></colgroup><tbody><tr data-local-id="6ebc11de-e43e-4ce5-80cc-2157547c1779"><th data-local-id="7005c733-1732-4bd7-8b76-c480aacffaa6" class="confluenceTh"><p local-id="c738682f-6433-4376-a4e1-45bbd9ab4cbd" style="text-align: center;"><strong>Title</strong></p></th><th data-local-id="d637df85-a1ec-4093-9041-268769012380" class="confluenceTh"><p local-id="a1771ab7-8031-41ef-ab2c-f21b7c84f16a" style="text-align: center;"><strong>Description</strong></p></th></tr><tr data-local-id="5faf5eaf-f9e6-494d-9894-79180c196873"><td data-local-id="48d9f71b-727d-4544-b543-c69520c9ee27" class="confluenceTd"><p local-id="9f066152-b7c7-44f9-9f30-10396c287d50" style="text-align: right;"><strong>Summary</strong></p></td><td data-local-id="60b6fdb3-d142-43a4-910a-3454f64c99b8" class="confluenceTd"><p local-id="1ae0c07d-8da1-41f9-afe4-1798ee1b6861">Provides details about the transaction and any errors.</p></td></tr><tr data-local-id="11a58201-ef00-41e4-b95d-c17daed1236c"><td data-local-id="47c9137a-b351-49e9-8581-e3dd45759dd3" class="confluenceTd"><p local-id="2fcc1e96-33d1-47c8-9b5c-1f43cc30aed0" style="text-align: right;"><strong>Request ID</strong></p></td><td data-local-id="f81fdf1a-6af7-42df-9550-fdbbaf09c21e" class="confluenceTd"><p local-id="bba68166-0472-461e-b8a5-eee97daf0703">The ID provided in a request transaction that is made to obtain prescription data of an individual patient.</p></td></tr><tr data-local-id="5f5fad42-f949-4477-af6f-cf20fc27283d"><td data-local-id="31994beb-2c40-4893-9927-f1ba76c5cca8" class="confluenceTd"><p local-id="add5422f-4167-4b5d-8794-cdfce7d87850" style="text-align: right;"><strong>Requesting Site</strong></p></td><td data-local-id="210cef49-1306-4e6b-9832-ff3d98b504a2" class="confluenceTd"><p local-id="daa3d2c0-e5a8-4676-a1ec-c98946eb5fb3">The state code of the State that initiated the data request.</p></td></tr><tr data-local-id="27e6c6c3-b1bd-424c-b3a6-e59da7eeb2b4"><td data-local-id="f59d11dc-773f-42ec-8147-db3b8ba07d60" class="confluenceTd"><p local-id="db52c931-db75-4679-bcd4-f1d5d2829677" style="text-align: right;"><strong>Disclosing Site</strong></p></td><td data-local-id="51d49046-6eb8-481d-acaa-f91ff7b2694c" class="confluenceTd"><p local-id="ec485345-585d-4182-9c61-0568d9e56c19">The state code of the State to which the data request is being sent to.</p></td></tr><tr data-local-id="074b1760-77b2-4121-b9aa-ded5e229073a"><td data-local-id="991c88e2-f117-4d6f-882b-42d694c867f6" class="confluenceTd"><p local-id="d5d2d24e-b42d-4b43-ac42-6c500fa1af3d" style="text-align: right;"><strong>Requestor</strong></p></td><td data-local-id="51f13270-b42c-4e82-ab9a-9b811216e177" class="confluenceTd"><p local-id="801ac88c-a205-4f40-b96c-9346b9ca9a50">The name of the healthcare professional who submitted the request.</p></td></tr><tr data-local-id="693e14e3-9920-4322-bf08-e1cc8969a4c3"><td data-local-id="27db2230-e510-4a6d-8fda-9345ef611fc9" class="confluenceTd"><p local-id="0f24bb23-deff-4f63-8c6a-8d5dda1106b7" style="text-align: right;"><strong>Role</strong></p></td><td data-local-id="4ef8cf76-ae37-4350-86ff-07920178ac7a" class="confluenceTd"><p local-id="a56f423d-7e56-4f16-ab38-e284e4dc10dc">The role of the healthcare professional who submitted the request.</p></td></tr><tr data-local-id="b92ef684-1cb9-4d21-82df-016d05fa35fe"><td data-local-id="68d287ed-ddea-4a6d-b6cf-713fcb21b975" class="confluenceTd"><p local-id="c3b16b0a-f64c-4145-a417-b479ce62fc9f" style="text-align: right;"><strong>DEA</strong></p></td><td data-local-id="c9ebe556-25bd-4437-8c0d-b49ccafec28f" class="confluenceTd"><p local-id="892434fa-6e75-44cd-a948-2867f8e838bf">The Drug Enforcement Administration number of the healthcare professional who submitted the request.</p></td></tr><tr data-local-id="ad845553-5976-4321-a54b-e4ed0e887ca3"><td data-local-id="abfe1962-fec2-4d95-bcbc-41b4f27dfc16" class="confluenceTd"><p local-id="f1e49fee-96ae-43af-9738-9392ea4f122d" style="text-align: right;"><strong>NPI</strong></p></td><td data-local-id="1339060b-5201-46c1-9076-8019da3c2396" class="confluenceTd"><p local-id="278511d3-cd45-4fd1-9b57-b3c738bc2ac5">The National Provider Identification number of the healthcare professional who submitted the request.</p></td></tr><tr data-local-id="35d86fd1-691d-4a1e-8761-4fb324ade9a8"><td data-local-id="6e524d49-58fa-466b-8d56-2604bb5b3267" class="confluenceTd"><p local-id="79c3dfde-8712-4fc4-8748-c3edcc4c7ee3" style="text-align: right;"><strong>SLN</strong></p></td><td data-local-id="1168f28e-da71-46ad-9f8b-b127ce3114ae" class="confluenceTd"><p local-id="4a25fe3f-73ca-47b4-a603-6d1798f5e5c2">The State License number of the healthcare professional who submitted the request.</p></td></tr><tr data-local-id="b4ce1526-4f1c-4d70-8308-e47b5e85adf6"><td data-local-id="0c580220-2b07-4baf-b7a3-5c53bb8eec6b" class="confluenceTd"><p local-id="1b6bc4bd-464d-4e37-aa23-673264a8bae4" style="text-align: right;"><strong>Request DateTime</strong></p></td><td data-local-id="72829f3e-2231-4cc0-8601-0ee3e1709345" class="confluenceTd"><p local-id="ff4ee919-0d37-40b9-86e1-cd29d9a9846b">The date and time the request was initiated.</p></td></tr><tr data-local-id="b56068dd-264b-4919-8e31-c3291a32d814"><td data-local-id="7d531e59-8650-4a74-953e-a6e28936eb6b" class="confluenceTd"><p local-id="5802e991-9264-4a70-aeeb-00c0e1df6779" style="text-align: right;"><strong>Response DateTime</strong></p></td><td data-local-id="1de2b2e8-4938-41dc-9f7c-0eaf89f06ca2" class="confluenceTd"><p local-id="0ca6af86-0b1a-4d19-9aac-eec03bb12996">The date and time the response was sent.</p></td></tr><tr data-local-id="2ac2036a-2eeb-4cd7-ab40-fa2d0d75aad1"><td data-local-id="66a2ebf4-cdaa-42fc-a8a4-7e616eb1ffe7" class="confluenceTd"><p local-id="809c8494-c6fa-4c61-9a7d-2620999679f9" style="text-align: right;"><strong>Response Status</strong></p></td><td data-local-id="90ae25f2-21e5-4c1c-bad1-6f11de3d9cdd" class="confluenceTd"><p local-id="9c5be076-2617-4133-a4fe-4ad9e054def5">The status of the transaction.</p></td></tr></tbody></table></div><p local-id="5e95910b-6a9e-4076-afb6-8b86fdbd93ac">The following table describes what each of the available <em>Request Status</em> options translates to.</p><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="cabe0f4f-fe0d-483e-8f92-f8570f7d17a5" class="confluenceTable"><colgroup><col style="width: 170.0px;"/><col style="width: 589.0px;"/></colgroup><tbody><tr data-local-id="40f02e1a-e9ae-482f-9dbd-7badd7f2f062"><th data-local-id="97a8f990-67d0-4190-aaf4-a5dd03533148" class="confluenceTh"><p local-id="8849fa00-688c-4d14-869b-9040f27c060c" style="text-align: center;"><strong>Title</strong></p></th><th data-local-id="4691cd46-147b-40e9-8563-b8c8b501c4e3" class="confluenceTh"><p local-id="f3f216f3-25f8-42c1-9f31-ff027fb18978" style="text-align: center;"><strong>Description</strong></p></th></tr><tr data-local-id="65218f3c-5144-4a4d-8630-05f39d984aa2"><td data-local-id="ec79f8ef-c418-4ed6-8753-a1538065bf60" class="confluenceTd"><p local-id="872b2f76-0aa6-455e-969e-21042a714bb5" style="text-align: right;"><strong>Provided</strong></p></td><td data-local-id="099e6174-9f0a-4379-bf91-acf0e15735ed" class="confluenceTd"><p local-id="a02e894e-1225-4f6f-b84e-92665970dfc7">A query was received, and a result was returned without issue.</p></td></tr><tr data-local-id="8b690bc7-4180-4ab8-a16a-76ebbe2ad5b5"><td data-local-id="9575c3ab-cbd2-4a5a-ad7a-4d51dfc3277f" class="confluenceTd"><p local-id="d4f69804-6c1f-41c6-ba4a-92e7d448b17c" style="text-align: right;"><strong>Deferred</strong></p></td><td data-local-id="d34b7902-b087-49fa-9dc9-d45de4ff9bf3" class="confluenceTd"><p local-id="0bf8b3b1-d46c-48dc-befb-d649573b4e1d">*Internal only- for debugging purposes</p></td></tr><tr data-local-id="6c84af24-4ade-4b30-9f6a-11d3a70d7f31"><td data-local-id="d2b76528-af1b-4af2-a180-a57785b22b44" class="confluenceTd"><p local-id="5d56abf1-9817-4579-9c92-656e99baec2e" style="text-align: right;"><strong>Not Found</strong></p></td><td data-local-id="57fc0ac6-f6cb-4388-94b6-359b263fae02" class="confluenceTd"><p local-id="148bc0a0-aee7-4dc9-861c-73270f0f8b3c">A query was received, but a patient match was not found. In some cases, Not Found will also be the response when too many patients were found and a guaranteed match could not be established.</p></td></tr><tr data-local-id="28adeab9-8883-453f-a82b-e174b0aa0dd1"><td data-local-id="452f21d8-6d5c-4a68-be0a-8ae2427304f3" class="confluenceTd"><p local-id="6a786384-d0d5-4b06-b7cf-c9cf724766d1" style="text-align: right;"><strong>Disallowed</strong></p></td><td data-local-id="e6260a2d-3960-468f-89f2-ad9573f7f2dc" class="confluenceTd"><p local-id="e1e7b6ae-5ef6-41af-be4a-1ee6336914ea">*Internal only- for debugging purposes</p></td></tr><tr data-local-id="7800e004-7629-4144-8dee-04190832cae2"><td data-local-id="7409cc41-3db4-4d41-86fe-036b85fd39b4" class="confluenceTd"><p local-id="f26afd4c-554d-4a72-a4b2-bbd56c74d763" style="text-align: right;"><strong>Invalid Document</strong></p></td><td data-local-id="0f551066-78f0-449f-b827-578293cecc72" class="confluenceTd"><p local-id="e02e12cc-3a97-4029-ac15-5106379b09c9">*Internal only- for debugging purposes</p></td></tr><tr data-local-id="762d1c79-1c93-412c-9f45-847e3f732f4a"><td data-local-id="fc97a03b-e789-4ba3-9c8d-2980dbf0a4bf" class="confluenceTd"><p local-id="44674a79-d954-4095-a0e3-3a75de53de8b" style="text-align: right;"><strong>Invalid Response</strong></p></td><td data-local-id="c3102fd6-a102-4f04-b5a4-8d38cf11a5cc" class="confluenceTd"><p local-id="541f764f-e14e-4c83-910b-c807994780a6">*Internal only- for debugging purposes</p></td></tr><tr data-local-id="d1a37e57-a273-45f6-a43a-dd79dbf93ad3"><td data-local-id="88e3c634-4d9a-43c6-8e6e-154573bf0b51" class="confluenceTd"><p local-id="f7cdbc4d-2627-4a2c-a625-d22fb76e1794" style="text-align: right;"><strong>No Route Found</strong></p></td><td data-local-id="51789515-0304-431a-a019-0aa554abc71e" class="confluenceTd"><p local-id="ee9e15c8-b276-4d52-872b-6c4c0e524e44">There is no message route found to forward the request to a PDMP.</p></td></tr><tr data-local-id="bd0413cb-4875-4271-b06c-d4f79e7cdc1a"><td data-local-id="2318701f-4487-4ae6-9eed-941c6d86cb55" class="confluenceTd"><p local-id="bb054ff2-24ed-46c7-9a83-088a1faa59ea" style="text-align: right;"><strong>Access Denied</strong></p></td><td data-local-id="95694930-440a-4944-8c3b-38607e1603a1" class="confluenceTd"><p local-id="e4ab3e73-0164-4480-8dc6-1170d01c6360">A query was received, but the disclosing state denied the request (often due to not allowing the requestor’s role access to data).</p></td></tr><tr data-local-id="3cf37ee0-a607-499b-aa78-859839a3c599"><td data-local-id="58b0fe4f-591d-444c-9e12-68e38eac4f0e" class="confluenceTd"><p local-id="c53594a0-a450-464a-a8ad-932d172c3b72" style="text-align: right;"><strong>Outbound Certificate Expired</strong></p></td><td data-local-id="984fb51e-5368-441f-a2e1-66314146722b" class="confluenceTd"><p local-id="5f8c5daf-85ad-4c71-a847-8d6bd5682123">The sending state’s certificate has expired.</p></td></tr><tr data-local-id="43739ed7-8f74-4c8a-a0ed-d55650f47689"><td data-local-id="0d319ec6-cf4c-4279-8565-40635b6af7cc" class="confluenceTd"><p local-id="f71784b5-9e91-4901-9d8c-a56f1100a545" style="text-align: right;"><strong>Inbound Certificate Expired</strong></p></td><td data-local-id="56202fe3-0f6f-407c-8979-2377620a75b3" class="confluenceTd"><p local-id="339dab17-327c-4ff2-ba08-9c1f2bbf442c">The receiving state’s certificate has expired.</p></td></tr><tr data-local-id="abc57c2b-8e49-4518-847d-ce73cf68ec6c"><td data-local-id="a0d02b4b-bd1a-47bc-a8bf-d0c1bec9a671" class="confluenceTd"><p local-id="cb71dd8d-93e5-4627-badd-db2e7eb021ec" style="text-align: right;"><strong>Invalid Site Code</strong></p></td><td data-local-id="ac08049a-6858-45ae-934a-1f9663a7c3ca" class="confluenceTd"><p local-id="0d9564f2-6426-4abd-a08f-b43761ac0bac">An invalid site code was sent in the message.</p></td></tr><tr data-local-id="9424f298-2b94-4b0a-9698-18ebb49e61ac"><td data-local-id="7df4ff1f-ea88-4334-99a3-00d038c61f0d" class="confluenceTd"><p local-id="00d16832-53d1-4ae7-8d3e-f3bc36090cd8" style="text-align: right;"><strong>Max Limit Reached</strong></p></td><td data-local-id="31983d53-32cb-4689-b586-454f25f30ef9" class="confluenceTd"><p local-id="1cca39ac-ebfe-4fed-ba33-0c797a5d5877">When the number of messages reaches the threshold that the PDMP Administrator sets in the hub.</p></td></tr><tr data-local-id="8e22814b-0b79-4c4e-ab2a-9f67eeeb72c3"><td data-local-id="f93daa25-0ce3-49a8-b618-7d79c15e196d" class="confluenceTd"><p local-id="d0396654-7d55-4e0d-aa6c-bd7493ee78ee" style="text-align: right;"><strong>Timeout</strong></p></td><td data-local-id="cf66c79d-5f18-407f-b23a-75f6047d9036" class="confluenceTd"><p local-id="ebf80ee2-c60d-4428-b753-7fd961eddf5c">The request timed out while waiting for the response.</p></td></tr><tr data-local-id="ced6847e-e488-4ae8-8171-da3d8a05a978"><td data-local-id="ee20de52-9dc4-4ddc-8547-63f97af41596" class="confluenceTd"><p local-id="14f75a94-3c3a-4921-9fb1-b73fa3cf4492" style="text-align: right;"><strong>Connection Error</strong></p></td><td data-local-id="0c7077e7-59f8-455f-b570-42cdc50e2a7d" class="confluenceTd"><p local-id="591724e9-f1ea-4593-9860-7f4f97d07e8e">There was an error connecting the requesting entity to the SRS.</p></td></tr><tr data-local-id="15cb5932-8257-4b46-bd17-95f579d52222"><td data-local-id="b7c2524f-97aa-4a58-a9e5-c5167f60dabf" class="confluenceTd"><p local-id="7189bd1f-a92b-437c-a2b3-37fe1d91beab" style="text-align: right;"><strong>Validation Failed</strong></p></td><td data-local-id="83a6748f-f0d8-419a-9084-4a7048c82ab1" class="confluenceTd"><p local-id="6cb53a6b-6732-4650-b99d-ebad97387e0d">A query was received, but the requestor did not pass validation rules set up in the RxConsole for the state.</p></td></tr><tr data-local-id="72183443-b66d-44f4-b2b9-f1bd8c4a92d8"><td data-local-id="bc9ab110-0992-4934-93f4-8d356201d2c9" class="confluenceTd"><p local-id="d4eb9159-c2d1-4595-a747-c7229e620979" style="text-align: right;"><strong>Version Mismatch</strong></p></td><td data-local-id="875e8730-084c-4abb-8a0e-d98c43acd466" class="confluenceTd"><p local-id="c5ec3714-c2e1-4df7-9851-46b1a009b61d">*Internal only- for debugging purposes</p></td></tr><tr data-local-id="4b317dad-d5b4-4e1a-8e21-0aaa5d0f55a4"><td data-local-id="c99fc37f-f7f9-4110-8350-565e4f4bdd87" class="confluenceTd"><p local-id="8263f8c6-7b51-4db3-afa1-29c2f314acb6" style="text-align: right;"><strong>Error</strong></p></td><td data-local-id="ebedb3ef-1259-47d6-a4c5-4ba2f1804b29" class="confluenceTd"><p local-id="61a7b9c5-c5f2-4acc-a649-a29a3cf25c72">*Internal only- for debugging purposes</p></td></tr><tr data-local-id="3adcbf6d-7762-42de-8915-cb18747e9387"><td data-local-id="d284c929-d8d0-402a-a12e-609dfb45469a" class="confluenceTd"><p local-id="dd946c7c-9a06-4406-ac47-881e40061076" style="text-align: right;"><strong>Connection Reset</strong></p></td><td data-local-id="0d2c2e97-0b5e-432d-9fa2-e5ad7e7c3b1c" class="confluenceTd"><p local-id="488b0dbc-38d6-4cff-a970-bedb4e381649">There is a TCP/IP connection reset that occurred.</p></td></tr><tr data-local-id="98bef526-6c73-4d29-ae4b-71d0a25e0d06"><td data-local-id="968250de-1ffc-4175-bd1c-bfa8bbfbd3da" class="confluenceTd"><p local-id="59d81180-c844-482f-8dee-5772a44efac6" style="text-align: right;"><strong>Service Not Available</strong></p></td><td data-local-id="f6f36fe5-2db4-4504-8f00-82849a1e946d" class="confluenceTd"><p local-id="15acb0e8-bd9d-474a-8275-4ae7e56bfe87">Displays when any of the internal services are not available to process the message.</p></td></tr><tr data-local-id="dc5e00bb-d320-42a3-bc5f-b902d3f9e816"><td data-local-id="99fa1ef5-dc1b-4608-9865-a082a65afa62" class="confluenceTd"><p local-id="2587e3d9-c98d-4876-99ff-71471bf0bbdc" style="text-align: right;"><strong>Site not found</strong></p></td><td data-local-id="98ea1f6e-d853-4168-b847-9cf965a91444" class="confluenceTd"><p local-id="c6cf31c6-43b3-479e-8e70-d3e185117410">An invalid site code was sent in the message.</p></td></tr></tbody></table></div>
-                    </div>
-
-                                        <div class="pageSection group">
-                        <div class="pageSectionHeader">
-                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
-                        </div>
-
-                        <div class="greybox" align="left">
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/192020481/192217089.png">Confluence Header.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/192020481/192053252.png">image-20260107-201612.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/192020481/192348161.png">image-20260107-201646.png</a> (image/png)
-                                <br/>
-                                                    </div>
-                    </div>
-                    
-                                                      
-                </div>             </div> 
-            <div id="footer" role="contentinfo">
-                <section class="footer-body">
-                    <p>Document generated by Confluence on Apr 22, 2026 13:04</p>
-                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-                </section>
-            </div>
-        </div>     </body>
+ <head>
+  <title>
+   RxCheck : Reading the hub audit logs
+  </title>
+  <link href="styles/site.css"/>
+  <meta/>
+  <style>
+   body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 1200px; margin: auto; color: #333; }
+            .columnLayout { display: flex; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
+            .cell { flex: 1; min-width: 320px; }
+            .panel { padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #d1d5db; }
+            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
+            .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
+            hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
+  </style>
+ </head>
+ <body class="theme-default aui-theme-default">
+  <div id="page">
+   <div class="aui-page-panel" id="main">
+    <div id="main-header">
+     <h1 class="pagetitle" id="title-heading">
+      <span id="title-text">
+       RxCheck : Reading the hub audit logs
+      </span>
+     </h1>
+    </div>
+    <div class="view" id="content">
+     <div class="wiki-content group" id="main-content">
+      <p>
+       The following screenshot displays two hub audit log entries.
+      </p>
+      <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+       <img alt="image-20260107-201612.png" class="confluence-embedded-image image-center" src="attachments/192020481/192053252.png?width=507"/>
+      </span>
+      <p>
+       Clicking on the blue hyperlink text will display additional information about its column.
+      </p>
+      <p>
+       For example, clicking on
+       <em>
+        View
+       </em>
+       will display the following Log Summary pop-up page. The Log Summary contains additional information about the respective transaction and may add further insight (in the “Message” section) as to why a transaction was not successful.
+      </p>
+      <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+       <img alt="image-20260107-201646.png" class="confluence-embedded-image image-center" src="attachments/192020481/192348161.png?width=380"/>
+      </span>
+      <p>
+       The following table details the role of each column title displayed in the Hub Audit Log.
+      </p>
+      <div class="table-wrap">
+       <table class="confluenceTable">
+        <colgroup>
+         <col style="width: 200.0px;"/>
+         <col style="width: 559.0px;"/>
+        </colgroup>
+        <tbody>
+         <tr>
+          <th class="confluenceTh">
+           <p style="text-align: center;">
+            <strong>
+             Title
+            </strong>
+           </p>
+          </th>
+          <th class="confluenceTh">
+           <p style="text-align: center;">
+            <strong>
+             Description
+            </strong>
+           </p>
+          </th>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Summary
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Provides details about the transaction and any errors.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Request ID
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The ID provided in a request transaction that is made to obtain prescription data of an individual patient.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Requesting Site
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The state code of the State that initiated the data request.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Disclosing Site
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The state code of the State to which the data request is being sent to.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Requestor
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The name of the healthcare professional who submitted the request.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Role
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The role of the healthcare professional who submitted the request.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             DEA
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The Drug Enforcement Administration number of the healthcare professional who submitted the request.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             NPI
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The National Provider Identification number of the healthcare professional who submitted the request.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             SLN
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The State License number of the healthcare professional who submitted the request.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Request DateTime
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The date and time the request was initiated.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Response DateTime
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The date and time the response was sent.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Response Status
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The status of the transaction.
+           </p>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <p>
+       The following table describes what each of the available
+       <em>
+        Request Status
+       </em>
+       options translates to.
+      </p>
+      <div class="table-wrap">
+       <table class="confluenceTable">
+        <colgroup>
+         <col style="width: 170.0px;"/>
+         <col style="width: 589.0px;"/>
+        </colgroup>
+        <tbody>
+         <tr>
+          <th class="confluenceTh">
+           <p style="text-align: center;">
+            <strong>
+             Title
+            </strong>
+           </p>
+          </th>
+          <th class="confluenceTh">
+           <p style="text-align: center;">
+            <strong>
+             Description
+            </strong>
+           </p>
+          </th>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Provided
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A query was received, and a result was returned without issue.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Deferred
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            *Internal only- for debugging purposes
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Not Found
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A query was received, but a patient match was not found. In some cases, Not Found will also be the response when too many patients were found and a guaranteed match could not be established.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Disallowed
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            *Internal only- for debugging purposes
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Invalid Document
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            *Internal only- for debugging purposes
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Invalid Response
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            *Internal only- for debugging purposes
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             No Route Found
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            There is no message route found to forward the request to a PDMP.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Access Denied
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A query was received, but the disclosing state denied the request (often due to not allowing the requestor’s role access to data).
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Outbound Certificate Expired
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The sending state’s certificate has expired.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Inbound Certificate Expired
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The receiving state’s certificate has expired.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Invalid Site Code
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            An invalid site code was sent in the message.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Max Limit Reached
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            When the number of messages reaches the threshold that the PDMP Administrator sets in the hub.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Timeout
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The request timed out while waiting for the response.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Connection Error
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            There was an error connecting the requesting entity to the SRS.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Validation Failed
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A query was received, but the requestor did not pass validation rules set up in the RxConsole for the state.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Version Mismatch
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            *Internal only- for debugging purposes
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Error
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            *Internal only- for debugging purposes
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Connection Reset
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            There is a TCP/IP connection reset that occurred.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Service Not Available
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Displays when any of the internal services are not available to process the message.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p style="text-align: right;">
+            <strong>
+             Site not found
+            </strong>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            An invalid site code was sent in the message.
+           </p>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>

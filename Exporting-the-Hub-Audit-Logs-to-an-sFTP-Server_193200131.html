@@ -1,95 +1,205 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RxCheck : Exporting the Hub Audit Logs to an sFTP Server</title>
-        <link rel="stylesheet" href="styles/site.css" type="text/css" />
-        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-
-    <body class="theme-default aui-theme-default">
-        <div id="page">
-            <div id="main" class="aui-page-panel">
-                <div id="main-header">
-                    <div id="breadcrumb-section">
-                        <ol id="breadcrumbs">
-                            <li class="first">
-                                <span><a href="index.html">RxCheck</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="Hub-Audit-Logs_184680476.html">Hub Audit Logs</a></span>
-                            </li>
-                                                </ol>
-                    </div>
-                    <h1 id="title-heading" class="pagetitle">
-                                                <span id="title-text">
-                            RxCheck : Exporting the Hub Audit Logs to an sFTP Server
-                        </span>
-                    </h1>
-                </div>
-
-                <div id="content" class="view">
-                    <div class="page-metadata">
-                            
-        
-    
-        
-    
-        
-        
-            Created by <span class='author'> Joseph Fibich</span> on Jan 07, 2026
-                        </div>
-                    <div id="main-content" class="wiki-content group">
-                    <div class="contentLayout2">
-<div class="columnLayout fixed-width" data-layout="fixed-width">
-<div class="cell normal" data-type="normal">
-<div class="innerCell">
-<p local-id="148c656b-2647-414f-94a4-baf6e56fd587">RxConsole enables PDMP Administrators to export RxCheck Hub audit logs to their state’s sFTP server by providing the required sFTP configuration—hostname, port, username, and password—via the “Log Extract” section on the Hub Audit Logs page.</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260107-204826.png" width="281" loading="lazy" src="attachments/193200131/193003523.png?width=281" data-image-src="attachments/193200131/193003523.png" data-height="228" data-width="281" data-unresolved-comment-count="0" data-linked-resource-id="193003523" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260107-204826.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="193200131" data-linked-resource-container-version="1" data-media-id="c02f94e1-7704-4ead-8050-c88cca97ee84" data-media-type="file"></span><p local-id="33d56082-c2d7-4161-928d-bb349ac6fe3b">After clicking the <em>Log Extract</em> button, you will see the following window.</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260107-204838.png" width="337" loading="lazy" src="attachments/193200131/193560577.png?width=337" data-image-src="attachments/193200131/193560577.png" data-height="238" data-width="337" data-unresolved-comment-count="0" data-linked-resource-id="193560577" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260107-204838.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="193200131" data-linked-resource-container-version="1" data-media-id="e332d763-37c1-4388-9d63-3f8ab18130cf" data-media-type="file"></span><p local-id="f4164d0c-3b62-4e89-bb3a-39f2870fe6a1">The following table includes a description of each of the fields available.</p><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="8963a939-573d-4b98-b7eb-b8e760643448" class="confluenceTable"><colgroup><col style="width: 116.0px;"/><col style="width: 643.0px;"/></colgroup><tbody><tr data-local-id="d988f24c-b3b4-4ecd-a63f-bf6bfa365483"><th data-local-id="fc31f780-58a4-42d2-be3a-c13e9adad5e0" class="confluenceTh"><p local-id="ccc5de26-84f0-457d-bf41-ac0e134b48ac" style="text-align: center;"><strong>Field</strong></p></th><th data-local-id="6dd971a5-7f1d-42ef-8bbf-7568a343ac10" class="confluenceTh"><p local-id="c07f0f0b-b667-4f81-a78a-6b360e868de6" style="text-align: center;"><strong>Description</strong></p></th></tr><tr data-local-id="762d1ec4-c638-4a78-84d4-e14440f24684"><td data-local-id="a08300fe-636c-481c-85dd-dcad69e981ba" class="confluenceTd"><p local-id="ea16f35b-9c67-4089-aff5-59f1e21bfbcb" style="text-align: right;"><strong>Host Name</strong></p></td><td data-local-id="3a175f52-673c-46cf-b7e1-8231488a3d72" class="confluenceTd"><p local-id="0599c6c7-0244-46cb-bebb-839451370669">The domain name or IP address of the remote SFTP server.</p><p local-id="8020c4b2-0e9b-4e77-909c-2e7fe1a7b8ef">Example: sftp.example.com or 192.168.1.100.</p></td></tr><tr data-local-id="419fabbc-ff7d-4704-a449-b5aab86d31f3"><td data-local-id="61a3321d-1bf5-4364-9e58-54e14303fa53" class="confluenceTd"><p local-id="cddabab0-e960-4738-8c11-407bb067ba71" style="text-align: right;"><strong>Port</strong></p></td><td data-local-id="06e30e6a-4140-437b-aef8-c9c238f2b2bc" class="confluenceTd"><p local-id="1eea0768-0f01-48cd-98aa-400132a05a0a">The port number used for the sFTP connection. The default is “22”, but it can be configured to other values by the server administrator.</p></td></tr><tr data-local-id="c973a62a-e147-4419-ab5b-0179354df154"><td data-local-id="4f2a1962-4c77-4189-80cd-bc4b8562e68a" class="confluenceTd"><p local-id="9596da7c-e397-43a1-a327-3ddf92d4e611" style="text-align: right;"><strong>File Path</strong></p></td><td data-local-id="b9a0ebb7-ab51-4529-8530-09519397ff14" class="confluenceTd"><p local-id="ffc5ce90-f394-4381-9ef3-40d0f536b362">The directory path on the remote server where files will be uploaded to or downloaded from.</p><p local-id="45179b69-cb75-4fc7-a183-b389fbecf191">Example: /home/sftp,_user/uploads, or /data/incoming.</p></td></tr><tr data-local-id="30f08ddd-cf00-4707-99d7-eb03e4d6730b"><td data-local-id="61f433f7-bb3b-4b9c-8b9e-ce027c9d313a" class="confluenceTd"><p local-id="7a6a4814-056f-4b02-a1a8-a7c348231b9a" style="text-align: right;"><strong>Username</strong></p></td><td data-local-id="9143b653-a0de-4fe0-af90-2080d9d22151" class="confluenceTd"><p local-id="f7d918b2-b0cd-41db-a59f-650236755315">The login name used to authenticate the user with the SFTP server. It is typically assigned by the server administrator.</p></td></tr><tr data-local-id="92c3a301-4fd3-418a-a923-d3d8e482317a"><td data-local-id="8c6f249a-a96a-4b56-9add-a7f468abb04a" class="confluenceTd"><p local-id="7b953676-1254-465d-b200-9ecd9a36cb3b" style="text-align: right;"><strong>Password</strong></p></td><td data-local-id="4285d84e-2951-46d0-8147-54cec7c5c7b3" class="confluenceTd"><p local-id="5edacf69-104e-4c29-bf95-6e96d455e17f">The secret key or password corresponding to the username for authentication. This can be omitted if key-based authentication is used.</p></td></tr><tr data-local-id="37af9b1d-056c-47d3-b045-9a2cf82af701"><td data-local-id="43053b9c-073f-415c-a65b-dfe83a71de52" class="confluenceTd"><p local-id="a2edbbf5-ac05-43ea-a173-a8bedc529007" style="text-align: right;"><strong>Active</strong></p></td><td data-local-id="6ff39456-3f39-4262-b4a3-0fc85c14599e" class="confluenceTd"><p local-id="6737ff76-c02b-4692-a1f0-23e892e9abfb">Allows a user to enable and disable the log extract function. When the box is green, it is enabled. When red, the functionality is disabled.</p></td></tr></tbody></table></div></div>
-</div>
-</div>
-<div class="columnLayout two-equal" data-layout="two-equal">
-<div class="cell normal" data-type="normal">
-<div class="innerCell">
-<p local-id="6085b61a-5d29-4050-8f2d-66f1c524afb0">After the sFTP configuration is saved, the system will activate the <em>Export Logs (sFTP)</em> button for the PDMP administrator. To initiate the log export, click this button. The system will process the request and send an email notification once the export is complete.</p></div>
-</div>
-<div class="cell normal" data-type="normal">
-<div class="innerCell">
-<p local-id="ebe085e7-851c-43c9-9904-3b3922809497" /><p local-id="7a373ab7-6219-4d7e-87cc-95916ed73850" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260107-205031.png" width="141" loading="lazy" src="attachments/193200131/193200138.png?width=141" data-image-src="attachments/193200131/193200138.png" data-height="31" data-width="141" data-unresolved-comment-count="0" data-linked-resource-id="193200138" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260107-205031.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="193200131" data-linked-resource-container-version="1" data-media-id="2a613808-53b1-4436-95b4-e3ca5bd0b6ae" data-media-type="file"></span><p local-id="d4d972ee-6cb6-4b59-bb28-b6a22f5642dc" /></div>
-</div>
-</div>
-</div>
-                    </div>
-
-                                        <div class="pageSection group">
-                        <div class="pageSectionHeader">
-                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
-                        </div>
-
-                        <div class="greybox" align="left">
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193200131/192839682.png">Confluence Header.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193200131/193003523.png">image-20260107-204826.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193200131/193560577.png">image-20260107-204838.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193200131/193200138.png">image-20260107-205031.png</a> (image/png)
-                                <br/>
-                                                    </div>
-                    </div>
-                    
-                                                      
-                </div>             </div> 
-            <div id="footer" role="contentinfo">
-                <section class="footer-body">
-                    <p>Document generated by Confluence on Apr 22, 2026 13:04</p>
-                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-                </section>
-            </div>
-        </div>     </body>
+ <head>
+  <title>
+   RxCheck : Exporting the Hub Audit Logs to an sFTP Server
+  </title>
+  <link href="styles/site.css"/>
+  <meta/>
+  <style>
+   body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 1200px; margin: auto; color: #333; }
+            .columnLayout { display: flex; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
+            .cell { flex: 1; min-width: 320px; }
+            .panel { padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #d1d5db; }
+            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
+            .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
+            hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
+  </style>
+ </head>
+ <body class="theme-default aui-theme-default">
+  <div id="page">
+   <div class="aui-page-panel" id="main">
+    <div id="main-header">
+     <h1 class="pagetitle" id="title-heading">
+      <span id="title-text">
+       RxCheck : Exporting the Hub Audit Logs to an sFTP Server
+      </span>
+     </h1>
+    </div>
+    <div class="view" id="content">
+     <div class="wiki-content group" id="main-content">
+      <div class="contentLayout2">
+       <div class="columnLayout fixed-width">
+        <div class="cell normal">
+         <div class="innerCell">
+          <p>
+           RxConsole enables PDMP Administrators to export RxCheck Hub audit logs to their state’s sFTP server by providing the required sFTP configuration—hostname, port, username, and password—via the “Log Extract” section on the Hub Audit Logs page.
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260107-204826.png" class="confluence-embedded-image image-center" src="attachments/193200131/193003523.png?width=281"/>
+          </span>
+          <p>
+           After clicking the
+           <em>
+            Log Extract
+           </em>
+           button, you will see the following window.
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260107-204838.png" class="confluence-embedded-image image-center" src="attachments/193200131/193560577.png?width=337"/>
+          </span>
+          <p>
+           The following table includes a description of each of the fields available.
+          </p>
+          <div class="table-wrap">
+           <table class="confluenceTable">
+            <colgroup>
+             <col style="width: 116.0px;"/>
+             <col style="width: 643.0px;"/>
+            </colgroup>
+            <tbody>
+             <tr>
+              <th class="confluenceTh">
+               <p style="text-align: center;">
+                <strong>
+                 Field
+                </strong>
+               </p>
+              </th>
+              <th class="confluenceTh">
+               <p style="text-align: center;">
+                <strong>
+                 Description
+                </strong>
+               </p>
+              </th>
+             </tr>
+             <tr>
+              <td class="confluenceTd">
+               <p style="text-align: right;">
+                <strong>
+                 Host Name
+                </strong>
+               </p>
+              </td>
+              <td class="confluenceTd">
+               <p>
+                The domain name or IP address of the remote SFTP server.
+               </p>
+               <p>
+                Example: sftp.example.com or 192.168.1.100.
+               </p>
+              </td>
+             </tr>
+             <tr>
+              <td class="confluenceTd">
+               <p style="text-align: right;">
+                <strong>
+                 Port
+                </strong>
+               </p>
+              </td>
+              <td class="confluenceTd">
+               <p>
+                The port number used for the sFTP connection. The default is “22”, but it can be configured to other values by the server administrator.
+               </p>
+              </td>
+             </tr>
+             <tr>
+              <td class="confluenceTd">
+               <p style="text-align: right;">
+                <strong>
+                 File Path
+                </strong>
+               </p>
+              </td>
+              <td class="confluenceTd">
+               <p>
+                The directory path on the remote server where files will be uploaded to or downloaded from.
+               </p>
+               <p>
+                Example: /home/sftp,_user/uploads, or /data/incoming.
+               </p>
+              </td>
+             </tr>
+             <tr>
+              <td class="confluenceTd">
+               <p style="text-align: right;">
+                <strong>
+                 Username
+                </strong>
+               </p>
+              </td>
+              <td class="confluenceTd">
+               <p>
+                The login name used to authenticate the user with the SFTP server. It is typically assigned by the server administrator.
+               </p>
+              </td>
+             </tr>
+             <tr>
+              <td class="confluenceTd">
+               <p style="text-align: right;">
+                <strong>
+                 Password
+                </strong>
+               </p>
+              </td>
+              <td class="confluenceTd">
+               <p>
+                The secret key or password corresponding to the username for authentication. This can be omitted if key-based authentication is used.
+               </p>
+              </td>
+             </tr>
+             <tr>
+              <td class="confluenceTd">
+               <p style="text-align: right;">
+                <strong>
+                 Active
+                </strong>
+               </p>
+              </td>
+              <td class="confluenceTd">
+               <p>
+                Allows a user to enable and disable the log extract function. When the box is green, it is enabled. When red, the functionality is disabled.
+               </p>
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="columnLayout two-equal">
+        <div class="cell normal">
+         <div class="innerCell">
+          <p>
+           After the sFTP configuration is saved, the system will activate the
+           <em>
+            Export Logs (sFTP)
+           </em>
+           button for the PDMP administrator. To initiate the log export, click this button. The system will process the request and send an email notification once the export is complete.
+          </p>
+         </div>
+        </div>
+        <div class="cell normal">
+         <div class="innerCell">
+          <p>
+          </p>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260107-205031.png" class="confluence-embedded-image image-center" src="attachments/193200131/193200138.png?width=141"/>
+          </span>
+          <p>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>

@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RxCheck : Hub Audit Log Overview</title>
-        <link rel="stylesheet" href="styles/site.css" type="text/css" />
-        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-
-    <body class="theme-default aui-theme-default">
-        <div id="page">
-            <div id="main" class="aui-page-panel">
-                <div id="main-header">
-                    <div id="breadcrumb-section">
-                        <ol id="breadcrumbs">
-                            <li class="first">
-                                <span><a href="index.html">RxCheck</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="Hub-Audit-Logs_184680476.html">Hub Audit Logs</a></span>
-                            </li>
-                                                </ol>
-                    </div>
-                    <h1 id="title-heading" class="pagetitle">
-                                                <span id="title-text">
-                            RxCheck : Hub Audit Log Overview
-                        </span>
-                    </h1>
-                </div>
-
-                <div id="content" class="view">
-                    <div class="page-metadata">
-                            
-        
-    
-        
-    
-        
-        
-            Created by <span class='author'> Joseph Fibich</span> on Dec 23, 2025
-                        </div>
-                    <div id="main-content" class="wiki-content group">
-                    <p local-id="253bbc1b-732b-481f-a4a8-0f61344d5582">The Hub Audit Log captures detailed records of all incoming and outgoing transactions processed through the RxCheck Hub. This feature provides State PDMP Administrators with visibility into:</p><ul local-id="c65e4c14-78a3-40b8-bd90-0e2ad26ca138"><li local-id="73563a64-ecaa-4b59-9d97-8cf2292dc0fd"><p local-id="f2e6a037-1751-4a44-a17f-5e7638fa5b51">The number of requests received by their state,</p></li><li local-id="18739df2-a3c7-4ba3-a21c-24d15c458849"><p local-id="105fe905-5c10-462f-b137-a011c5c5596a">The number of requests sent to other states, and</p></li><li local-id="5bb56709-d85c-4c30-a4a8-c7e0fa508c54"><p local-id="b325d156-650f-40d1-b812-c080d2c4084b">The status of each transaction (e.g., Successful, Access Denied, Deferred, Failed due to Connection Error, etc.)</p></li></ul><p local-id="fcde42b2-91d6-47f2-beb9-965923d7034f">An Audit ID is automatically generated for each transaction that reaches the RxCheck Hub. These records are summarized and displayed in the Hub Audit Log section of the RxConsole application.</p><p local-id="4a28b77e-bdc4-4c87-a15f-a1b91fc20e76">By clicking on an Audit ID, administrators can view a detailed summary of the associated transaction, including both request and response details involving the PDMP state. The Hub Audit Logs are also a valuable tool for diagnosing failed transactions and identifying the root cause of communication issues.</p><p local-id="f4b073fb-6adf-4711-bb1b-9022ce9e8e38">The following subsection provides step-by-step instructions for viewing the Hub Audit Logs within the RxConsole interface. Each step is accompanied by a screenshot to assist with navigation and understanding.</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20251223-182154.png" width="471" loading="lazy" src="attachments/185106487/185270311.png?width=471" data-image-src="attachments/185106487/185270311.png" data-height="235" data-width="471" data-unresolved-comment-count="0" data-linked-resource-id="185270311" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20251223-182154.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="185106487" data-linked-resource-container-version="1" data-media-id="dd8ec2c0-3a93-4162-bb8b-495706702393" data-media-type="file"></span><p local-id="49dd428d-0e84-4dc7-a754-f1929eb8a347" />
-                    </div>
-
-                                        <div class="pageSection group">
-                        <div class="pageSectionHeader">
-                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
-                        </div>
-
-                        <div class="greybox" align="left">
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/185106487/185663514.png">Confluence Header.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/185106487/185270311.png">image-20251223-182154.png</a> (image/png)
-                                <br/>
-                                                    </div>
-                    </div>
-                    
-                                                      
-                </div>             </div> 
-            <div id="footer" role="contentinfo">
-                <section class="footer-body">
-                    <p>Document generated by Confluence on Apr 22, 2026 13:04</p>
-                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-                </section>
-            </div>
-        </div>     </body>
+ <head>
+  <title>
+   RxCheck : Hub Audit Log Overview
+  </title>
+  <link href="styles/site.css"/>
+  <meta/>
+  <style>
+   body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 1200px; margin: auto; color: #333; }
+            .columnLayout { display: flex; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
+            .cell { flex: 1; min-width: 320px; }
+            .panel { padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #d1d5db; }
+            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
+            .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
+            hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
+  </style>
+ </head>
+ <body class="theme-default aui-theme-default">
+  <div id="page">
+   <div class="aui-page-panel" id="main">
+    <div id="main-header">
+     <h1 class="pagetitle" id="title-heading">
+      <span id="title-text">
+       RxCheck : Hub Audit Log Overview
+      </span>
+     </h1>
+    </div>
+    <div class="view" id="content">
+     <div class="wiki-content group" id="main-content">
+      <p>
+       The Hub Audit Log captures detailed records of all incoming and outgoing transactions processed through the RxCheck Hub. This feature provides State PDMP Administrators with visibility into:
+      </p>
+      <ul>
+       <li>
+        <p>
+         The number of requests received by their state,
+        </p>
+       </li>
+       <li>
+        <p>
+         The number of requests sent to other states, and
+        </p>
+       </li>
+       <li>
+        <p>
+         The status of each transaction (e.g., Successful, Access Denied, Deferred, Failed due to Connection Error, etc.)
+        </p>
+       </li>
+      </ul>
+      <p>
+       An Audit ID is automatically generated for each transaction that reaches the RxCheck Hub. These records are summarized and displayed in the Hub Audit Log section of the RxConsole application.
+      </p>
+      <p>
+       By clicking on an Audit ID, administrators can view a detailed summary of the associated transaction, including both request and response details involving the PDMP state. The Hub Audit Logs are also a valuable tool for diagnosing failed transactions and identifying the root cause of communication issues.
+      </p>
+      <p>
+       The following subsection provides step-by-step instructions for viewing the Hub Audit Logs within the RxConsole interface. Each step is accompanied by a screenshot to assist with navigation and understanding.
+      </p>
+      <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+       <img alt="image-20251223-182154.png" class="confluence-embedded-image image-center" src="attachments/185106487/185270311.png?width=471"/>
+      </span>
+      <p>
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>

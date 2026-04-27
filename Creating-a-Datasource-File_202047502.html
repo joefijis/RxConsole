@@ -1,104 +1,201 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RxCheck : Creating a Datasource File</title>
-        <link rel="stylesheet" href="styles/site.css" type="text/css" />
-        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-
-    <body class="theme-default aui-theme-default">
-        <div id="page">
-            <div id="main" class="aui-page-panel">
-                <div id="main-header">
-                    <div id="breadcrumb-section">
-                        <ol id="breadcrumbs">
-                            <li class="first">
-                                <span><a href="index.html">RxCheck</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="Provider-Validation_200802311.html">Provider Validation</a></span>
-                            </li>
-                                                </ol>
-                    </div>
-                    <h1 id="title-heading" class="pagetitle">
-                                                <span id="title-text">
-                            RxCheck : Creating a Datasource File
-                        </span>
-                    </h1>
-                </div>
-
-                <div id="content" class="view">
-                    <div class="page-metadata">
-                            
-        
-    
-        
-    
-        
-        
-            Created by <span class='author'> Joseph Fibich</span> on Jan 13, 2026
-                        </div>
-                    <div id="main-content" class="wiki-content group">
-                    <div class="contentLayout2">
-<div class="columnLayout two-equal" data-layout="two-equal">
-<div class="cell normal" data-type="normal">
-<div class="innerCell">
-<ol start="1" local-id="f476bf7e-2b4b-4d4e-b0eb-1aa10c6f1216"><li local-id="19fdcb3e-5a80-439c-9807-85cd71e9a5bf"><p local-id="4697b155-3335-4b4f-99ff-8d3216b7b91c">Open Microsoft Excel on your computer.</p></li></ol><p local-id="4d782ac2-b807-4c34-bfbe-170623b41e39" /><p local-id="1933fd99-94e0-44bb-a168-b683735e52c1" /><ol start="2" local-id="91e23e34-4b81-4257-8b5b-c8b0e6eb31e2"><li local-id="4b9bd2fa-1dec-489f-b8dd-ebb7c2118007"><p local-id="579017d3-c9a0-463c-bebe-ae262e29149c">Create a new blank workbook.</p></li></ol><p local-id="e4bd3fed-95d7-4ff5-8c4d-5879c6a16013" /><p local-id="699848ab-c76c-4b5d-ac9e-b46371212240" /><p local-id="0fc03755-235f-4e61-bfaa-8d68cd961aab" /><ol start="3" local-id="4c34994e-a2c2-4b1d-b68d-edfaf77ef6d6"><li local-id="be8463a3-97e3-4d9e-b6f3-491b3a36a9aa"><p local-id="bcf4e6bf-872d-4aca-9330-22a775f3675d">Add your desired headers in any order you prefer. The names of the possible headers are:</p></li></ol><ul local-id="d4e99ad5-55ee-4710-8deb-be1da058ab97"><li local-id="0a30b146-f30f-4f93-a29c-bed4d338d538"><p local-id="9c650851-b366-4354-9855-516f7db7a128">First Name</p></li><li local-id="49354f29-f433-43d5-8214-1c2482d95b1f"><p local-id="dd5e1c49-4512-4271-8ed9-c025db3a2971">Last Name</p></li><li local-id="c9f72afd-531b-4206-8806-bf5d9699f310"><p local-id="7b736947-fb4b-4aa3-90c4-08d17c021395">NPI#</p></li><li local-id="bf5ed8f7-d9ea-41b3-be5f-61e487010062"><p local-id="b96258ac-207b-4faa-956f-e3d14b797c5c">DEA#</p></li><li local-id="3fcc514f-9f87-4637-815b-569521c0eb03"><p local-id="ba70db60-0cfe-4d43-a835-2fa285bf81eb">SL#</p></li><li local-id="c62fb021-28df-4d9b-b491-2eeeaef06bd2"><p local-id="9c135d31-acfe-449c-8cd1-ddfa3731ce35">OTHER#</p></li></ul><div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;"><div class="panelContent" style="background-color: #EAE6FF;">
-<p local-id="3af7838c-fb63-4bd7-a325-226c5f84cc8c">The header names should be entered in cells A1, B1, C1, D1, E1 and F1.</p>
-</div></div><div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;"><div class="panelContent" style="background-color: #EAE6FF;">
-<p local-id="5907089b-0b23-4277-a455-380c2360c5a8">Not all header names are required and any combination of headers can be used (For example, if a state administrator does not want to use the DEA number, the may elect to remove that header completely.</p>
-</div></div><p local-id="c9b9fba0-4ea5-4c1c-a657-21d856c5ed7c" /><ol start="4" local-id="3df66d68-bad3-480d-a38e-defde56006b4"><li local-id="be37bd86-ba61-4f4e-8b90-8449c54c38b7"><p local-id="160695ce-1db5-4df9-90b2-a124ab69e080">Populate the relevant information under the corresponding column.</p></li></ol><div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;"><div class="panelContent" style="background-color: #EAE6FF;">
-<p local-id="d7bbb59d-f14b-4aee-aa9e-74bb755ff76e">Duplications in the First Name and Last Name column are expected and will not affect provider validation.</p>
-</div></div><p local-id="e80b5d3b-83ea-4c15-b3a5-b4de33204478" /><p local-id="e2b6f5d3-22e3-4d6f-ae31-65a5c01d27e9" /><ol start="5" local-id="0633167d-3bba-4bea-a874-f9e0e89e8f9a"><li local-id="5b547cea-d402-432c-a473-accb7d00a686"><p local-id="976d7bf9-b558-4f7d-83db-e19f3c85b4ca">When finished building your datasource file, save the file as either a .csv (Comma Separated Values (CSV)) or .xlsx (Excel workbook).</p></li></ol></div>
-</div>
-<div class="cell normal" data-type="normal">
-<div class="innerCell">
-<span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-204003.png" width="39" loading="lazy" src="attachments/202047502/200966151.png?width=39" data-image-src="attachments/202047502/200966151.png" data-height="48" data-width="39" data-unresolved-comment-count="0" data-linked-resource-id="200966151" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-204003.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="202047502" data-linked-resource-container-version="1" data-media-id="d1110692-dc15-426c-81cd-0eee563319d5" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-204036.png" width="184" loading="lazy" src="attachments/202047502/201752585.png?width=184" data-image-src="attachments/202047502/201752585.png" data-height="153" data-width="184" data-unresolved-comment-count="0" data-linked-resource-id="201752585" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-204036.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="202047502" data-linked-resource-container-version="1" data-media-id="6e61cb30-98bc-4a7a-831f-66f0165824f7" data-media-type="file"></span><p local-id="882ac310-3b47-4b0f-a278-d0a19537c0e8" /><p local-id="f30fcd38-8831-449a-a0f2-df3353006f1a" /><p local-id="e6cea03b-2df4-44e5-a417-06001ea4c178" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-204146.png" width="215" loading="lazy" src="attachments/202047502/200835075.png?width=215" data-image-src="attachments/202047502/200835075.png" data-height="100" data-width="215" data-unresolved-comment-count="0" data-linked-resource-id="200835075" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-204146.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="202047502" data-linked-resource-container-version="1" data-media-id="44321fc7-ee9c-4949-9b0b-541ada6da0e4" data-media-type="file"></span><p local-id="7be3ec16-27b8-45a2-8eeb-1eb7008a2bd8" /><p local-id="ece0fd05-b907-4e42-86e9-eedb2490742e" /><p local-id="953923f8-9592-4871-ad55-3d92ce080712" /><p local-id="23b8435c-f85d-40d4-b38e-335a935e10de" /><p local-id="8c7dd552-0691-4c21-93cd-cadd9be63e68" /><p local-id="6d9ccae3-6789-4b84-a8af-ab7cffd12f75" /><p local-id="420846fa-dc67-4619-b27d-64a8604eed36" /><p local-id="88afeacf-cb1c-4ff0-8988-b951821e1b91" /><p local-id="d51864c6-afe6-4b57-ad95-1c23e528ad91" /><p local-id="3aef58be-a6c8-440b-846a-c639d2f8aa92" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-204221.png" width="210" loading="lazy" src="attachments/202047502/200638476.png?width=210" data-image-src="attachments/202047502/200638476.png" data-height="62" data-width="210" data-unresolved-comment-count="0" data-linked-resource-id="200638476" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-204221.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="202047502" data-linked-resource-container-version="1" data-media-id="31392f03-c9fe-4c24-9cea-402870cf5308" data-media-type="file"></span><p local-id="8ff958f0-5b90-4b7f-9e65-57b2c567c7ec" /><p local-id="bf129d41-6244-4177-a43c-178bdfd852b4" /><p local-id="7603f3d7-9019-4bc7-8632-47961cc6d97e" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260113-204250.png" width="236" loading="lazy" src="attachments/202047502/201228306.png?width=236" data-image-src="attachments/202047502/201228306.png" data-height="176" data-width="236" data-unresolved-comment-count="0" data-linked-resource-id="201228306" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260113-204250.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="202047502" data-linked-resource-container-version="1" data-media-id="648f1c59-798a-4092-977d-25b4a6ef32ef" data-media-type="file"></span><p local-id="e3a137e1-c21b-4c11-9aae-8fbe067216ef" /></div>
-</div>
-</div>
-</div>
-                    </div>
-
-                                        <div class="pageSection group">
-                        <div class="pageSectionHeader">
-                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
-                        </div>
-
-                        <div class="greybox" align="left">
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/202047502/201555970.png">Confluence Header.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/202047502/201981959.png">image-20260113-204001.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/202047502/200966151.png">image-20260113-204003.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/202047502/201752585.png">image-20260113-204036.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/202047502/200835075.png">image-20260113-204146.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/202047502/200638476.png">image-20260113-204221.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/202047502/201228306.png">image-20260113-204250.png</a> (image/png)
-                                <br/>
-                                                    </div>
-                    </div>
-                    
-                                                      
-                </div>             </div> 
-            <div id="footer" role="contentinfo">
-                <section class="footer-body">
-                    <p>Document generated by Confluence on Apr 22, 2026 13:05</p>
-                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-                </section>
-            </div>
-        </div>     </body>
+ <head>
+  <title>
+   RxCheck : Creating a Datasource File
+  </title>
+  <link href="styles/site.css"/>
+  <meta/>
+  <style>
+   body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 1200px; margin: auto; color: #333; }
+            .columnLayout { display: flex; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
+            .cell { flex: 1; min-width: 320px; }
+            .panel { padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #d1d5db; }
+            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
+            .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
+            hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
+  </style>
+ </head>
+ <body class="theme-default aui-theme-default">
+  <div id="page">
+   <div class="aui-page-panel" id="main">
+    <div id="main-header">
+     <h1 class="pagetitle" id="title-heading">
+      <span id="title-text">
+       RxCheck : Creating a Datasource File
+      </span>
+     </h1>
+    </div>
+    <div class="view" id="content">
+     <div class="wiki-content group" id="main-content">
+      <div class="contentLayout2">
+       <div class="columnLayout two-equal">
+        <div class="cell normal">
+         <div class="innerCell">
+          <ol>
+           <li>
+            <p>
+             Open Microsoft Excel on your computer.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             Create a new blank workbook.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             Add your desired headers in any order you prefer. The names of the possible headers are:
+            </p>
+           </li>
+          </ol>
+          <ul>
+           <li>
+            <p>
+             First Name
+            </p>
+           </li>
+           <li>
+            <p>
+             Last Name
+            </p>
+           </li>
+           <li>
+            <p>
+             NPI#
+            </p>
+           </li>
+           <li>
+            <p>
+             DEA#
+            </p>
+           </li>
+           <li>
+            <p>
+             SL#
+            </p>
+           </li>
+           <li>
+            <p>
+             OTHER#
+            </p>
+           </li>
+          </ul>
+          <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
+           <div class="panelContent" style="background-color: #EAE6FF;">
+            <p>
+             The header names should be entered in cells A1, B1, C1, D1, E1 and F1.
+            </p>
+           </div>
+          </div>
+          <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
+           <div class="panelContent" style="background-color: #EAE6FF;">
+            <p>
+             Not all header names are required and any combination of headers can be used (For example, if a state administrator does not want to use the DEA number, the may elect to remove that header completely.
+            </p>
+           </div>
+          </div>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             Populate the relevant information under the corresponding column.
+            </p>
+           </li>
+          </ol>
+          <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
+           <div class="panelContent" style="background-color: #EAE6FF;">
+            <p>
+             Duplications in the First Name and Last Name column are expected and will not affect provider validation.
+            </p>
+           </div>
+          </div>
+          <p>
+          </p>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             When finished building your datasource file, save the file as either a .csv (Comma Separated Values (CSV)) or .xlsx (Excel workbook).
+            </p>
+           </li>
+          </ol>
+         </div>
+        </div>
+        <div class="cell normal">
+         <div class="innerCell">
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-204003.png" class="confluence-embedded-image image-center" src="attachments/202047502/200966151.png?width=39"/>
+          </span>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-204036.png" class="confluence-embedded-image image-center" src="attachments/202047502/201752585.png?width=184"/>
+          </span>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-204146.png" class="confluence-embedded-image image-center" src="attachments/202047502/200835075.png?width=215"/>
+          </span>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-204221.png" class="confluence-embedded-image image-center" src="attachments/202047502/200638476.png?width=210"/>
+          </span>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260113-204250.png" class="confluence-embedded-image image-center" src="attachments/202047502/201228306.png?width=236"/>
+          </span>
+          <p>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>

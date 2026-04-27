@@ -1,72 +1,394 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RxCheck : SRS Outbound Sender Endpoint</title>
-        <link rel="stylesheet" href="styles/site.css" type="text/css" />
-        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-
-    <body class="theme-default aui-theme-default">
-        <div id="page">
-            <div id="main" class="aui-page-panel">
-                <div id="main-header">
-                    <div id="breadcrumb-section">
-                        <ol id="breadcrumbs">
-                            <li class="first">
-                                <span><a href="index.html">RxCheck</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="State-Routing-Service-Configuration_185106453.html">State Routing Service Configuration</a></span>
-                            </li>
-                                                </ol>
-                    </div>
-                    <h1 id="title-heading" class="pagetitle">
-                                                <span id="title-text">
-                            RxCheck : SRS Outbound Sender Endpoint
-                        </span>
-                    </h1>
-                </div>
-
-                <div id="content" class="view">
-                    <div class="page-metadata">
-                            
-        
-    
-        
-    
-        
-        
-            Created by <span class='author'> Joseph Fibich</span> on Dec 23, 2025
-                        </div>
-                    <div id="main-content" class="wiki-content group">
-                    <p local-id="b1bedeb8-664f-4764-b0bd-3ba59da3920e">This section enlists the standards and interfaces that are supported by the RxCheck application for all request and response transactions. This step allows State PDMP Administrators to select/enter specific details pertaining to their unique PDMP site environment.</p><p local-id="901ad57c-d1ed-47ac-8be2-aff2b2c4a9df">Currently, RxConsole supports the following interfaces:</p><ul local-id="18285822-e695-4d38-b554-08288ea5da34"><li local-id="ac455912-dd6e-47d4-a4eb-39863c7bde9b"><p local-id="517d0a49-8cdf-4aa0-a7aa-80fc5ce2af02"><u>PMIX/NIEM</u> – National Information Exchange Model</p></li><li local-id="7f16edca-d103-4f7f-93e8-92e70c1390bd"><p local-id="7df60673-23bb-456c-8d99-25f98f103c64"><u>NCPDP 2017</u> – National Council for Prescription Drug Programs</p></li><li local-id="2e9d57ca-de09-4558-ba25-d99e560ae8b3"><p local-id="a928ad2d-77e5-4c39-8fa6-b4410840fc6c"><u>HL7 FHIR</u> – Health Level Seven International (HL7) Fast Healthcare Interoperability Resources (FHIR)</p></li><li local-id="fb1864ad-0f5f-47b5-ad95-90ad646507cf"><p local-id="aec3654c-35ef-4419-a0bd-a50806ab2af1"><u>HTML5</u> – Hypertext Markup Language 5</p></li></ul><p local-id="041d4024-cfe5-47a7-8291-f5e519a9be0c" /><p local-id="3dfc1699-4c30-4768-9ad3-a188e6a6d6f7">A brief description of each type of interface is listed below:</p><ul local-id="99dbc1fc-cb03-4c89-abb1-ba0853ca3c36"><li local-id="ec86fa2d-8543-4d88-a439-5cbf1c51577d"><p local-id="6a824909-a47d-4df9-9cc5-aa53dd60ff17"><strong>PMIX:</strong> The PMIX Standards Organization supports the sharing of Prescription Drug Monitoring (PDMP) program Data among PDMP organizations and their stakeholders by establishing and maintaining the PMIX National Architecture and related guidelines, policies and standards to minimize the cost and complexity of sharing PDMP data across organizational, vendor, geographic and operational boundaries; enable secure, trusted exchanges of PDMP data and promote consistency among PDMPs.</p></li><li local-id="d6d6b458-be08-4b12-bdb7-cabcf61ede6e"><p local-id="487c1a2d-bba9-4e26-a105-427b264f214a"><strong>NIEM:</strong> NIEM is an XML information exchange standard which specifies the foundation and building blocks for interoperable information exchange by serving as a common XML vocabulary, integrated with established information exchange standards and processes, to support cross-domain information sharing and efficient information exchange between inter-related public and private service domains (e.g., law enforcement, public safety, healthcare, etc.). NIEM enables agencies to share information that crosses system, agency, and jurisdictional borders. NIEM improves decision-making, agility, and efficiency in satisfying business needs. NIEM supports interoperability and reuse, reducing costs.</p></li><li local-id="f6f3d84d-5dff-4a05-9f46-628f5dd4c754"><p local-id="b558beaf-bda6-4a51-b429-4b778628d64d"><strong>NCPDP:</strong> NCPDP is a not-for-profit, multi-stakeholder forum for developing and promoting industry standards and business solutions that improve patient safety and health outcomes, while also decreasing costs. NCPDP uses a consensus-building process to create national standards for real-time, electronic exchange of healthcare information. Their primary focus is on information exchange for prescribing, dispensing, monitoring, managing, and paying for medications and pharmacy services crucial to quality healthcare.</p></li><li local-id="057464ca-8258-4f88-a11f-1da0cfb1ad51"><p local-id="e76049f4-e538-4486-a4b5-2d454fcd64a4"><strong>HL7/FHIR:</strong> HL7 are a set of international standards used to transfer and share data between various healthcare providers. It supports clinical practice and the management, delivery, and evaluation of health services by providing a framework (and related standards) for the information exchange, system integration, data sharing, and retrieval of electronic health information. HL7 helps bridge the gap between health IT applications and makes sharing healthcare data easier and more efficient when compared to older methods.</p></li><li local-id="97f8fe8d-d008-49d6-b7a1-ac107ec888fb"><p local-id="99418667-7b31-416f-8057-04ecfc0f5b89"><strong>HTML5:</strong> It supports the rendering of information received by the user into an understandable &amp; readable format by displaying the data on a user interface.</p></li></ul><p local-id="ec92dc77-fa86-4a37-9d6a-017ce0fbb573">To configure the SRS Outbound Sender Endpoint section, the State PDMP Administrator must enter the requested information into the active data fields that fall under this section. All URL Paths and Outbound URLs for each interface are auto populated. Should there be any questions or concerns, please contact the RxCheck technical team for further assistance.</p><p local-id="40dc1290-7ed6-4814-b594-5eec72cd2e5c">The following Screenshot depicts the configuration process for the SRS Outbound Sender Endpoint section. For additional clarity, the ensuing table provides a definition of each data field present in the screenshot.</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20251223-164914.png" width="471" loading="lazy" src="attachments/185434128/185040904.png?width=471" data-image-src="attachments/185434128/185040904.png" data-height="269" data-width="471" data-unresolved-comment-count="0" data-linked-resource-id="185040904" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20251223-164914.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="185434128" data-linked-resource-container-version="1" data-media-id="8a2fa8ea-405a-44b6-b62a-0ebbe295f0c0" data-media-type="file"></span><p local-id="51717d19-f0ec-44af-a26a-3962b28b5a26" /><div class="table-wrap"><table data-table-width="760" data-layout="default" data-local-id="5753a166-529c-49b2-8183-d754ad6e0d82" class="confluenceTable"><colgroup><col style="width: 133.0px;"/><col style="width: 184.0px;"/><col style="width: 440.0px;"/></colgroup><tbody><tr data-local-id="2b0430d4-27df-4cd7-bb60-2707aa9cef35"><th data-local-id="db78a66f-007f-42ee-ba1a-d4c767161d04" class="confluenceTh"><p local-id="b3ce5257-1325-45cb-8d2c-f1faa8a15a96"><strong>Heading</strong></p></th><th data-local-id="9e6ee629-c5ff-4cd9-b1f2-398717d785c0" class="confluenceTh"><p local-id="332460d1-6693-4520-8309-cae577feac78"><strong>Data Field Name</strong></p></th><th data-local-id="bb42edef-bd03-48a9-af88-37751c0f5a33" class="confluenceTh"><p local-id="004b4b25-cc37-47be-9802-b5019ffcc487"><strong>Description</strong></p></th></tr><tr data-local-id="28e6553f-27ee-48f8-8298-6c0c0d9d7f01"><td data-local-id="bc99d883-ea02-401c-9c24-85b9a2727fd8" class="confluenceTd"><p local-id="3aec297b-473e-4e2f-828f-72162d8bff29" /></td><td data-local-id="92c775db-60e9-405c-bfe2-48880f8723d7" class="confluenceTd"><p local-id="ed7f8947-35e0-402a-b0be-da7bcacd657b">Protocol</p></td><td data-local-id="db50fcfc-63be-489e-9f87-ea847dbd1d40" class="confluenceTd"><p local-id="5224aa96-916b-412e-bb00-160727e497db">Protocols define a standardized set of rules for formatting and handling data during transmission.</p><p local-id="ac152e70-f02c-4982-9d08-8bb5664619a6">State PDMP Administrators must select one of the following options from the dropdown menu:</p><ul local-id="7db64c38-7d75-4671-8443-6dcdc103abd0"><li local-id="8fbb1e48-06ac-42b7-8686-8687527e135b"><p local-id="7a395bf8-9df9-48fe-ab13-ec789bc5f4e3"><strong>HTTP (HyperText Transfer Protocol) – </strong>A basic protocol used for transmitting text-based data between a client (e.g. browser) and a server. HTTP does not provide encryption, making it less secure for transmitting sensitive information.</p></li><li local-id="9d5a270c-2073-472d-98b5-048297d30dc5"><p local-id="1eda56dd-8a8c-4ec9-b32b-5266a644186f"><strong>HTTPS (HyperText Transfer Protocol Secure) –</strong> An enhanced version of HTTP that uses encryption and authentication mechanisms. HTTPS ensure secure communication be leveraging Secure Socket Layer (SSL) or Transport Layer Security (TLS), and is the recommended protocol for transmitting PDMP data within the RxCheck infrastructure.</p></li></ul></td></tr><tr data-local-id="603c5eee-9b9f-443d-b8ec-72dce0ae1711"><td data-local-id="8898c8b4-ba9f-4d75-a241-9cb2501bf2fe" class="confluenceTd"><p local-id="626caa2f-1b8e-4231-b91d-72d74991d43b" /></td><td data-local-id="3c1d772c-b0a5-4d67-a046-b05bae760975" class="confluenceTd"><p local-id="06488f09-174b-4b8d-af73-4c694193ac19">Domain</p></td><td data-local-id="ee47e173-b4de-49a3-9d6d-71f77d159990" class="confluenceTd"><p local-id="0fad38fe-5dc7-48b6-a1da-6c18bfb5c88e">The domain name of the server on which the SRS is running.</p><p local-id="a9d9892d-e531-42ae-95ca-a4af5503585c">This field is <u>optional</u> – If no domain is specified the system will use the IP Address.</p><p local-id="00da4d55-8f3a-49dd-bce6-a6c8d8dd95b4">E.g. New Jersey: NJ.gov</p></td></tr><tr data-local-id="e846c0fe-24f5-4aa6-9ee6-a0d7eaacd736"><td data-local-id="cfd94512-9198-4767-975c-f88d191a865b" class="confluenceTd"><p local-id="33e80bfd-7e1e-486a-8013-ceef2b19ac93" /></td><td data-local-id="0bf76be9-2f6e-4602-b914-8b6dd6d192cf" class="confluenceTd"><p local-id="d5967104-2145-49be-82f7-9b0f3ee543e4">Port Number</p></td><td data-local-id="f5604360-fe80-49bc-9945-a6ec85ded57a" class="confluenceTd"><p local-id="cab066f0-dbdb-43f6-98e7-055ed15be755">A port is a communication endpoint, and a port number is a logical number assigned to it. The port number indicates the dedicated port that will be used by the SRS software for communication purposes.</p><p local-id="4c9e86cf-6f4f-4f50-8939-77bf0953da21">Port numbers are used to direct incoming network traffic to the appropriate process or service on a server, ensuring that messages reach the correct application for handling. </p></td></tr><tr data-local-id="b010df7c-a8d2-4db5-9442-e38701e5e84c"><td data-local-id="9373b414-717c-44b8-be23-bf00d0bd3e4c" class="confluenceTd"><p local-id="87aec7fd-b93b-4699-bf3a-b2188f8a6b5a" /></td><td data-local-id="84b12c1f-d82a-4854-9a58-e0a8e75bdbc5" class="confluenceTd"><p local-id="4df08c0c-8424-40ae-abc8-b9ae7e63f262">IP Address</p></td><td data-local-id="e1fd2030-df4e-48c8-a8e5-fa1e3a28b980" class="confluenceTd"><p local-id="7821e588-3ed2-406f-ba73-4e4699531b7b">An Internet Protocol (IP) Address is a unique numerical identifier assigned to each device that is connected to a network that uses the Internet Protocol for communication.</p><p local-id="9ebd8974-729f-48c8-8ddf-8af085cb42e3">The IP Address field is populated as “localhost” by default.</p></td></tr><tr data-local-id="6ad6380e-73f6-4280-be73-716c257271cc"><td data-local-id="e7f3014c-2437-41a7-be2c-d5125b984973" class="confluenceTd"><p local-id="b1a4b580-de1a-4d0c-981d-acc096275d07">NIEM</p></td><td data-local-id="f180ba86-3417-461f-bd8d-70a9abd368ac" class="confluenceTd"><p local-id="37e3db0f-5c98-4848-8ef5-bdd22e7bae63">PMIX Outbound URL</p></td><td data-local-id="0a64c2f6-e350-400d-bf58-9b633d4e3f5a" class="confluenceTd"><p local-id="86028f40-68d8-4b19-b29a-b5d12dd2b0f7">A fully qualified URL for the NIEM Service on Outbound SRS.</p><p local-id="02c61355-ecc1-4bbf-b588-dbd1832b5928"><em><strong>This field is auto-populated.</strong></em></p></td></tr><tr data-local-id="9288b2b5-5f13-440f-9367-3ca3b329c11a"><td data-local-id="f5abef50-f6f9-4934-9e80-a1f3e8deb7ec" class="confluenceTd"><p local-id="794d9dd9-6b6d-454b-8fb0-25c5388f6cb9">NCPDP-2017</p></td><td data-local-id="918eb039-3c13-43b7-871f-b3808289c2d5" class="confluenceTd"><p local-id="97244972-9c6f-42b0-813c-000521e00af4">NCPDP-2017 Outbound URL</p></td><td data-local-id="cc324a91-5023-44a8-adb6-5cb4e876f784" class="confluenceTd"><p local-id="80e40a7b-8403-469a-bcdb-55b8fc28acd8">A fully qualified URL for the NCPDP 2017 Service on Outbound SRS.</p><p local-id="ec910cf2-d2e2-46d1-8614-171bdcade155"><em><strong>This field is auto-populated.</strong></em></p></td></tr><tr data-local-id="0a4f07bb-6be6-4765-b550-8f05be112c3a"><td data-local-id="3f66652d-8515-4eef-9a9b-03c5f98500bf" class="confluenceTd"><p local-id="60e0d647-2aea-4228-9b85-0e9c9fa7d5df">HL7 FHIR</p></td><td data-local-id="9f1fd6a5-0a87-4270-880c-2c4d406b835d" class="confluenceTd"><p local-id="d924b478-906d-4d88-bc06-9eb3c8e9c071">FHIR Outbound URL</p></td><td data-local-id="5dc17419-5b2c-4f92-8b32-82fdb8fabcc0" class="confluenceTd"><p local-id="5e032a14-8e9c-4bb4-87e6-5c366b4dd02b">A fully qualified URL for the FHIR Service on Outbound SRS.</p><p local-id="12b140c7-2e2c-44c5-8336-d3ba2b8ae430"><em><strong>This field is auto-populated.</strong></em></p></td></tr><tr data-local-id="0fe7e793-769d-4375-8f75-b0301f425dc3"><td data-local-id="fe2bb62e-f4e0-4e7a-9442-c2a33783bc9b" class="confluenceTd"><p local-id="a5d35973-64a9-4cda-b3fd-52c82424859a">HTML</p></td><td data-local-id="db1ae4b9-9e11-4908-a1b7-2e8b1a31801d" class="confluenceTd"><p local-id="9970a900-17ed-4776-be2a-e3ef0393c086">HTML Outbound URL</p></td><td data-local-id="1674e764-e1a5-44b4-84dc-dd8a61595ea5" class="confluenceTd"><p local-id="94b7d9a9-b9fc-421a-bb1b-14f6c41c841a">A fully qualified URL for the HTML Service on Outbound SRS.</p><p local-id="836782a3-7966-456d-afb4-c2435951ab5a"><em><strong>This field is auto-populated.</strong></em></p></td></tr><tr data-local-id="8b84b73b-f104-4a53-89ff-faf6271c7b41"><td rowspan="2" data-local-id="839c04b5-e5d9-4c5b-839f-b671e609306d" class="confluenceTd"><p local-id="b00ea079-914c-44b9-9cc6-b4f6afe3998f">Security Credentials: (HTTP Basic Authentication)</p></td><td data-local-id="212f846e-07ed-410e-972d-8134d649da2f" class="confluenceTd"><p local-id="515e2568-148d-4862-af81-ac25c78e7e72">Outbound Username</p></td><td data-local-id="1fa6717f-ecbd-4268-8509-787dd5d833a5" class="confluenceTd"><p local-id="d05069c6-857a-451b-9c50-0b22e3799e48">A username to authenticate the SRS connection on the RxCheck network.</p></td></tr><tr data-local-id="973c9b5a-a1af-4184-ba8f-18f527aba3b3"><td data-local-id="6cd25596-51e5-40e9-8e87-5027fb9837d4" class="confluenceTd"><p local-id="2c70cc29-71a0-42ba-9eec-17864b795e5a">Outbound Password</p></td><td data-local-id="a232046c-c940-42cc-a8ef-f238a88a3991" class="confluenceTd"><p local-id="8a599a06-94f1-4dd1-b287-8d90c6dd0b14">A password to authenticate the SRS connection on the RxCheck network.</p></td></tr></tbody></table></div>
-                    </div>
-
-                                        <div class="pageSection group">
-                        <div class="pageSectionHeader">
-                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
-                        </div>
-
-                        <div class="greybox" align="left">
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/185434128/184942607.png">Confluence Header.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/185434128/185040904.png">image-20251223-164914.png</a> (image/png)
-                                <br/>
-                                                    </div>
-                    </div>
-                    
-                                                      
-                </div>             </div> 
-            <div id="footer" role="contentinfo">
-                <section class="footer-body">
-                    <p>Document generated by Confluence on Apr 22, 2026 13:04</p>
-                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-                </section>
-            </div>
-        </div>     </body>
+ <head>
+  <title>
+   RxCheck : SRS Outbound Sender Endpoint
+  </title>
+  <link href="styles/site.css"/>
+  <meta/>
+  <style>
+   body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 1200px; margin: auto; color: #333; }
+            .columnLayout { display: flex; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
+            .cell { flex: 1; min-width: 320px; }
+            .panel { padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #d1d5db; }
+            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
+            .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
+            hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
+  </style>
+ </head>
+ <body class="theme-default aui-theme-default">
+  <div id="page">
+   <div class="aui-page-panel" id="main">
+    <div id="main-header">
+     <h1 class="pagetitle" id="title-heading">
+      <span id="title-text">
+       RxCheck : SRS Outbound Sender Endpoint
+      </span>
+     </h1>
+    </div>
+    <div class="view" id="content">
+     <div class="wiki-content group" id="main-content">
+      <p>
+       This section enlists the standards and interfaces that are supported by the RxCheck application for all request and response transactions. This step allows State PDMP Administrators to select/enter specific details pertaining to their unique PDMP site environment.
+      </p>
+      <p>
+       Currently, RxConsole supports the following interfaces:
+      </p>
+      <ul>
+       <li>
+        <p>
+         <u>
+          PMIX/NIEM
+         </u>
+         – National Information Exchange Model
+        </p>
+       </li>
+       <li>
+        <p>
+         <u>
+          NCPDP 2017
+         </u>
+         – National Council for Prescription Drug Programs
+        </p>
+       </li>
+       <li>
+        <p>
+         <u>
+          HL7 FHIR
+         </u>
+         – Health Level Seven International (HL7) Fast Healthcare Interoperability Resources (FHIR)
+        </p>
+       </li>
+       <li>
+        <p>
+         <u>
+          HTML5
+         </u>
+         – Hypertext Markup Language 5
+        </p>
+       </li>
+      </ul>
+      <p>
+      </p>
+      <p>
+       A brief description of each type of interface is listed below:
+      </p>
+      <ul>
+       <li>
+        <p>
+         <strong>
+          PMIX:
+         </strong>
+         The PMIX Standards Organization supports the sharing of Prescription Drug Monitoring (PDMP) program Data among PDMP organizations and their stakeholders by establishing and maintaining the PMIX National Architecture and related guidelines, policies and standards to minimize the cost and complexity of sharing PDMP data across organizational, vendor, geographic and operational boundaries; enable secure, trusted exchanges of PDMP data and promote consistency among PDMPs.
+        </p>
+       </li>
+       <li>
+        <p>
+         <strong>
+          NIEM:
+         </strong>
+         NIEM is an XML information exchange standard which specifies the foundation and building blocks for interoperable information exchange by serving as a common XML vocabulary, integrated with established information exchange standards and processes, to support cross-domain information sharing and efficient information exchange between inter-related public and private service domains (e.g., law enforcement, public safety, healthcare, etc.). NIEM enables agencies to share information that crosses system, agency, and jurisdictional borders. NIEM improves decision-making, agility, and efficiency in satisfying business needs. NIEM supports interoperability and reuse, reducing costs.
+        </p>
+       </li>
+       <li>
+        <p>
+         <strong>
+          NCPDP:
+         </strong>
+         NCPDP is a not-for-profit, multi-stakeholder forum for developing and promoting industry standards and business solutions that improve patient safety and health outcomes, while also decreasing costs. NCPDP uses a consensus-building process to create national standards for real-time, electronic exchange of healthcare information. Their primary focus is on information exchange for prescribing, dispensing, monitoring, managing, and paying for medications and pharmacy services crucial to quality healthcare.
+        </p>
+       </li>
+       <li>
+        <p>
+         <strong>
+          HL7/FHIR:
+         </strong>
+         HL7 are a set of international standards used to transfer and share data between various healthcare providers. It supports clinical practice and the management, delivery, and evaluation of health services by providing a framework (and related standards) for the information exchange, system integration, data sharing, and retrieval of electronic health information. HL7 helps bridge the gap between health IT applications and makes sharing healthcare data easier and more efficient when compared to older methods.
+        </p>
+       </li>
+       <li>
+        <p>
+         <strong>
+          HTML5:
+         </strong>
+         It supports the rendering of information received by the user into an understandable &amp; readable format by displaying the data on a user interface.
+        </p>
+       </li>
+      </ul>
+      <p>
+       To configure the SRS Outbound Sender Endpoint section, the State PDMP Administrator must enter the requested information into the active data fields that fall under this section. All URL Paths and Outbound URLs for each interface are auto populated. Should there be any questions or concerns, please contact the RxCheck technical team for further assistance.
+      </p>
+      <p>
+       The following Screenshot depicts the configuration process for the SRS Outbound Sender Endpoint section. For additional clarity, the ensuing table provides a definition of each data field present in the screenshot.
+      </p>
+      <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+       <img alt="image-20251223-164914.png" class="confluence-embedded-image image-center" src="attachments/185434128/185040904.png?width=471"/>
+      </span>
+      <p>
+      </p>
+      <div class="table-wrap">
+       <table class="confluenceTable">
+        <colgroup>
+         <col style="width: 133.0px;"/>
+         <col style="width: 184.0px;"/>
+         <col style="width: 440.0px;"/>
+        </colgroup>
+        <tbody>
+         <tr>
+          <th class="confluenceTh">
+           <p>
+            <strong>
+             Heading
+            </strong>
+           </p>
+          </th>
+          <th class="confluenceTh">
+           <p>
+            <strong>
+             Data Field Name
+            </strong>
+           </p>
+          </th>
+          <th class="confluenceTh">
+           <p>
+            <strong>
+             Description
+            </strong>
+           </p>
+          </th>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Protocol
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Protocols define a standardized set of rules for formatting and handling data during transmission.
+           </p>
+           <p>
+            State PDMP Administrators must select one of the following options from the dropdown menu:
+           </p>
+           <ul>
+            <li>
+             <p>
+              <strong>
+               HTTP (HyperText Transfer Protocol) –
+              </strong>
+              A basic protocol used for transmitting text-based data between a client (e.g. browser) and a server. HTTP does not provide encryption, making it less secure for transmitting sensitive information.
+             </p>
+            </li>
+            <li>
+             <p>
+              <strong>
+               HTTPS (HyperText Transfer Protocol Secure) –
+              </strong>
+              An enhanced version of HTTP that uses encryption and authentication mechanisms. HTTPS ensure secure communication be leveraging Secure Socket Layer (SSL) or Transport Layer Security (TLS), and is the recommended protocol for transmitting PDMP data within the RxCheck infrastructure.
+             </p>
+            </li>
+           </ul>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Domain
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            The domain name of the server on which the SRS is running.
+           </p>
+           <p>
+            This field is
+            <u>
+             optional
+            </u>
+            – If no domain is specified the system will use the IP Address.
+           </p>
+           <p>
+            E.g. New Jersey: NJ.gov
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Port Number
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A port is a communication endpoint, and a port number is a logical number assigned to it. The port number indicates the dedicated port that will be used by the SRS software for communication purposes.
+           </p>
+           <p>
+            Port numbers are used to direct incoming network traffic to the appropriate process or service on a server, ensuring that messages reach the correct application for handling.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            IP Address
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            An Internet Protocol (IP) Address is a unique numerical identifier assigned to each device that is connected to a network that uses the Internet Protocol for communication.
+           </p>
+           <p>
+            The IP Address field is populated as “localhost” by default.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+            NIEM
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            PMIX Outbound URL
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A fully qualified URL for the NIEM Service on Outbound SRS.
+           </p>
+           <p>
+            <em>
+             <strong>
+              This field is auto-populated.
+             </strong>
+            </em>
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+            NCPDP-2017
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            NCPDP-2017 Outbound URL
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A fully qualified URL for the NCPDP 2017 Service on Outbound SRS.
+           </p>
+           <p>
+            <em>
+             <strong>
+              This field is auto-populated.
+             </strong>
+            </em>
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+            HL7 FHIR
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            FHIR Outbound URL
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A fully qualified URL for the FHIR Service on Outbound SRS.
+           </p>
+           <p>
+            <em>
+             <strong>
+              This field is auto-populated.
+             </strong>
+            </em>
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+            HTML
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            HTML Outbound URL
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A fully qualified URL for the HTML Service on Outbound SRS.
+           </p>
+           <p>
+            <em>
+             <strong>
+              This field is auto-populated.
+             </strong>
+            </em>
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+            Security Credentials: (HTTP Basic Authentication)
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            Outbound Username
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A username to authenticate the SRS connection on the RxCheck network.
+           </p>
+          </td>
+         </tr>
+         <tr>
+          <td class="confluenceTd">
+           <p>
+            Outbound Password
+           </p>
+          </td>
+          <td class="confluenceTd">
+           <p>
+            A password to authenticate the SRS connection on the RxCheck network.
+           </p>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>

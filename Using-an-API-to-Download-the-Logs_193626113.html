@@ -1,109 +1,160 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RxCheck : Using an API to Download the Logs</title>
-        <link rel="stylesheet" href="styles/site.css" type="text/css" />
-        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-
-    <body class="theme-default aui-theme-default">
-        <div id="page">
-            <div id="main" class="aui-page-panel">
-                <div id="main-header">
-                    <div id="breadcrumb-section">
-                        <ol id="breadcrumbs">
-                            <li class="first">
-                                <span><a href="index.html">RxCheck</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="RxConsole-Documentation_178487297.html">RxConsole Documentation</a></span>
-                            </li>
-                                                    <li>
-                                <span><a href="Hub-Audit-Logs_184680476.html">Hub Audit Logs</a></span>
-                            </li>
-                                                </ol>
-                    </div>
-                    <h1 id="title-heading" class="pagetitle">
-                                                <span id="title-text">
-                            RxCheck : Using an API to Download the Logs
-                        </span>
-                    </h1>
-                </div>
-
-                <div id="content" class="view">
-                    <div class="page-metadata">
-                            
-        
-    
-        
-    
-        
-        
-            Created by <span class='author'> Joseph Fibich</span>, last modified on Jan 07, 2026
-                        </div>
-                    <div id="main-content" class="wiki-content group">
-                    <div class="contentLayout2">
-<div class="columnLayout fixed-width" data-layout="fixed-width">
-<div class="cell normal" data-type="normal">
-<div class="innerCell">
-<p local-id="15362fd7-595d-421d-8e03-5be6d8bdf445">RxConsole also allows a PDMP Administrator to enable an API endpoint to download audit logs from the RxCheck Hub. To access this API, an API key is required.</p></div>
-</div>
-</div>
-<div class="columnLayout two-equal" data-layout="two-equal">
-<div class="cell normal" data-type="normal">
-<div class="innerCell">
-<p local-id="ca348b9c-e04a-4134-aea2-a8f62aa09254" /><ol start="1" local-id="d50b9266-9689-4e43-910a-2276e8bed073"><li local-id="6564d63e-27fc-42dc-839f-4ee14ca4626c"><p local-id="2de7ac34-127c-4809-80cf-02383064c7d1">From the log extract window, select the <em>API Key</em> tab.</p></li></ol><p local-id="3a159c40-ff3e-4038-beb2-cb9947a8391c" /><p local-id="7ee75f18-4c10-4e4f-b4df-3e4ea55f11e3" /><p local-id="5d5e5c98-08c3-4e78-8f98-da68af416969" /><ol start="2" local-id="81e1f558-cc7b-4679-af14-89770df18947"><li local-id="9945a471-6ad4-4205-a439-8477507cef04"><p local-id="8724a5fe-d505-45f2-8db4-1c0c64806a33">Press the <em>Key</em> button to generate an API key.</p></li></ol><p local-id="42c583aa-7f51-48fe-abec-65c0a9b27bd0" /><p local-id="0ee8339e-2c6f-4467-84a2-6f660ae9d59d" /><p local-id="0ef65129-7441-44c8-86a4-e9ab83a7af6d" /><ol start="3" local-id="baf71ac1-60dc-4b80-a25c-9ef03ca35201"><li local-id="9a504ad8-e7ac-4907-89f1-cd72cc03958b"><p local-id="5aacaa4d-cd0b-4935-91aa-70c4ee75ef24">To copy the API Key, press the <em>copy</em> button.</p></li></ol><p local-id="4d1f72f3-0817-43e2-8ec8-2e350ae69b50" /><ol start="4" local-id="dbfcecd8-151d-443a-ad9a-2c3e802e7d63"><li local-id="b0fdce5d-d5a9-4c34-b8a2-ca260b619c2c"><p local-id="77093e3a-44e1-4127-bf4e-6c95683b449c">To create a new unique API key, press the <em>ReGenerateAPIKey</em>.</p></li></ol><p local-id="3bf0b748-53f1-4302-9cb3-0120438c6fa0" /><ol start="5" local-id="f503d824-4494-45d2-aad8-873fa0d922d1"><li local-id="d465d130-9b23-47c0-856d-b0fe6e434d63"><p local-id="ad2227b3-05a3-48a7-a099-7175b57cb717">To remove your API, press the <em>Delete</em> key.</p></li></ol><div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;"><div class="panelContent" style="background-color: #EAE6FF;">
-<p local-id="87bebaf6-b7f0-40ab-8dc7-8393ede37295">The system generates a sample API request to be used as a reference for developing a module to download Hub audit logs.</p>
-</div></div></div>
-</div>
-<div class="cell normal" data-type="normal">
-<div class="innerCell">
-<span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260107-205502.png" width="226" loading="lazy" src="attachments/193626113/193724417.png?width=226" data-image-src="attachments/193626113/193724417.png" data-height="160" data-width="226" data-unresolved-comment-count="0" data-linked-resource-id="193724417" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260107-205502.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="193626113" data-linked-resource-container-version="4" data-media-id="fe73c845-8215-4401-95bb-ad2d8c2e2490" data-media-type="file"></span><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260107-205515.png" width="225" loading="lazy" src="attachments/193626113/193757185.png?width=225" data-image-src="attachments/193626113/193757185.png" data-height="153" data-width="225" data-unresolved-comment-count="0" data-linked-resource-id="193757185" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260107-205515.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="193626113" data-linked-resource-container-version="4" data-media-id="67e5fbe7-8308-4697-a06e-b82c5fc9ba12" data-media-type="file"></span><p local-id="040bf09f-3850-4d9b-86a7-950252a6a449" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260107-205704.png" width="25" loading="lazy" src="attachments/193626113/193822721.png?width=25" data-image-src="attachments/193626113/193822721.png" data-height="23" data-width="25" data-unresolved-comment-count="0" data-linked-resource-id="193822721" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260107-205704.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="193626113" data-linked-resource-container-version="4" data-media-id="465d2111-fe2e-4c4d-ab26-cc888071c7a5" data-media-type="file"></span><p local-id="13f819c1-f3ef-4291-80a5-4a1804d92410" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260107-205729.png" width="24" loading="lazy" src="attachments/193626113/193855489.png?width=24" data-image-src="attachments/193626113/193855489.png" data-height="23" data-width="24" data-unresolved-comment-count="0" data-linked-resource-id="193855489" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260107-205729.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="193626113" data-linked-resource-container-version="4" data-media-id="8f3ff52f-cf0a-492a-9b79-63fca3d2d229" data-media-type="file"></span><p local-id="dc7428be-29f0-4171-9b43-f1bd36eab4a7" /><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" alt="image-20260107-205737.png" width="25" loading="lazy" src="attachments/193626113/191987715.png?width=25" data-image-src="attachments/193626113/191987715.png" data-height="23" data-width="25" data-unresolved-comment-count="0" data-linked-resource-id="191987715" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image-20260107-205737.png" data-base-url="https://ijisinstitute.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="193626113" data-linked-resource-container-version="4" data-media-id="3dd2485c-080a-432b-9c8e-dafc0331cbca" data-media-type="file"></span><p local-id="b3ffce39-5fc4-42c7-8e64-da8405be8062" /></div>
-</div>
-</div>
-</div>
-                    </div>
-
-                                        <div class="pageSection group">
-                        <div class="pageSectionHeader">
-                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
-                        </div>
-
-                        <div class="greybox" align="left">
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193626113/193691649.png">image-20260107-205459.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193626113/193724417.png">image-20260107-205502.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193626113/193757185.png">image-20260107-205515.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193626113/193822721.png">image-20260107-205704.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193626113/193855489.png">image-20260107-205729.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193626113/191987715.png">image-20260107-205737.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193626113/194084865.png">Confluence Header.png</a> (image/png)
-                                <br/>
-                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
-                                <a href="attachments/193626113/194019329.png">Confluence Header.png</a> (image/png)
-                                <br/>
-                                                    </div>
-                    </div>
-                    
-                                                      
-                </div>             </div> 
-            <div id="footer" role="contentinfo">
-                <section class="footer-body">
-                    <p>Document generated by Confluence on Apr 22, 2026 13:04</p>
-                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
-                </section>
-            </div>
-        </div>     </body>
+ <head>
+  <title>
+   RxCheck : Using an API to Download the Logs
+  </title>
+  <link href="styles/site.css"/>
+  <meta/>
+  <style>
+   body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 1200px; margin: auto; color: #333; }
+            .columnLayout { display: flex; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
+            .cell { flex: 1; min-width: 320px; }
+            .panel { padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #d1d5db; }
+            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
+            .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
+            hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
+  </style>
+ </head>
+ <body class="theme-default aui-theme-default">
+  <div id="page">
+   <div class="aui-page-panel" id="main">
+    <div id="main-header">
+     <h1 class="pagetitle" id="title-heading">
+      <span id="title-text">
+       RxCheck : Using an API to Download the Logs
+      </span>
+     </h1>
+    </div>
+    <div class="view" id="content">
+     <div class="wiki-content group" id="main-content">
+      <div class="contentLayout2">
+       <div class="columnLayout fixed-width">
+        <div class="cell normal">
+         <div class="innerCell">
+          <p>
+           RxConsole also allows a PDMP Administrator to enable an API endpoint to download audit logs from the RxCheck Hub. To access this API, an API key is required.
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="columnLayout two-equal">
+        <div class="cell normal">
+         <div class="innerCell">
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             From the log extract window, select the
+             <em>
+              API Key
+             </em>
+             tab.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             Press the
+             <em>
+              Key
+             </em>
+             button to generate an API key.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <p>
+          </p>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             To copy the API Key, press the
+             <em>
+              copy
+             </em>
+             button.
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             To create a new unique API key, press the
+             <em>
+              ReGenerateAPIKey
+             </em>
+             .
+            </p>
+           </li>
+          </ol>
+          <p>
+          </p>
+          <ol>
+           <li>
+            <p>
+             To remove your API, press the
+             <em>
+              Delete
+             </em>
+             key.
+            </p>
+           </li>
+          </ol>
+          <div class="panel" style="background-color: #EAE6FF;border-color: #998DD9;border-width: 1px;">
+           <div class="panelContent" style="background-color: #EAE6FF;">
+            <p>
+             The system generates a sample API request to be used as a reference for developing a module to download Hub audit logs.
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="cell normal">
+         <div class="innerCell">
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260107-205502.png" class="confluence-embedded-image image-center" src="attachments/193626113/193724417.png?width=226"/>
+          </span>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260107-205515.png" class="confluence-embedded-image image-center" src="attachments/193626113/193757185.png?width=225"/>
+          </span>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260107-205704.png" class="confluence-embedded-image image-center" src="attachments/193626113/193822721.png?width=25"/>
+          </span>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260107-205729.png" class="confluence-embedded-image image-center" src="attachments/193626113/193855489.png?width=24"/>
+          </span>
+          <p>
+          </p>
+          <span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size">
+           <img alt="image-20260107-205737.png" class="confluence-embedded-image image-center" src="attachments/193626113/191987715.png?width=25"/>
+          </span>
+          <p>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>
