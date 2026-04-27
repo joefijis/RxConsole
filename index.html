@@ -208,24 +208,53 @@
 <script>
     function toggleFolder(element) {
         element.classList.toggle('active');
-        element.nextElementSibling.classList.toggle('open');
+        const list = element.nextElementSibling;
+        list.classList.toggle('open');
+        list.style.display = list.classList.contains('open') ? "block" : "none";
     }
-    function toggleSidebar() { document.body.classList.toggle('sidebar-collapsed'); }
+
+    function toggleSidebar() { 
+        document.body.classList.toggle('sidebar-collapsed'); 
+    }
+
     function filterDocs() {
         let input = document.getElementById('docSearch').value.toLowerCase();
         let folders = document.querySelectorAll('.folder');
         let lists = document.querySelectorAll('.file-list');
+
         folders.forEach((folder, i) => {
             let links = lists[i].querySelectorAll('a');
-            let visible = Array.from(links).some(link => {
-                let match = link.innerText.toLowerCase().includes(input);
-                link.style.display = match ? "" : "none";
-                return match;
+            let folderHasMatch = false;
+
+            links.forEach(link => {
+                let text = link.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    link.parentElement.style.display = "";
+                    folderHasMatch = true;
+                } else {
+                    link.parentElement.style.display = "none";
+                }
             });
-            folder.style.display = visible ? "" : "none";
-            if(input) { lists[i].classList.add('open'); folder.classList.add('active'); }
+
+            if (input.length > 0) {
+                if (folderHasMatch) {
+                    folder.style.display = "";
+                    lists[i].style.display = "block";
+                    lists[i].classList.add('open');
+                    folder.classList.add('active');
+                } else {
+                    folder.style.display = "none";
+                    lists[i].style.display = "none";
+                }
+            } else {
+                folder.style.display = "";
+                folder.classList.remove('active');
+                lists[i].style.display = "none";
+                lists[i].classList.remove('open');
+            }
         });
     }
+
     const links = document.querySelectorAll('.file-list a');
     links.forEach(link => {
         link.addEventListener('click', function() {
