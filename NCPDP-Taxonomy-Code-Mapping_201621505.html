@@ -13,7 +13,7 @@
                 --panel-bg: #f4f5f7;
                 --macro-bg: #f0f0f0;
                 --macro-text: #333333;
-                --breadcrumb-color: #444444; /* Darker for light mode */
+                --breadcrumb-color: #444444;
                 --border-color: #d1d5db;
             }
             [data-theme="dark"] {
@@ -22,7 +22,7 @@
                 --panel-bg: #1c2128;
                 --macro-bg: #1f2937;
                 --macro-text: #ffffff;
-                --breadcrumb-color: #c9d1d9; /* Lighter for dark mode */
+                --breadcrumb-color: #c9d1d9;
                 --border-color: #30363d;
             }
 
@@ -34,13 +34,14 @@
                 color: var(--text-color) !important; 
             }
 
-            /* --- THE MACRO FIX (Strips the pink/lavender highlight) --- */
+            /* --- THE FINAL MACRO HIGHLIGHT FIX --- */
             div.confluence-information-macro, 
             div.panel, 
             div.conf-macro,
             div.confluence-information-macro-body,
             .confluence-information-macro-note {
                 background-color: var(--macro-bg) !important;
+                background: var(--macro-bg) !important; /* Force overall background */
                 border: 1px solid var(--border-color) !important;
                 color: var(--macro-text) !important;
                 padding: 15px 20px !important;
@@ -48,26 +49,28 @@
                 border-radius: 4px;
             }
 
-            /* Ensure nested elements inside macros respect the padding */
-            div.confluence-information-macro * {
+            /* Target every single nested element inside to strip backgrounds */
+            div.confluence-information-macro *, 
+            div.panel *,
+            .confluence-information-macro-body * {
                 color: var(--macro-text) !important;
                 background-color: transparent !important;
+                background: transparent !important; /* Strips the pink/lavender */
+                box-shadow: none !important;
+                text-shadow: none !important;
             }
 
-            /* --- BREADCRUMBS VISIBILITY --- */
+            /* --- BREADCRUMBS --- */
             .content-breadcrumbs { 
-                font-size: 13px; /* Slightly larger */
+                font-size: 13px; 
                 font-weight: 500;
                 color: var(--breadcrumb-color) !important; 
                 margin-bottom: 25px; 
-                letter-spacing: 0.3px;
             }
 
-            /* --- LAYOUT PROTECTION --- */
+            /* --- LAYOUT & TEXT --- */
             .columnLayout { display: flex !important; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
             .cell { flex: 1 !important; min-width: 320px; }
-
-            /* --- GENERAL TEXT --- */
             p, span, li, b, strong, h1, h2, h3, h4, .step-num { 
                 color: var(--text-color) !important; 
             }
