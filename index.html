@@ -226,7 +226,7 @@
     </nav>
 
     <main>
-        <iframe name="content-frame" id="docFrame" title="RxConsole Documentation Content" src="RxConsole-Documentation_178487297.html"></iframe>
+        <iframe name="content-frame" id="docFrame" title="RxConsole Documentation Content" src="RxConsole-Documentation_178487297.html" onload="syncIframeTheme()"></iframe>
     </main>
 </div>
 
@@ -239,11 +239,25 @@
         const newTheme = currentTheme === "dark" ? "light" : "dark";
         document.documentElement.setAttribute("data-theme", newTheme);
         localStorage.setItem("theme", newTheme);
+        syncIframeTheme();
     }
 
     // Load saved theme on startup
     const savedTheme = localStorage.getItem("theme") || "light";
     document.documentElement.setAttribute("data-theme", savedTheme);
+
+    // Function to push theme preference to iframe content
+    function syncIframeTheme() {
+        const currentTheme = document.documentElement.getAttribute("data-theme");
+        try {
+            const frameDoc = frame.contentDocument || frame.contentWindow.document;
+            if (frameDoc && frameDoc.documentElement) {
+                frameDoc.documentElement.setAttribute("data-theme", currentTheme);
+            }
+        } catch (e) {
+            console.warn("Theme sync restricted by origin policies, but standard for local/GitHub Pages environments.");
+        }
+    }
 
     // 2. Sidebar and Folder Logic
     function toggleFolder(element) {
