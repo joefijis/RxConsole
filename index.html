@@ -35,12 +35,40 @@
         }
 
         header {
-            height: var(--header-height); background: var(--primary-blue);
-            color: white; display: flex; align-items: center; justify-content: space-between;
-            padding: 0 20px; position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-        }
+        height: var(--header-height); 
+        background: var(--primary-blue);
+        color: white; 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;
+        padding: 0 20px; 
+        position: fixed; 
+        top: 0; left: 0; right: 0; 
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-        .header-left { display: flex; align-items: center; }
+       .header-left { 
+           display: flex; 
+           align-items: center; 
+           gap: 15px; /* Space between logo and title */
+       }
+
+       .header-logo {
+           height: 40px; /* Adjust size to fit header height */
+           width: auto;
+           background: white; /* Optional: adds a small white backing if the logo is transparent */
+           padding: 4px;
+           border-radius: 4px;
+           display: block;
+       }
+
+       header h1 {
+           font-size: 20px;
+           margin: 0;
+           letter-spacing: -0.5px;
+           font-weight: 600;
+       }
 
         #menu-toggle, #theme-toggle {
             background: none; border: 1px solid rgba(255,255,255,0.3);
@@ -94,6 +122,7 @@
 <header>
     <div class="header-left">
         <button id="menu-toggle" onclick="toggleSidebar()" title="Toggle Sidebar">☰</button>
+        <img src="rxcheck1_20200520.PNG" alt="RxCheck Logo" class="header-logo">
         <h1>RxConsole User Guide</h1>
     </div>
     <button id="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">🌓</button>
