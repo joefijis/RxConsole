@@ -11,15 +11,21 @@
                 --bg-color: #ffffff;
                 --text-color: #333333;
                 --panel-bg: #f4f5f7;
+                --info-box-bg: #eae6ff; /* Light purple for light mode */
+                --info-box-text: #403294;
                 --breadcrumb-color: #6b778c;
                 --link-color: #0052cc;
+                --border-color: #d1d5db;
             }
             [data-theme="dark"] {
                 --bg-color: #0d1117;
                 --text-color: #e0e0e0;
                 --panel-bg: #1c2128;
+                --info-box-bg: #282e3e; /* Deep blue/gray for dark mode */
+                --info-box-text: #b8afff; /* Bright lavender for contrast */
                 --breadcrumb-color: #8b949e;
                 --link-color: #58a6ff;
+                --border-color: #30363d;
             }
 
             body { 
@@ -30,21 +36,34 @@
                 color: var(--text-color) !important; 
             }
 
+            /* --- INFO BOX / MACRO FIX --- */
+            .confluence-information-macro, .panel, .confluence-information-macro-note {
+                background-color: var(--info-box-bg) !important;
+                border: 1px solid var(--border-color) !important;
+                padding: 15px !important;
+                border-radius: 6px !important;
+                margin: 20px 0 !important;
+            }
+
+            /* Force the text INSIDE the info box to be readable */
+            .confluence-information-macro p, 
+            .confluence-information-macro span, 
+            .confluence-information-macro b {
+                color: var(--info-box-text) !important;
+            }
+
             /* --- LAYOUT PROTECTION --- */
             .columnLayout { display: flex !important; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
             .cell { flex: 1 !important; min-width: 320px; }
-            .panel { padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid var(--border-color); background-color: var(--panel-bg) !important; }
 
-            /* --- TEXT COLOR FIX (Scoped to avoid breaking layout) --- */
+            /* --- GENERAL TEXT COLOR --- */
             p, span, li, b, strong, h1, h2, h3, h4, .step-num { 
                 color: var(--text-color) !important; 
             }
             
             a { color: var(--link-color) !important; }
-
             .content-breadcrumbs { font-size: 12px; color: var(--breadcrumb-color) !important; margin-bottom: 20px; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc !important; }
-            
             img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
             .hardcoded-step { margin-bottom: 10px; display: block; }
             
