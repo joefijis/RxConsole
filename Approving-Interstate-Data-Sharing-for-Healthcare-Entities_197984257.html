@@ -13,7 +13,8 @@
                 --panel-bg: #f4f5f7;
                 --macro-bg: #f0f0f0;
                 --macro-text: #333333;
-                --breadcrumb-color: #6b778c;
+                --breadcrumb-color: #444444; /* Darker for light mode */
+                --border-color: #d1d5db;
             }
             [data-theme="dark"] {
                 --bg-color: #0d1117;
@@ -21,7 +22,8 @@
                 --panel-bg: #1c2128;
                 --macro-bg: #1f2937;
                 --macro-text: #ffffff;
-                --breadcrumb-color: #8b949e;
+                --breadcrumb-color: #c9d1d9; /* Lighter for dark mode */
+                --border-color: #30363d;
             }
 
             body { 
@@ -32,24 +34,33 @@
                 color: var(--text-color) !important; 
             }
 
-            /* --- THE MACRO FIX (Panels and Info Boxes) --- */
-            /* This targets the white blocks in your screenshot */
+            /* --- THE MACRO FIX (Padding & Margin) --- */
             div.confluence-information-macro, 
             div.panel, 
             div.conf-macro,
             div.confluence-information-macro-body,
             .confluence-information-macro-note {
                 background-color: var(--macro-bg) !important;
-                background: var(--macro-bg) !important;
-                border: 1px solid #30363d !important;
+                border: 1px solid var(--border-color) !important;
                 color: var(--macro-text) !important;
+                padding: 15px 20px !important; /* Added 20px left/right padding */
+                margin: 20px 0 !important;
+                border-radius: 4px;
             }
 
-            /* Ensure all nested text inside those blocks turns white/light */
-            div.confluence-information-macro *, 
-            div.panel * {
+            /* Ensure nested elements inside macros respect the padding */
+            div.confluence-information-macro * {
                 color: var(--macro-text) !important;
                 background-color: transparent !important;
+            }
+
+            /* --- BREADCRUMBS VISIBILITY --- */
+            .content-breadcrumbs { 
+                font-size: 13px; /* Slightly larger */
+                font-weight: 500;
+                color: var(--breadcrumb-color) !important; 
+                margin-bottom: 25px; 
+                letter-spacing: 0.3px;
             }
 
             /* --- LAYOUT PROTECTION --- */
@@ -62,12 +73,11 @@
             }
             
             a { color: #58a6ff !important; }
-            .content-breadcrumbs { font-size: 12px; color: var(--breadcrumb-color) !important; margin-bottom: 20px; }
             .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc !important; }
-            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
-            .hardcoded-step { margin-bottom: 10px; display: block; }
+            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid var(--border-color); }
+            .hardcoded-step { margin-bottom: 12px; display: block; }
             
-            .doc-footer-nav { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 2px solid #30363d; }
+            .doc-footer-nav { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 2px solid var(--border-color); }
             .nav-btn { text-decoration: none; color: #58a6ff !important; padding: 10px 20px; border: 1px solid #58a6ff !important; border-radius: 5px; }
   </style>
  </head>
