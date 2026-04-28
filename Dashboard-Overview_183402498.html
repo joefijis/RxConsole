@@ -7,19 +7,45 @@
   <link href="styles/site.css"/>
   <meta/>
   <style>
-   body { font-family: -apple-system, sans-serif; line-height: 1.6; padding: 20px; max-width: 1200px; margin: auto; color: #333; }
-            .columnLayout { display: flex; gap: 30px; margin-bottom: 20px; flex-wrap: wrap; }
-            .cell { flex: 1; min-width: 320px; }
-            .panel { padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #d1d5db; }
-            img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #eee; }
-            .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc; }
-            hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
-            .hardcoded-step { margin-bottom: 10px; display: block; }
+   :root {
+                --bg-color: #ffffff;
+                --text-color: #333333;
+                --panel-bg: #f9f9f9;
+                --breadcrumb-color: #6b778c;
+            }
+            [data-theme="dark"] {
+                --bg-color: #0d1117;
+                --text-color: #e0e0e0;
+                --panel-bg: #1c2128;
+                --breadcrumb-color: #8b949e;
+            }
+
+            body { 
+                font-family: -apple-system, sans-serif; 
+                line-height: 1.6; padding: 20px; 
+                max-width: 1200px; margin: auto; 
+                background-color: var(--bg-color) !important; 
+                color: var(--text-color) !important; 
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+            /* FORCE ALL TEXT TO BE VISIBLE */
+            p, div, span, li, b, strong { 
+                color: var(--text-color) !important; 
+            }
+
+            .content-breadcrumbs { font-size: 12px; color: var(--breadcrumb-color) !important; margin-bottom: 20px; }
+            .pagetitle { border-bottom: 2px solid #0052cc; padding-bottom: 10px; color: #0052cc !important; }
             
-            /* Footer Navigation Styling */
-            .doc-footer-nav { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; }
-            .nav-btn { text-decoration: none; color: #0052cc; font-weight: bold; padding: 10px 20px; border: 1px solid #0052cc; border-radius: 5px; transition: 0.2s; }
-            .nav-btn:hover { background: #0052cc; color: white; }
+            /* Update panels to be readable */
+            .panel, .confluence-information-macro { 
+                background-color: var(--panel-bg) !important; 
+                border: 1px solid #30363d !important;
+                color: var(--text-color) !important;
+            }
+
+            .hardcoded-step { margin-bottom: 10px; display: block; }
+            .nav-btn { color: #0052cc !important; border: 1px solid #0052cc !important; }
   </style>
  </head>
  <body class="theme-default aui-theme-default">
